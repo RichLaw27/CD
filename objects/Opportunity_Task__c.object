@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Optional or mandatory tasks associated with opportunities.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Assigned_By__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Who is assigning the opportunity task to other user</description>
+        <externalId>false</externalId>
+        <label>Assigned By</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Opportunity_Tasks1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Assigned_User__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Optional sales force user asked to complete this task</description>
+        <externalId>false</externalId>
+        <label>Assigned To</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Opportunity_Tasks</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Assigned_to__c</fullName>
+        <description>Person or company to who was asked to complete this task. Does not have to be a sales force user.</description>
+        <externalId>false</externalId>
+        <label>Assigned to</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Create_Event__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Create Task to Involved Users</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Date_Completed__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Completed</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_Final_Approval__c</fullName>
+        <description>Date on which approved this task was completed successfully and the outcome was approved</description>
+        <externalId>false</externalId>
+        <label>Date Final Approval</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_Required__c</fullName>
+        <description>Date Required</description>
+        <externalId>false</externalId>
+        <label>Date Required</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_Started__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Started</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Details__c</fullName>
+        <description>Details / comments relating to task</description>
+        <externalId>false</externalId>
+        <label>Details</label>
+        <length>32768</length>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Internal_Approval__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Tick if internal approval has been gained to start this task</description>
+        <externalId>false</externalId>
+        <label>Internal Approval</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity__c</fullName>
+        <description>Opportunity to which this task relates</description>
+        <externalId>false</externalId>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Opportunity Tasks</relationshipLabel>
+        <relationshipName>Opportunity_Tasks</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <label>Opportunity Task</label>
+    <nameField>
+        <displayFormat>Task-{000000}</displayFormat>
+        <label>Opportunity Task Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Opportunity Tasks</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Agree_Full_Production_Plan</fullName>
+        <active>true</active>
+        <description>Create this task to confirm customer trial acceptance (if relevant) and internal production approval to meet the product requirements</description>
+        <label>90% - Customer Trial and Internal Production Planning</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Agree_Requirement_definition</fullName>
+        <active>true</active>
+        <description>Create this task to track the requirement definition with the client</description>
+        <label>20% - Agree Requirement Definition</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Agree_technical_solution_time_frame</fullName>
+        <active>true</active>
+        <description>Create this task to track technical solution timeframes for innovation products</description>
+        <label>50% - Agree Technical Solution Timeframes</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Compliance_Certification</fullName>
+        <active>false</active>
+        <description>Create this task to track compliance certification</description>
+        <label>90% - Compliance Certification</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Create_Sample</fullName>
+        <active>true</active>
+        <description>Create this task to track Sample Creation for clients.  If no samples are required, still create this task and confirm requirement</description>
+        <label>70% - Create Sample</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Create_solution_cost_estimate</fullName>
+        <active>true</active>
+        <description>Create this task to track creation of the solution cost estimate</description>
+        <label>70% - Create Solution Cost Estimate</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Create_solution_specification</fullName>
+        <active>true</active>
+        <description>Create this task to track the creation of the internal solution specification</description>
+        <label>70% - Agree Final Product Solution Specification</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Create_value_proposition</fullName>
+        <active>true</active>
+        <description>Create this task to track the creation of the customer value proposition for this opportunity</description>
+        <label>50% - Create Value Proposition</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Engage_innovation_council</fullName>
+        <active>true</active>
+        <description>Create this task to track engagement for innovation/design opportunities</description>
+        <label>20% - Innovation or Design Required</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Graphical_solution_design</fullName>
+        <active>true</active>
+        <description>Create this task to track graphic design creation for Portfolio and Innovation products - only for Packaging solutions</description>
+        <label>70% - Graphical solution design</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Know_your_customer_stage_2</fullName>
+        <active>true</active>
+        <description>Create this task to track Know Your Customer validation.  Mandatory for New Accounts within Filters at 10% and PSS at 90%.</description>
+        <label>10% - Know Your Customer</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Legal_NDA_Approval</fullName>
+        <active>true</active>
+        <description>Create this task to track Legal / NDA approval for this opportunity</description>
+        <label>20% - Legal / NDA Approval</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Supply_chain_validation</fullName>
+        <active>false</active>
+        <description>Create this task to track supply chain validation of this opportunity</description>
+        <label>90% - Supply chain validation</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Trial_Product_Production_Run</fullName>
+        <active>false</active>
+        <description>Create this task to track feasibility of trail production and customer acceptance of trial product</description>
+        <label>90% - Trial Product Production Run</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>X20_Custom_Solution_Design_Required</fullName>
+        <active>true</active>
+        <description>Create this task and assign it CD Custom Solutions to develop custom design solution. Only for Innovation Solution CD Opp Record Types.</description>
+        <label>20% - Custom Solution Design Required</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>X90_Commercial_Proposal</fullName>
+        <active>true</active>
+        <description>Create this task to track creation of the customer commercial offer</description>
+        <label>90% - Commercial Proposal (Mandatory)</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>X99_Order_Won</fullName>
+        <active>true</active>
+        <description>Create this task to track order to won</description>
+        <label>99% - Order Won</label>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Check_approval_not_in_future</fullName>
+        <active>true</active>
+        <errorConditionFormula>Date_Final_Approval__c &gt; today()</errorConditionFormula>
+        <errorDisplayField>Date_Final_Approval__c</errorDisplayField>
+        <errorMessage>Approval date can not be in the future</errorMessage>
+    </validationRules>
+</CustomObject>

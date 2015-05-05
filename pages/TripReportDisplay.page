@@ -1,0 +1,103 @@
+<apex:page StandardController="Trip_Report__c" extensions="ContactRoles_DiscussionPoints_Ctrler" title="{!$ObjectType.Trip_Report__c.label} {!Trip_Report__c.name}" sidebar="true">
+<apex:Messages id="error" />
+<chatter:feedWithFollowers entityId="{!Trip_Report__c.id}" />
+<apex:detail />
+<!--  overall action -->
+<apex:form id="form">
+<!-- Start Contact Roles -->
+        <apex:pageBlock title="{!$ObjectType.Trip_Report_Contact_Role__c.label}" id="newConRoleTable" mode="maindetail">
+            <apex:PageBlockButtons location="bottom">
+                <apex:commandButton value="{!$Label.Call_Report_Save}" action="{!ConRolesave}" rerender="newConRoleTable,error" />
+                <apex:commandButton value="{!$Label.Call_Report_Add_Participant}" action="{!ConRoleAddRow}" rerender="newConRoleTable, error" immediate="true" />
+            </apex:PageBlockButtons>
+            <!-- Name, Contact__c, Contact_Role__c, Primary_Contact__c, No__c  -->                                     
+            <apex:pageBlockTable value="{!TripRepConRoles}" var="item" >
+            <apex:column headervalue="Action">
+                <apex:outputpanel rendered="{!NOT(ISNULL(item.No__c))}">
+                    <a href="javascript:if (window.confirm('Are you sure? Deleting {!item.Name}')) ConRoleDelete('{!item.No__c}');" style="font-weight:bold">Del</a>
+                </apex:outputpanel>
+            </apex:column>
+            <apex:column headervalue="{!$ObjectType.Trip_Report_Contact_Role__c.fields.Contact__c.label}" >
+                <apex:inputfield value="{!item.Contact_Selection__c}"><apex:actionsupport event="onchange" rerender="responsible_con" /></apex:inputfield> &nbsp;
+                <apex:outputpanel id="responsible_con">
+                    <apex:inputfield value="{!item.Contact__c}" rendered="{!IF(item.Contact_Selection__c == 'Contact', true, false)}" />
+                    <apex:inputfield value="{!item.User__c}" rendered="{!IF(item.Contact_Selection__c == 'User', true, false)}" />
+                    <apex:inputfield value="{!item.Lead__c}" rendered="{!IF(item.Contact_Selection__c == 'Lead', true, false)}" />
+                </apex:outputpanel>             
+            </apex:column>
+            <apex:column headervalue="{!$ObjectType.Trip_Report_Contact_Role__c.fields.Primary_Contact__c.label}" >
+                <apex:inputfield value="{!item.Primary_Contact__c}" />
+            </apex:column>
+            <apex:column headervalue="{!$ObjectType.Trip_Report_Contact_Role__c.fields.Contact_Role__c.label}" >
+                <apex:inputfield value="{!item.Contact_Role__c}" />
+            </apex:column>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+    <apex:actionFunction action="{!ConRoleDelete}" name="ConRoleDelete" rerender="newConRoleTable" >
+            <apex:param name="No__c" value="" assignTo="{!selectConRole}"/>
+    </apex:actionFunction>
+        
+<!-- End Contact Roles-->
+
+<!-- Start Opportunities -->
+    <apex:PageBlock title="{!$ObjectType.Opportunity.labelPlural}" id="oppyTable" mode="maindetail">
+        <apex:pageBlockTable value="{!Oppys}" var="item" style="vertical-align: top;">
+            <apex:column value="{!item.Opportunity__c}" />
+        </apex:pageBlockTable>
+    </apex:PageBlock>
+<!-- End Opportunities -->
+
+<!-- Start Discussion Points-->
+        <apex:pageBlock title="{!$ObjectType.Discussion_Points__c.label}" id="newPointTable" mode="maindetail">
+            <apex:PageBlockButtons location="bottom">
+                <apex:commandButton value="{!$Label.Call_Report_Save}" action="{!Pointsave}" reRender="oppyTable" />
+                <apex:commandButton value="{!$Label.Call_Report_add_Discussion_Point}" action="{!PointAddRow}"  immediate="true" />
+            </apex:PageBlockButtons>
+            <!-- Due_Date__c, Internal_use_only__c, No__c, Responsible_contact__c, Responsible_selection__c, Responsible_user__c, Subject__c, Summary__c, Trip_Report__c, Name   -->                                       
+            <apex:pageBlockTable value="{!TripRepPoints}" var="item" style="vertical-align: top;width:1500px" columnsWidth="10%,10%,10%,30%,10%,10%,10%,10%" >
+            <apex:column headervalue="Action"  style="vertical-align: top;">
+<!--                <apex:outputpanel rendered="{!NOT(ISNULL(item.No__c))}">
+                    <a href="javascript:if (window.confirm('Are you sure? Deleting {!item.Name}')) PointDelete('{!item.No__c}');" style="font-weight:bold">Del</a>
+                </apex:outputpanel>
+ -->            <apex:outputLink value="{!URLFOR($Action.Discussion_Points__c.Delete, item.id, [retURL='/'&Trip_Report__c.id])}" onclick="return window.confirm('Are you sure?');">Del</apex:outputLink>    
+            </apex:column>
+            <apex:column headervalue="{!$ObjectType.Discussion_Points__c.fields.Name.label}" style="vertical-align:top;">
+                <apex:inputfield value="{!item.name}" />
+            </apex:column>
+            <apex:column headervalue="{!$ObjectType.Discussion_Points__c.fields.Category__c.label}" style="vertical-align:top;">
+                <apex:inputfield value="{!item.Category__c}" />
+            </apex:column>
+            <apex:column headervalue="{!$ObjectType.Discussion_Points__c.fields.Summary__c.label}" style="vertical-align:top;width:300px">
+                <apex:inputfield value="{!item.Summary__c}"/>
+            </apex:column> 
+            <apex:column headervalue="{!$ObjectType.Discussion_Points__c.fields.Responsible_selection__c.label}"  style="vertical-align:top;">
+                <apex:inputfield value="{!item.Responsible_selection__c}" ><apex:actionsupport event="onchange" rerender="responsible" /></apex:inputfield> &nbsp;
+                <apex:outputpanel id="responsible">
+                <apex:inputfield value="{!item.Responsible_user__c}" rendered="{!IF(item.Responsible_selection__c == 'User', true, false)}" />
+                <apex:inputfield value="{!item.Responsible_contact__c}" rendered="{!IF(item.Responsible_selection__c == 'Contact', true, false)}" />
+                <apex:inputfield value="{!item.Lead__c}" rendered="{!IF(item.Responsible_selection__c == 'Lead', true, false)}" />
+                </apex:outputpanel>
+            </apex:column>
+            <apex:column headervalue="{!$ObjectType.Discussion_Points__c.fields.Due_Date__c.label}"  style="vertical-align:top;">
+                <apex:inputfield value="{!item.Due_Date__c}" />
+            </apex:column>
+            <apex:column headervalue="{!$ObjectType.Discussion_Points__c.fields.Internal_use_only__c.label}"  style="vertical-align:top;">
+                <apex:inputfield value="{!item.Internal_use_only__c}" />
+            </apex:column>          
+            <apex:column headervalue="{!$ObjectType.Discussion_Points__c.fields.Opportunity__c.label}"  style="vertical-align:top;">
+                <apex:inputfield value="{!item.Opportunity__c}" />
+            </apex:column>          
+            </apex:pageBlockTable>
+
+        </apex:pageBlock>
+    <apex:actionFunction action="{!PointDelete}" name="PointDelete" >
+            <apex:param name="No__c" value="" assignTo="{!selectPoint}"/>
+    </apex:actionFunction>
+        
+<!-- End Discussion Points-->
+</apex:form>
+<apex:relatedList list="Call_Reports__r"/>
+<apex:relatedList list="OpenActivities" />
+<apex:relatedList list="ActivityHistories"/>
+<apex:relatedList list="NotesAndAttachments" />
+</apex:page>

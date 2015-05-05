@@ -1,0 +1,4150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ChangeStatus</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CloneAsChild</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CloseCase</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>MassClose</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewCase</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <businessProcesses>
+        <fullName>Case Investigation</fullName>
+        <description>Case Investigation process</description>
+        <isActive>true</isActive>
+        <values>
+            <fullName>Closed %E2%80%93 Accepted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed %E2%80%93 Unjustified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Waiting for customer data</fullName>
+            <default>false</default>
+        </values>
+    </businessProcesses>
+    <businessProcesses>
+        <fullName>New Case</fullName>
+        <description>New Case</description>
+        <isActive>true</isActive>
+        <values>
+            <fullName>Closed %E2%80%93 Accepted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed %E2%80%93 Unjustified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Waiting for customer data</fullName>
+            <default>false</default>
+        </values>
+    </businessProcesses>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>true</enableFeeds>
+    <fields>
+        <fullName>AccountId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Acknowledge_Complaint__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Acknowledge Complaint</description>
+        <externalId>false</externalId>
+        <label>Acknowledge Complaint</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>AssetId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Batch_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Batch Number</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BusinessHoursId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Business_Area__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Business Area</label>
+        <referenceTo>Business_Area__c</referenceTo>
+        <relationshipLabel>Cases</relationshipLabel>
+        <relationshipName>Cases</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CaseOwner__c</fullName>
+        <externalId>false</externalId>
+        <formula>Owner:User.Username</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Case Owner</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CaseReasons_C__c</fullName>
+        <externalId>false</externalId>
+        <label>Case Reason</label>
+        <picklist>
+            <controllingField>Product_Group_C__c</controllingField>
+            <picklistValues>
+                <fullName>Bow</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dimensioning/Elongation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dimensioning/fitting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dimensioning/Length</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dimensioning/Model</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dimensioning/Squareness</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Gloss level</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Identification/Absence of inkjet</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Identification/Inkjet</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Identification/label</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Identification/Wrong inkjet</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Letter of contents absent</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Material/</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Material/ Tensile impact strenght </fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Material/Adhesion</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Material/Hardness</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Material/Recipe</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Material/Shrinkage</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No tape</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Package/Boxes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Package/contamination</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Package/damaged</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Package/Number</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Package/pallet</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Package/wrong</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Surface</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Surface/waviness</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tape wrong position</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Twisting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Wrong application of foil</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Wrong die</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Wrong length delivered</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Adhesive Debris</fullName>
+                <controllingFieldValues>Tear Tape</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Contamination</fullName>
+                <controllingFieldValues>Filter Products</controllingFieldValues>
+                <controllingFieldValues>Porous Products</controllingFieldValues>
+                <controllingFieldValues>Tear Tape</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Damaged Goods</fullName>
+                <controllingFieldValues>Tear Tape</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Direction Error</fullName>
+                <controllingFieldValues>Tear Tape</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Excessive Adhesive / Adhesive Bleed</fullName>
+                <controllingFieldValues>Tear Tape</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Inadequate Adhesion</fullName>
+                <controllingFieldValues>Tear Tape</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Incorrect Length  / Quantity</fullName>
+                <controllingFieldValues>Tear Tape</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Incorrect Product / Material / Order</fullName>
+                <controllingFieldValues>Tear Tape</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Incorrect Registration</fullName>
+                <controllingFieldValues>Tear Tape</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ink Splashing / Transfer</fullName>
+                <controllingFieldValues>Tear Tape</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Labelling / Documentation Error</fullName>
+                <controllingFieldValues>Tear Tape</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Loops</fullName>
+                <controllingFieldValues>Tear Tape</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Loose Core</fullName>
+                <controllingFieldValues>Tear Tape</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Misalignment</fullName>
+                <controllingFieldValues>Tear Tape</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Missing Print</fullName>
+                <controllingFieldValues>Tear Tape</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Multiple Ends</fullName>
+                <controllingFieldValues>Tear Tape</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Off Centre Core</fullName>
+                <controllingFieldValues>Tear Tape</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Poor Join</fullName>
+                <controllingFieldValues>Tear Tape</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Print Fault</fullName>
+                <controllingFieldValues>Tear Tape</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Slit Edge Quality Issues</fullName>
+                <controllingFieldValues>Tear Tape</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Snapping</fullName>
+                <controllingFieldValues>Labels</controllingFieldValues>
+                <controllingFieldValues>Tear Tape</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tight Release</fullName>
+                <controllingFieldValues>Tear Tape</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Twist</fullName>
+                <controllingFieldValues>Tear Tape</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Width Issues</fullName>
+                <controllingFieldValues>Tear Tape</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Wind Quality Issues</fullName>
+                <controllingFieldValues>Tear Tape</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <controllingFieldValues>Tear Tape</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Open Seam</fullName>
+                <controllingFieldValues>Filter Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Seam Bursting</fullName>
+                <controllingFieldValues>Filter Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Loose Segment / Segment Fall Out</fullName>
+                <controllingFieldValues>Filter Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>End Segment Fallout</fullName>
+                <controllingFieldValues>Filter Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Missing Segment</fullName>
+                <controllingFieldValues>Filter Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>End Segment Variation</fullName>
+                <controllingFieldValues>Filter Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Missing Glue Lines</fullName>
+                <controllingFieldValues>Filter Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Excess Glue</fullName>
+                <controllingFieldValues>Filter Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>High Circumference</fullName>
+                <controllingFieldValues>Filter Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Low Circumference</fullName>
+                <controllingFieldValues>Filter Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Circumference Variation</fullName>
+                <controllingFieldValues>Filter Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Low Pressure Drop (PD)</fullName>
+                <controllingFieldValues>Filter Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>High Pressure Drop (PD)</fullName>
+                <controllingFieldValues>Filter Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pressure Drop (PD) Variation</fullName>
+                <controllingFieldValues>Filter Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Soft Filters / Low Hardness</fullName>
+                <controllingFieldValues>Filter Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Coring / Melt hole</fullName>
+                <controllingFieldValues>Filter Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Product Mix-up</fullName>
+                <controllingFieldValues>Filter Products</controllingFieldValues>
+                <controllingFieldValues>Porous Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Product Contamination</fullName>
+                <controllingFieldValues>Filter Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Incorrect usage of input materials</fullName>
+                <controllingFieldValues>Filter Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Label Defects</fullName>
+                <controllingFieldValues>Filter Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Wrinkles</fullName>
+                <controllingFieldValues>Filter Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>High Paper</fullName>
+                <controllingFieldValues>Filter Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>V Groove defect</fullName>
+                <controllingFieldValues>Filter Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Damaged Filters</fullName>
+                <controllingFieldValues>Filter Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Bar Code Print Defects</fullName>
+                <controllingFieldValues>Filter Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Joint Filters</fullName>
+                <controllingFieldValues>Filter Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Length Variation</fullName>
+                <controllingFieldValues>Filter Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Low Flavour</fullName>
+                <controllingFieldValues>Filter Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Flavour Variation</fullName>
+                <controllingFieldValues>Filter Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Raised Lap</fullName>
+                <controllingFieldValues>Filter Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Creasing</fullName>
+                <controllingFieldValues>Filter Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dirty Filters</fullName>
+                <controllingFieldValues>Filter Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Flute Variation</fullName>
+                <controllingFieldValues>Filter Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Low Weight</fullName>
+                <controllingFieldValues>Filter Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>High Weight</fullName>
+                <controllingFieldValues>Filter Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Weight Variation</fullName>
+                <controllingFieldValues>Filter Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Packaging Defect</fullName>
+                <controllingFieldValues>Filter Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Bend Rods</fullName>
+                <controllingFieldValues>Filter Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Wet Rods</fullName>
+                <controllingFieldValues>Filter Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Bad Cut</fullName>
+                <controllingFieldValues>Filter Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hardness Variation</fullName>
+                <controllingFieldValues>Filter Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>V Loop Defect</fullName>
+                <controllingFieldValues>Filter Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Odour</fullName>
+                <controllingFieldValues>Filter Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ovality / Shape</fullName>
+                <controllingFieldValues>Filter Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Recess Ends</fullName>
+                <controllingFieldValues>Filter Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Carbon Carry Over (CCO)</fullName>
+                <controllingFieldValues>Filter Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Damaged Pallets</fullName>
+                <controllingFieldValues>Filter Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tray Count</fullName>
+                <controllingFieldValues>Filter Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Uneven Carbon Distribution</fullName>
+                <controllingFieldValues>Filter Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Improper Shipping Documents</fullName>
+                <controllingFieldValues>Filter Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Improper Quality Documents</fullName>
+                <controllingFieldValues>Filter Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Incorrect Segments</fullName>
+                <controllingFieldValues>Filter Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Damaged Tubes</fullName>
+                <controllingFieldValues>Filter Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Shelf Life Expired</fullName>
+                <controllingFieldValues>Filter Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Missing Treads</fullName>
+                <controllingFieldValues>Filter Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Var in Cig deliverables</fullName>
+                <controllingFieldValues>Filter Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Failure to meet specifications</fullName>
+                <controllingFieldValues>Porous Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Count</fullName>
+                <controllingFieldValues>Porous Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Damage</fullName>
+                <controllingFieldValues>Porous Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Label problem</fullName>
+                <controllingFieldValues>Porous Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Failure to meet requirements</fullName>
+                <controllingFieldValues>Porous Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Attribute Failure</fullName>
+                <controllingFieldValues>Porous Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Samples</fullName>
+                <controllingFieldValues>Porous Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Double delivery</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Wrong delivery address</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>8A Late Delivery</fullName>
+                <controllingFieldValues>Labels</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Late Delivery</fullName>
+                <controllingFieldValues>Tear Tape</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Bill of Lading</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Colour</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Delivery address</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Filth</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Fitting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Holes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Identification</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Impact resistance (slagvastheid)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Invoice</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Length</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Model</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Packaging</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Price</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Quantity</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Raw material</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Recipe</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Straightness</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tape</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tool development</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Transport damage</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Wrong Item Received</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Label Size / Repeat Wrong</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Missing / Incorrect Documentation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Missing Copy/Images</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Wrong Stepping</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Print Defect</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Colour Match Issue</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Wrong Material Used</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Barcode / Pharma code not reading</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Adhesive Bleed</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Poor Slitting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Wrong / Missing Core Label</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Wrong Reel Size</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Numbering Issue</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Wrong Direction</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Labels Received In Poor Condition</fullName>
+                <controllingFieldValues>Labels</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Incorrect Information On Box Label</fullName>
+                <controllingFieldValues>Labels</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Missing / Incorrect Box Label</fullName>
+                <controllingFieldValues>Labels</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Quantity Variance</fullName>
+                <controllingFieldValues>Labels</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Damaged Backing Material</fullName>
+                <controllingFieldValues>Labels</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Labels Misplaced</fullName>
+                <controllingFieldValues>Labels</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Adhesion / Releasing Issues</fullName>
+                <controllingFieldValues>Labels</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Label Not Overprintable</fullName>
+                <controllingFieldValues>Labels</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>A30 - General service or quality</fullName>
+                <controllingFieldValues>Extrusion Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>A31 - Delivery delay</fullName>
+                <controllingFieldValues>Extrusion Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>A32 - Leadtime production</fullName>
+                <controllingFieldValues>Extrusion Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>A33 - Leadtime R&amp;D</fullName>
+                <controllingFieldValues>Extrusion Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>B01 - Adhesion</fullName>
+                <controllingFieldValues>Extrusion Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>B02 - Colour</fullName>
+                <controllingFieldValues>Extrusion Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>B03 - Damage</fullName>
+                <controllingFieldValues>Extrusion Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>B04 - Filth</fullName>
+                <controllingFieldValues>Extrusion Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>B05 - Foil</fullName>
+                <controllingFieldValues>Extrusion Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>B06 - Functionality</fullName>
+                <controllingFieldValues>Extrusion Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>B07 - Gloss / primer</fullName>
+                <controllingFieldValues>Extrusion Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>B08 - Holes</fullName>
+                <controllingFieldValues>Extrusion Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>B09 - Identification</fullName>
+                <controllingFieldValues>Extrusion Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>B10 - Length</fullName>
+                <controllingFieldValues>Extrusion Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>B11 - Packing</fullName>
+                <controllingFieldValues>Extrusion Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>B12 - Breaking</fullName>
+                <controllingFieldValues>Extrusion Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>B13 - Quantity deviation</fullName>
+                <controllingFieldValues>Extrusion Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>B14 - Size tolerance</fullName>
+                <controllingFieldValues>Extrusion Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>B15 - Straightness</fullName>
+                <controllingFieldValues>Extrusion Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>B16 - Surface</fullName>
+                <controllingFieldValues>Extrusion Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>B17 - Tape</fullName>
+                <controllingFieldValues>Extrusion Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>B18 - Wrong product</fullName>
+                <controllingFieldValues>Extrusion Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>ClosedDate</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Comments</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>ContactEmail</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>ContactFax</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>ContactId</fullName>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>$Source.AccountId</field>
+                <operation>equals</operation>
+                <valueField>Contact.AccountId</valueField>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ContactMobile</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>ContactPhone</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Cost_Detail__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Cost Detail</description>
+        <externalId>false</externalId>
+        <label>Cost Detail</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CurrencyIsoCode</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Customer_PO_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer PO Number</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Customer_Ref__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer Ref</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Customer_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>InterCompany</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Customer - Formal</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Customer – Informal</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Data_Quality_Description__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Data_Quality_Score__c =100,&quot;All Case Details Captured&quot;, &quot;Missing: &quot;&amp;IF( ISPICKVAL( Status,&quot;&quot;),&quot;Status, &quot;,&quot;&quot;)&amp;&quot;&quot;&amp;IF(ISPICKVAL( Type ,&quot;&quot;), &quot;Type, &quot;,&quot;&quot;)&amp;&quot;&quot;&amp;IF( ISPICKVAL( Origin ,&quot;&quot;), &quot;Origin, &quot;,&quot;&quot;)&amp;&quot;&quot;&amp;IF( ISPICKVAL( Reason ,&quot;&quot;), &quot;Reason, &quot;,&quot;&quot;)&amp;&quot;&quot;&amp;IF( ISPICKVAL( Priority ,&quot;&quot;), &quot;Priority, &quot;,&quot;&quot;)&amp;&quot;&quot;&amp;IF( LEN( Subject )&lt;5, &quot;Meaningful Subject Line&quot;,&quot;&quot;)&amp;&quot;&quot;&amp;IF( OR(LEN(ContactId)=0,LEN( AccountId)=0), &quot;Associated Account and Contact&quot;,&quot;&quot;))</formula>
+        <label>Data Quality Description</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Data_Quality_Score__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( OR(LEN(ContactId)=0,LEN( AccountId)=0), 0,10) + IF( ISPICKVAL( Status ,&quot;&quot;), 0,15) + IF( ISPICKVAL( Type ,&quot;&quot;), 0,15) + IF( ISPICKVAL( Origin ,&quot;&quot;), 0,15) + IF( ISPICKVAL(   Reason ,&quot;&quot;), 0,15) + IF(ISPICKVAL(Priority, &quot;&quot;),0,15) + IF(LEN( Subject )&lt;5,0,15)</formula>
+        <label>Data Quality Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>EntitlementId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Investigating__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Investigating</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Investigation_status__c</fullName>
+        <externalId>false</externalId>
+        <label>Investigation status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Open</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Waiting Customer Information</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>IsClosedOnCreate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>IsEscalated</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>IsStopped</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>MilestoneStatus</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>MilestoneStatusIcon</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Order_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Order Number</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Origin</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Phone</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Visit</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Our_Item__c</fullName>
+        <externalId>false</externalId>
+        <label>Our Item</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ParentId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Priority</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>High</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Medium</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>ProductId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Product_Group_C__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Group</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Tear Tape</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Labels</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Extrusion Products</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Filter Products</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Porous Products</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cartons</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Leaflets</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Foil</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Inks</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Purchased Products</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Manufactured Cards</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Product_Type__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Product Type</label>
+        <referenceTo>Product2</referenceTo>
+        <relationshipLabel>Cases</relationshipLabel>
+        <relationshipName>Cases</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>QueriedQty__c</fullName>
+        <externalId>false</externalId>
+        <label>Queried Quantity</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>5</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Reason</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Out of Spec</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Not as expected</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Performance</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Late</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Early</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Not received</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Require more data/info</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Bow</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dimensioning/Elongation</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dimensioning/fitting</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dimensioning/Length</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dimensioning/Model</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dimensioning/Squareness</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Gloss level</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Identification/Absence of inkjet</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Identification/Inkjet</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Identification/label</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Identification/Wrong inkjet</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Letter of contents absent</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Material/</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Material/ Tensile impact strenght </fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Material/Adhesion</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Material/Hardness</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Material/Recipe</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Material/Shrinkage</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No tape</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Package/Boxes</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Package/contamination</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Package/damaged</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Package/Number</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Package/pallet</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Package/wrong</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Surface</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Surface/waviness</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tape wrong position</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Twisting</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Wrong application of foil</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Wrong die</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Wrong length delivered</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Receiving_Region__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Receving_Site__r.Region__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Receiving Region</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Receving_Site__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Receiving Site</label>
+        <referenceTo>Site__c</referenceTo>
+        <relationshipLabel>Cases</relationshipLabel>
+        <relationshipName>Cases</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Respond_to_Customer__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Respond to Customer</description>
+        <externalId>false</externalId>
+        <label>Respond to Customer</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBU__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account.Business_Area__r.SBU__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>SBU</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SlaExitDate</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>SlaStartDate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Status</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Closed – Accepted</fullName>
+                <closed>true</closed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Open</fullName>
+                <closed>false</closed>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Waiting for customer data</fullName>
+                <closed>false</closed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Closed – Unjustified</fullName>
+                <closed>true</closed>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>StopStartDate</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Subject</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>SuppliedCompany</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>SuppliedEmail</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>SuppliedName</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>SuppliedPhone</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Product Quality</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Logistics Complaint</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Administration Complaint</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other Issue</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>UM__c</fullName>
+        <externalId>false</externalId>
+        <label>Unit Of Measure</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Metres</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pieces</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Reels</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Thousands</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <listViews>
+        <fullName>AllCases</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>OWNER_NAME</columns>
+        <columns>Receving_Site__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>All Cases</label>
+    </listViews>
+    <listViews>
+        <fullName>MyCases</fullName>
+        <filterScope>Mine</filterScope>
+        <label>My Cases</label>
+    </listViews>
+    <listViews>
+        <fullName>MyOpenCases</fullName>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>My Open Cases</label>
+    </listViews>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>true</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Case_nvestigation</fullName>
+        <active>true</active>
+        <businessProcess>Case Investigation</businessProcess>
+        <description>Case Investigation</description>
+        <label>Case Investigation</label>
+        <picklistValues>
+            <picklist>CaseReasons_C__c</picklist>
+            <values>
+                <fullName>8A Late Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>A30 - General service or quality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>A31 - Delivery delay</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>A32 - Leadtime production</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>A33 - Leadtime R%26D</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Adhesion %2F Releasing Issues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Adhesive Bleed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Adhesive Debris</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Attribute Failure</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B01 - Adhesion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B02 - Colour</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B03 - Damage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B04 - Filth</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B05 - Foil</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B06 - Functionality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B07 - Gloss %2F primer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B08 - Holes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B09 - Identification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B10 - Length</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B11 - Packing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B12 - Breaking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B13 - Quantity deviation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B14 - Size tolerance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B15 - Straightness</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B16 - Surface</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B17 - Tape</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B18 - Wrong product</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bad Cut</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bar Code Print Defects</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Barcode %2F Pharma code not reading</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bend Rods</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bill of Lading</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bow</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Carbon Carry Over %28CCO%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Circumference Variation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Colour</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Colour Match Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contamination</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Coring %2F Melt hole</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Count</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Creasing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Damage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Damaged Backing Material</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Damaged Filters</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Damaged Goods</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Damaged Pallets</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Damaged Tubes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delivery address</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dimensioning%2FElongation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dimensioning%2FLength</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dimensioning%2FModel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dimensioning%2FSquareness</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dimensioning%2Ffitting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Direction Error</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dirty Filters</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Double delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>End Segment Fallout</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>End Segment Variation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Excess Glue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Excessive Adhesive %2F Adhesive Bleed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Failure to meet requirements</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Failure to meet specifications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Filth</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fitting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flavour Variation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flute Variation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gloss level</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hardness Variation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>High Circumference</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>High Paper</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>High Pressure Drop %28PD%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>High Weight</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Holes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Identification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Identification%2FAbsence of inkjet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Identification%2FInkjet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Identification%2FWrong inkjet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Identification%2Flabel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Impact resistance %28slagvastheid%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Improper Quality Documents</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Improper Shipping Documents</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inadequate Adhesion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incorrect Information On Box Label</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incorrect Length  %2F Quantity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incorrect Product %2F Material %2F Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incorrect Registration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incorrect Segments</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incorrect usage of input materials</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ink Splashing %2F Transfer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invoice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Joint Filters</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Label Defects</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Label Not Overprintable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Label Size %2F Repeat Wrong</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Label problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Labelling %2F Documentation Error</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Labels Misplaced</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Labels Received In Poor Condition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Late Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Length</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Length Variation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Letter of contents absent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Loops</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Loose Core</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Loose Segment %2F Segment Fall Out</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low Circumference</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low Flavour</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low Pressure Drop %28PD%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low Weight</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Material%2F</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Material%2F Tensile impact strenght%C2%A0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Material%2FAdhesion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Material%2FHardness</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Material%2FRecipe</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Material%2FShrinkage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Misalignment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Missing %2F Incorrect Box Label</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Missing %2F Incorrect Documentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Missing Copy%2FImages</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Missing Glue Lines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Missing Print</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Missing Segment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Missing Treads</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Model</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Multiple Ends</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No tape</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Numbering Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Odour</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Off Centre Core</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Open Seam</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ovality %2F Shape</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Package%2FBoxes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Package%2FNumber</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Package%2Fcontamination</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Package%2Fdamaged</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Package%2Fpallet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Package%2Fwrong</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Packaging</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Packaging Defect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Poor Join</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Poor Slitting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pressure Drop %28PD%29 Variation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Price</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Print Defect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Print Fault</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Contamination</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Mix-up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quantity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quantity Variance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Raised Lap</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Raw material</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recess Ends</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recipe</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Samples</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seam Bursting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shelf Life Expired</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Slit Edge Quality Issues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Snapping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Soft Filters %2F Low Hardness</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Straightness</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Surface</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Surface%2Fwaviness</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tape</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tape wrong position</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tight Release</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tool development</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transport damage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tray Count</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Twist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Twisting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Uneven Carbon Distribution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>V Groove defect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>V Loop Defect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Var in Cig deliverables</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Weight Variation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wet Rods</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Width Issues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wind Quality Issues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrinkles</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong %2F Missing Core Label</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong Direction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong Item Received</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong Material Used</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong Reel Size</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong Stepping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong application of foil</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong delivery address</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong die</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong length delivered</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Customer_Type__c</picklist>
+            <values>
+                <fullName>Customer %E2%80%93 Informal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer - Formal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>InterCompany</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Investigation_status__c</picklist>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Open</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Waiting Customer Information</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Visit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product_Group_C__c</picklist>
+            <values>
+                <fullName>Cartons</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Extrusion Products</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Filter Products</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Foil</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Labels</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Leaflets</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manufactured Cards</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Porous Products</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Purchased Products</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tear Tape</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason</picklist>
+            <values>
+                <fullName>Bow</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dimensioning%2FElongation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dimensioning%2FLength</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dimensioning%2FModel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dimensioning%2FSquareness</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dimensioning%2Ffitting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Early</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gloss level</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Identification%2FAbsence of inkjet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Identification%2FInkjet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Identification%2FWrong inkjet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Identification%2Flabel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Late</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Letter of contents absent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Material%2F</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Material%2F Tensile impact strenght%C2%A0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Material%2FAdhesion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Material%2FHardness</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Material%2FRecipe</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Material%2FShrinkage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No tape</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not as expected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not received</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Out of Spec</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Package%2FBoxes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Package%2FNumber</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Package%2Fcontamination</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Package%2Fdamaged</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Package%2Fpallet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Package%2Fwrong</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Performance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Require more data%2Finfo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Surface</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Surface%2Fwaviness</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tape wrong position</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Twisting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong application of foil</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong die</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong length delivered</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Administration Complaint</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Logistics Complaint</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Quality</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>UM__c</picklist>
+            <values>
+                <fullName>Metres</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pieces</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reels</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Thousands</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>New_Case</fullName>
+        <active>true</active>
+        <businessProcess>New Case</businessProcess>
+        <description>New Case</description>
+        <label>New Case</label>
+        <picklistValues>
+            <picklist>CaseReasons_C__c</picklist>
+            <values>
+                <fullName>8A Late Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>A30 - General service or quality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>A31 - Delivery delay</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>A32 - Leadtime production</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>A33 - Leadtime R%26D</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Adhesion %2F Releasing Issues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Adhesive Bleed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Adhesive Debris</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Attribute Failure</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B01 - Adhesion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B02 - Colour</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B03 - Damage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B04 - Filth</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B05 - Foil</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B06 - Functionality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B07 - Gloss %2F primer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B08 - Holes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B09 - Identification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B10 - Length</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B11 - Packing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B12 - Breaking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B13 - Quantity deviation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B14 - Size tolerance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B15 - Straightness</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B16 - Surface</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B17 - Tape</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B18 - Wrong product</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bad Cut</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bar Code Print Defects</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Barcode %2F Pharma code not reading</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bend Rods</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bill of Lading</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bow</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Carbon Carry Over %28CCO%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Circumference Variation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Colour</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Colour Match Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contamination</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Coring %2F Melt hole</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Count</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Creasing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Damage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Damaged Backing Material</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Damaged Filters</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Damaged Goods</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Damaged Pallets</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Damaged Tubes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delivery address</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dimensioning%2FElongation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dimensioning%2FLength</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dimensioning%2FModel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dimensioning%2FSquareness</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dimensioning%2Ffitting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Direction Error</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dirty Filters</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Double delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>End Segment Fallout</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>End Segment Variation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Excess Glue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Excessive Adhesive %2F Adhesive Bleed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Failure to meet requirements</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Failure to meet specifications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Filth</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fitting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flavour Variation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flute Variation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gloss level</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hardness Variation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>High Circumference</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>High Paper</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>High Pressure Drop %28PD%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>High Weight</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Holes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Identification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Identification%2FAbsence of inkjet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Identification%2FInkjet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Identification%2FWrong inkjet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Identification%2Flabel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Impact resistance %28slagvastheid%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Improper Quality Documents</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Improper Shipping Documents</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inadequate Adhesion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incorrect Information On Box Label</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incorrect Length  %2F Quantity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incorrect Product %2F Material %2F Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incorrect Registration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incorrect Segments</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incorrect usage of input materials</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ink Splashing %2F Transfer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invoice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Joint Filters</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Label Defects</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Label Not Overprintable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Label Size %2F Repeat Wrong</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Label problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Labelling %2F Documentation Error</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Labels Misplaced</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Labels Received In Poor Condition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Late Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Length</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Length Variation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Letter of contents absent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Loops</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Loose Core</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Loose Segment %2F Segment Fall Out</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low Circumference</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low Flavour</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low Pressure Drop %28PD%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low Weight</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Material%2F</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Material%2F Tensile impact strenght%C2%A0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Material%2FAdhesion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Material%2FHardness</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Material%2FRecipe</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Material%2FShrinkage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Misalignment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Missing %2F Incorrect Box Label</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Missing %2F Incorrect Documentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Missing Copy%2FImages</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Missing Glue Lines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Missing Print</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Missing Segment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Missing Treads</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Model</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Multiple Ends</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No tape</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Numbering Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Odour</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Off Centre Core</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Open Seam</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ovality %2F Shape</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Package%2FBoxes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Package%2FNumber</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Package%2Fcontamination</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Package%2Fdamaged</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Package%2Fpallet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Package%2Fwrong</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Packaging</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Packaging Defect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Poor Join</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Poor Slitting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pressure Drop %28PD%29 Variation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Price</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Print Defect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Print Fault</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Contamination</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Mix-up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quantity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quantity Variance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Raised Lap</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Raw material</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recess Ends</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recipe</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Samples</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seam Bursting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shelf Life Expired</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Slit Edge Quality Issues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Snapping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Soft Filters %2F Low Hardness</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Straightness</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Surface</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Surface%2Fwaviness</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tape</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tape wrong position</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tight Release</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tool development</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transport damage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tray Count</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Twist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Twisting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Uneven Carbon Distribution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>V Groove defect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>V Loop Defect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Var in Cig deliverables</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Weight Variation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wet Rods</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Width Issues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wind Quality Issues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrinkles</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong %2F Missing Core Label</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong Direction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong Item Received</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong Material Used</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong Reel Size</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong Stepping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong application of foil</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong delivery address</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong die</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong length delivered</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Customer_Type__c</picklist>
+            <values>
+                <fullName>Customer %E2%80%93 Informal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer - Formal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>InterCompany</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Investigation_status__c</picklist>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Open</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Waiting Customer Information</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Visit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product_Group_C__c</picklist>
+            <values>
+                <fullName>Cartons</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Extrusion Products</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Filter Products</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Foil</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Labels</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Leaflets</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manufactured Cards</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Porous Products</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Purchased Products</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tear Tape</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason</picklist>
+            <values>
+                <fullName>Bow</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dimensioning%2FElongation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dimensioning%2FLength</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dimensioning%2FModel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dimensioning%2FSquareness</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dimensioning%2Ffitting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Early</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gloss level</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Identification%2FAbsence of inkjet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Identification%2FInkjet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Identification%2FWrong inkjet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Identification%2Flabel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Late</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Letter of contents absent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Material%2F</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Material%2F Tensile impact strenght%C2%A0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Material%2FAdhesion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Material%2FHardness</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Material%2FRecipe</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Material%2FShrinkage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No tape</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not as expected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not received</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Out of Spec</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Package%2FBoxes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Package%2FNumber</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Package%2Fcontamination</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Package%2Fdamaged</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Package%2Fpallet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Package%2Fwrong</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Performance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Require more data%2Finfo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Surface</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Surface%2Fwaviness</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tape wrong position</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Twisting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong application of foil</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong die</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong length delivered</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Administration Complaint</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Logistics Complaint</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Quality</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>UM__c</picklist>
+            <values>
+                <fullName>Metres</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pieces</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reels</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Thousands</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>CASES.CASE_NUMBER</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CASES.SUBJECT</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CASES.CREATED_DATE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CASES.PRIORITY</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>CASES.CASE_NUMBER</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CASES.SUBJECT</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CASES.STATUS</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CASES.CASE_NUMBER</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CASES.SUBJECT</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CASES.STATUS</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>CASES.CASE_NUMBER</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CASES.SUBJECT</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CASES.STATUS</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CASES.CREATED_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Read</sharingModel>
+    <validationRules>
+        <fullName>Mandatroy_Investigation</fullName>
+        <active>true</active>
+        <description>Please complete Investigation Task before closing thes case.</description>
+        <errorConditionFormula>IF ( OR(ISPICKVAL(Status,&quot;Closed – Accepted&quot;),ISPICKVAL(Status,&quot;Closed – Unjustified&quot;))  &amp;&amp; not(ISPICKVAL(Investigation_status__c , &quot;Completed&quot;)),true,false   )</errorConditionFormula>
+        <errorMessage>Please complete Investigation Task before closing thes case.</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>Case_PDF_New</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>page</linkType>
+        <masterLabel>Case Report PDF</masterLabel>
+        <openType>newWindow</openType>
+        <page>CaseReportsNew</page>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+    </webLinks>
+    <webLinks>
+        <fullName>Send_Mail_with_Case_PDF</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Send Mail with Case PDF</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/apex/SendMail?id={!Case.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>TIMBASURVEYS__Send_Survey_Case</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Send Survey</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>if (&apos;{!JSENCODE(Case.ContactId)}&apos; == &apos;&apos;) {
+    alert(&apos;This case is not associated with any contact.&apos;);
+}else{
+    window.location = &quot;/apex/timbasurveys__collectionhub?cId={!URLENCODE(Case.ContactId)}&amp;caseId={!URLENCODE(Case.Id)}&amp;retURL=&quot; + encodeURIComponent(window.location);
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>TIMBASURVEYS__Send_Survey_To_Selected</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Send Survey To Selected</masterLabel>
+        <openType>sidebar</openType>
+        <page>TIMBASURVEYS__SendToCaseList</page>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+    </webLinks>
+    <webLinks>
+        <fullName>X8D_Excel</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>page</linkType>
+        <masterLabel>8D Excel</masterLabel>
+        <openType>newWindow</openType>
+        <page>X80DExcelReport</page>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+    </webLinks>
+    <webLinks>
+        <fullName>case_Pdf</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>page</linkType>
+        <masterLabel>Case Pdf</masterLabel>
+        <openType>newWindow</openType>
+        <page>CaseReports</page>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+    </webLinks>
+    <webLinks>
+        <fullName>i__Send_Mail_To_Contact</fullName>
+        <availability>online</availability>
+        <description>Spawns a new mail window with the subject line pre-populated</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Send Mail To Contact</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>window.open(&quot;mailto:{!IF( ISNULL( Case.ContactId ) ,  Case.SuppliedEmail , Contact.Email )}?subject=Case {!Case.CaseNumber} - {!Case.Subject}&quot;).close();</url>
+    </webLinks>
+</CustomObject>

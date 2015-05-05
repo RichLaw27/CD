@@ -1,0 +1,334 @@
+<apex:component id="tripreportDetails" controller="tripreportDetailsCtrler" access="global" >
+<apex:attribute name="tripReportId" type="id" assignTo="{!tripReportId}" description="Trip Report ID" />
+<!--  <apex:attribute name="tripReportRec" type="sobject" assignTo="{!TripRep}" description="Trip Report Record" /> -->
+<apex:stylesheet value="{!URLFOR($Resource.tripreportpdf)}"/>
+<div class="header">
+    <table style="table-layout:fixed">
+        <tr>
+            <td><apex:image value="{!$Resource.companylogo}" height="100px"/></td>
+            <td style="vertical-align:top;text-align: center;">
+                <!-- <b>{!$ObjectType.Trip_Report__c.label}</b> -  
+                {!TripRep.Customer_name__c}
+                  - <apex:outputText value="{0,date, yyyy'-'MM'-'dd}"> 
+                    <apex:param value="{!TripRep.Visit_Date__c}" />
+                </apex:outputText>
+                 -->                    
+            </td>
+            <td style="text-align:right;"></td>
+        </tr>
+    </table>
+</div>
+
+    <div class="footer">
+        <table style="table-layout:fixed">
+        <tr>
+            <td>&nbsp;</td>
+            <td><span class="confidential">{!$label.confidential}</span></td>
+            <td style="text-align:right;">{!$label.Page} <span class="pagenumber" /> {!$label.of} <span class="pagecount" /></td>
+        </tr>           
+        </table>
+    </div>
+<div class="content">
+    <table class="headertable">
+    <tr>
+        <td class="headercol1" ><apex:outputLabel value="{!$ObjectType.Trip_Report__c.fields.Customer_name__c.label}" for="Account1" /></td>
+        <td class="headercol3" ><apex:outputField value="{!TripRep.Customer_name__c}" id="Account1" /></td>
+        <td class="headercol1" >
+            <apex:outputLabel value="{!$ObjectType.Trip_Report__c.fields.Opportunity__c.label}" for="Opportunity__c1" rendered="{!IF(ISBLANK(TripRep.Opportunity__r.Name), false, true)}" />
+            <apex:outputLabel value="{!$ObjectType.Trip_Report__c.fields.Lead__c.label}" for="Lead__c" rendered="{!IF(ISBLANK(TripRep.leadname__c), false, true)}" />
+        </td>
+        <td class="headercol3" >
+            <apex:outputField value="{!TripRep.Opportunity__r.Name}" id="Opportunity__c1" rendered="{!IF(ISBLANK(TripRep.Opportunity__r.Name), false, true)}" />
+            <apex:outputField value="{!TripRep.leadname__c}" id="Lead__c" rendered="{!IF(ISBLANK(TripRep.leadname__c), false, true)}" />
+        </td>
+    </tr>
+    <tr>
+        <td class="headercol1" ><apex:outputLabel value="{!$ObjectType.Trip_Report__c.fields.Location__c.label}" for="Location__c" /></td>
+        <td class="headercol3" ><apex:outputField value="{!TripRep.Location__c}" id="Location__c" /></td>
+        <td class="headercol1" ><apex:outputLabel value="{!$ObjectType.Trip_Report__c.fields.Location_Details__c.label}" for="Location_Details__c" /></td>
+        <td class="headercol3" ><apex:outputField value="{!TripRep.Location_Details__c}" id="Location_Details__c" /></td>    
+    </tr>
+    <tr>
+        <td class="headercol1" ><apex:outputLabel value="{!$ObjectType.Trip_Report__c.fields.Contact_Type__c.label}" for="Contact_Type__c" /></td>
+        <td class="headercol3" ><apex:outputField value="{!TripRep.Contact_Type__c}" id="Contact_Type__c" /></td>       
+    </tr>
+    <tr>
+        <td class="headercol1" ><apex:outputLabel value="{!$ObjectType.Trip_Report__c.fields.Visit_Date__c.label}" for="Visit_Date__c" /></td>
+        <td class="headercol3" ><apex:outputField value="{!TripRep.Visit_Date__c}" id="Visit_Date__c" /></td>
+    </tr>
+    </table>
+    <br/>
+<!-- Start Contact Roles -->
+        <table rules="rows" styleClass="table" cellpadding="4px">
+            <tr>
+                <td colspan="3"  style="font-weight:bold; text-align: left;font-size:11pt;">{!$ObjectType.Trip_Report_Contact_Role__c.labelPlural}</td>
+            </tr>
+            <!-- Name, Contact__c, Contact_Role__c, Primary_Contact__c-->
+            <tr>
+                <td class="conrolecol1"><apex:outputText value="{!$ObjectType.Trip_Report_Contact_Role__c.fields.Contact__c.label}" style="font-weight: bold;"/></td>
+                <td class="conrolecol34"><apex:outputText value="{!$ObjectType.Trip_Report_Contact_Role__c.fields.Title__c.label}" style="font-weight: bold;"/></td>
+            </tr>
+            <apex:repeat value="{!TripRepConRoles}" var="item">
+            <tr>
+                <td class="conrolecol1"><apex:outputfield value="{!item.Contact_Name__c}" /></td>
+                <td class="conrolecol34"><apex:outputfield value="{!item.Title__c}" /></td>
+            </tr>
+            </apex:repeat>  
+        </table>    
+<!-- End Contact Roles-->
+    <br/>
+    <apex:panelGrid columns="2" frame="vsides" columnclasses="headercol1, headercol2" styleClass="headertable">
+        <apex:outputLabel value="{!$ObjectType.Trip_Report__c.fields.Introduction__c.label}" for="Introduction__c" />
+        <apex:outputField value="{!TripRep.Introduction__c}" id="Introduction__c" />
+    </apex:panelGrid>
+    <br/>
+    <apex:panelGrid columns="2" frame="vsides" columnclasses="headercol1, headercol2" styleClass="headertable">
+        <apex:outputLabel value="{!$ObjectType.Trip_Report__c.fields.Executive_Summary__c.label}" for="Executive_Summary__c" />
+        <apex:outputField value="{!TripRep.Executive_Summary__c}" id="Executive_Summary__c" />
+    </apex:panelGrid>
+
+<br/>
+<br/>
+<!-- Start Opportunities -->
+        <table rules="rows" styleClass="table" cellpadding="4px">
+            <tr>
+                <td colspan="2"  style="font-weight:bold; text-align: left;font-size:11pt;">{!$ObjectType.Opportunity.labelPlural}</td>
+            </tr>
+            <tr>
+                <td class="conrolecol1"><apex:outputText value="{!$ObjectType.Opportunity.fields.name.label}" style="font-weight: bold;"/></td>
+            </tr>
+            <apex:repeat value="{!TripRepOppys}" var="item">
+            <tr>
+                <td class="conrolecol1"><apex:outputfield value="{!item.Opportunity__r.name}" /></td>
+            </tr>
+            </apex:repeat>
+        </table>
+
+<!-- End Opportunities -->
+
+<br/>
+<br/>
+<table rules="rows" styleClass="table" cellpadding="4px">
+ <tr>
+     <td colspan="4"  style="font-weight:bold; text-align: left;font-size:11pt;">
+         {!$ObjectType.Discussion_Points__c.label}
+      </td>
+ </tr>
+</table>
+    
+<!-- Start Current Business review -->
+    <apex:outputPanel rendered="{!NOT(ISNULL(CurrentBusinessReview.size)) }">
+        <table rules="rows" styleClass="table" cellpadding="4px">
+            <!-- <colgroup>
+                <col width="20%" />
+                <col width="50%" />
+                <col width="15%" />
+                <col width="15%" />
+            </colgroup> -->
+            <tr>
+                <td colspan="4"  style="font-weight:bold; text-align: left;font-size:10pt;">{!$ObjectType.Discussion_Points__c.fields.Category__c.label}: Current Business Review</td>
+            </tr>
+            <tr>
+                <td class="colsubject" style="font-weight: bold;">{!$ObjectType.Discussion_Points__c.fields.Name.label}</td>
+                <td class="colsummary" style="font-weight: bold;">{!$ObjectType.Discussion_Points__c.fields.Summary__c.label}</td>
+                <td class="colresponsible" style="font-weight: bold;">{!$ObjectType.Discussion_Points__c.fields.Responsible_selection__c.label}</td>
+                <td class="colduedate" style="font-weight: bold;">{!$ObjectType.Discussion_Points__c.fields.Due_Date__c.label}</td>
+                <td class="coloppy" style="font-weight: bold;"> {!$ObjectType.Discussion_Points__c.fields.Opportunity__c.label}</td>
+            </tr>
+            <!-- Due_Date__c, Internal_use_only__c, No__c, Responsible_contact__c, Responsible_selection__c, Responsible_user__c, Subject__c, Summary__c, Trip_Report__c, Name   -->                                       
+            <apex:repeat value="{!CurrentBusinessReview}" var="item">
+                <apex:outputpanel rendered="{!NOT(item.internal_use__c)}" >
+                    <tr>
+                        <td class="colsubject"><apex:outputfield value="{!item.Name}" /></td>
+                        <td class="colsummary"><apex:outputfield value="{!item.Summary__c}" /></td>
+                        <td class="colresponsible"><apex:outputfield value="{!item.Responsible_company__c}" /></td>
+                        <td class="colduedate"><apex:outputfield value="{!item.Due_Date__c}" /></td>
+                        <td class="coloppy"><apex:outputfield value="{!item.Opportunity__r.name}"/></td>
+                    </tr>
+                </apex:outputpanel>
+            </apex:repeat>
+        </table>
+        <br/>
+    </apex:outputPanel>
+<!-- End CurrentBusinessReview -->
+
+<!-- Start New Business Opportunity -->
+    <apex:outputPanel rendered="{!NOT(ISNULL(NewBusinessOpportunity.size)) }">
+        <table rules="rows" styleClass="table" cellpadding="4px">
+            <!-- <colgroup>
+                <col width="20%" />
+                <col width="50%" />
+                <col width="15%" />
+                <col width="15%" />
+            </colgroup> -->
+            <tr>
+                <td colspan="4"  style="font-weight:bold; text-align: left;font-size:10pt;">{!$ObjectType.Discussion_Points__c.fields.Category__c.label}: New Business Opportunity</td>
+            </tr>
+            <tr>
+                <td class="colsubject" style="font-weight: bold;">{!$ObjectType.Discussion_Points__c.fields.Name.label}</td>
+                <td class="colsummary" style="font-weight: bold;">{!$ObjectType.Discussion_Points__c.fields.Summary__c.label}</td>
+                <td class="colresponsible" style="font-weight: bold;">{!$ObjectType.Discussion_Points__c.fields.Responsible_selection__c.label}</td>
+                <td class="colduedate" style="font-weight: bold;">{!$ObjectType.Discussion_Points__c.fields.Due_Date__c.label}</td>
+                <td class="coloppy" style="font-weight: bold;"> {!$ObjectType.Discussion_Points__c.fields.Opportunity__c.label}</td>
+            </tr>
+            <!-- Due_Date__c, Internal_use_only__c, No__c, Responsible_contact__c, Responsible_selection__c, Responsible_user__c, Subject__c, Summary__c, Trip_Report__c, Name   -->                                       
+            <apex:repeat value="{!NewBusinessOpportunity}" var="item">
+                <apex:outputpanel rendered="{!NOT(item.internal_use__c)}" >
+                    <tr>
+                        <td class="colsubject"><apex:outputfield value="{!item.Name}" /></td>
+                        <td class="colsummary"><apex:outputfield value="{!item.Summary__c}" /></td>
+                        <td class="colresponsible"><apex:outputfield value="{!item.Responsible_company__c}" /></td>
+                        <td class="colduedate"><apex:outputfield value="{!item.Due_Date__c}" /></td>
+                        <td class="coloppy"><apex:outputfield value="{!item.Opportunity__r.name}"/></td>
+                    </tr>
+                </apex:outputpanel>
+            </apex:repeat>
+        </table>
+        <br/>
+    </apex:outputPanel>
+<!-- End New Business Opportunity-->
+
+<!-- Start CompetitiveIntelligence -->
+    <apex:outputPanel rendered="{!NOT(ISNULL(CompetitiveIntelligence.size)) }">
+        <table rules="rows" styleClass="table" cellpadding="4px">
+            <!-- <colgroup>
+                <col width="20%" />
+                <col width="50%" />
+                <col width="15%" />
+                <col width="15%" />
+            </colgroup> -->
+            <tr>
+                <td colspan="4"  style="font-weight:bold; text-align: left;font-size:10pt;">{!$ObjectType.Discussion_Points__c.fields.Category__c.label}: Competitive Intelligence</td>
+            </tr>
+            <tr>
+                <td class="colsubject" style="font-weight: bold;">{!$ObjectType.Discussion_Points__c.fields.Name.label}</td>
+                <td class="colsummary" style="font-weight: bold;">{!$ObjectType.Discussion_Points__c.fields.Summary__c.label}</td>
+                <td class="colresponsible" style="font-weight: bold;">{!$ObjectType.Discussion_Points__c.fields.Responsible_selection__c.label}</td>
+                <td class="colduedate" style="font-weight: bold;">{!$ObjectType.Discussion_Points__c.fields.Due_Date__c.label}</td>
+                <td class="coloppy" style="font-weight: bold;"> {!$ObjectType.Discussion_Points__c.fields.Opportunity__c.label}</td>
+            </tr>
+            <!-- Due_Date__c, Internal_use_only__c, No__c, Responsible_contact__c, Responsible_selection__c, Responsible_user__c, Subject__c, Summary__c, Trip_Report__c, Name   -->                                       
+            <apex:repeat value="{!CompetitiveIntelligence}" var="item">
+                <apex:outputpanel rendered="{!NOT(item.internal_use__c)}" >
+                    <tr>
+                        <td class="colsubject"><apex:outputfield value="{!item.Name}" /></td>
+                        <td class="colsummary"><apex:outputfield value="{!item.Summary__c}" /></td>
+                        <td class="colresponsible"><apex:outputfield value="{!item.Responsible_company__c}" /></td>
+                        <td class="colduedate"><apex:outputfield value="{!item.Due_Date__c}" /></td>
+                        <td class="coloppy"><apex:outputfield value="{!item.Opportunity__r.name}"/></td>
+                    </tr>
+                </apex:outputpanel>
+            </apex:repeat>
+        </table>
+        <br/>
+    </apex:outputPanel>
+<!-- End CompetitiveIntelligence-->
+
+<!-- Start Miscellaneous -->
+    <apex:outputPanel rendered="{!NOT(ISNULL(Miscellaneous.size)) }">
+        <table rules="rows" styleClass="table" cellpadding="4px">
+            <!-- <colgroup>
+                <col width="20%" />
+                <col width="50%" />
+                <col width="15%" />
+                <col width="15%" />
+            </colgroup> -->
+            <tr>
+                <td colspan="4"  style="font-weight:bold; text-align: left;font-size:10pt;">{!$ObjectType.Discussion_Points__c.fields.Category__c.label}: Miscellaneous</td>
+            </tr>
+            <tr>
+                <td class="colsubject" style="font-weight: bold;">{!$ObjectType.Discussion_Points__c.fields.Name.label}</td>
+                <td class="colsummary" style="font-weight: bold;">{!$ObjectType.Discussion_Points__c.fields.Summary__c.label}</td>
+                <td class="colresponsible" style="font-weight: bold;">{!$ObjectType.Discussion_Points__c.fields.Responsible_selection__c.label}</td>
+                <td class="colduedate" style="font-weight: bold;">{!$ObjectType.Discussion_Points__c.fields.Due_Date__c.label}</td>
+                <td class="coloppy" style="font-weight: bold;"> {!$ObjectType.Discussion_Points__c.fields.Opportunity__c.label}</td>
+            </tr>
+            <!-- Due_Date__c, Internal_use_only__c, No__c, Responsible_contact__c, Responsible_selection__c, Responsible_user__c, Subject__c, Summary__c, Trip_Report__c, Name   -->                                       
+            <apex:repeat value="{!Miscellaneous}" var="item">
+                <apex:outputpanel rendered="{!NOT(item.internal_use__c)}" >
+                    <tr>
+                        <td class="colsubject"><apex:outputfield value="{!item.Name}" /></td>
+                        <td class="colsummary"><apex:outputfield value="{!item.Summary__c}" /></td>
+                        <td class="colresponsible"><apex:outputfield value="{!item.Responsible_company__c}" /></td>
+                        <td class="colduedate"><apex:outputfield value="{!item.Due_Date__c}" /></td>
+                        <td class="coloppy"><apex:outputfield value="{!item.Opportunity__r.name}"/></td>
+                    </tr>
+                </apex:outputpanel>
+            </apex:repeat>
+        </table>
+        <br/>
+    </apex:outputPanel>
+<!-- End Miscellaneous-->
+
+<!-- Start Action Item-->
+    <apex:outputPanel rendered="{!NOT(ISNULL(ActionItem.size)) }">
+        <table rules="rows" styleClass="table" cellpadding="4px">
+            <!-- <colgroup>
+                <col width="20%" />
+                <col width="50%" />
+                <col width="15%" />
+                <col width="15%" />
+            </colgroup> -->
+            <tr>
+                <td colspan="4"  style="font-weight:bold; text-align: left;font-size:10pt;">{!$ObjectType.Discussion_Points__c.fields.Category__c.label}: Action Items</td>
+            </tr>
+            <tr>
+                <td class="colsubject" style="font-weight: bold;">{!$ObjectType.Discussion_Points__c.fields.Name.label}</td>
+                <td class="colsummary" style="font-weight: bold;">{!$ObjectType.Discussion_Points__c.fields.Summary__c.label}</td>
+                <td class="colresponsible" style="font-weight: bold;">{!$ObjectType.Discussion_Points__c.fields.Responsible_selection__c.label}</td>
+                <td class="colduedate" style="font-weight: bold;">{!$ObjectType.Discussion_Points__c.fields.Due_Date__c.label}</td>
+                <td class="coloppy" style="font-weight: bold;"> {!$ObjectType.Discussion_Points__c.fields.Opportunity__c.label}</td>
+            </tr>
+            <!-- Due_Date__c, Internal_use_only__c, No__c, Responsible_contact__c, Responsible_selection__c, Responsible_user__c, Subject__c, Summary__c, Trip_Report__c, Name   -->                                       
+            <apex:repeat value="{!ActionItem}" var="item">
+                <apex:outputpanel rendered="{!NOT(item.internal_use__c)}" >
+                    <tr>
+                        <td class="colsubject"><apex:outputfield value="{!item.Name}" /></td>
+                        <td class="colsummary"><apex:outputfield value="{!item.Summary__c}" /></td>
+                        <td class="colresponsible"><apex:outputfield value="{!item.Responsible_company__c}" /></td>
+                        <td class="colduedate"><apex:outputfield value="{!item.Due_Date__c}" /></td>
+                        <td class="coloppy"><apex:outputfield value="{!item.Opportunity__r.name}"/></td>
+                    </tr>
+                </apex:outputpanel>
+            </apex:repeat>
+        </table>
+        <br/>
+    </apex:outputPanel>
+<!-- End ActionItem-->
+<!-- Start No Category -->
+    <apex:outputPanel rendered="{!NOT(ISNULL(NoCategory.size)) }">
+        <table rules="rows" styleClass="table" cellpadding="4px">
+            <!-- <colgroup>
+                <col width="20%" />
+                <col width="50%" />
+                <col width="15%" />
+                <col width="15%" />
+            </colgroup> -->
+            <tr>
+                <td colspan="4"  style="font-weight:bold; text-align: left;font-size:10pt;">{!$ObjectType.Discussion_Points__c.fields.Category__c.label}: No Category</td>
+            </tr>
+            <tr>
+                <td class="colsubject" style="font-weight: bold;">{!$ObjectType.Discussion_Points__c.fields.Name.label}</td>
+                <td class="colsummary" style="font-weight: bold;">{!$ObjectType.Discussion_Points__c.fields.Summary__c.label}</td>
+                <td class="colresponsible" style="font-weight: bold;">{!$ObjectType.Discussion_Points__c.fields.Responsible_selection__c.label}</td>
+                <td class="colduedate" style="font-weight: bold;">{!$ObjectType.Discussion_Points__c.fields.Due_Date__c.label}</td>
+                <td class="coloppy" style="font-weight: bold;"> {!$ObjectType.Discussion_Points__c.fields.Opportunity__c.label}</td>
+            </tr>
+            <!-- Due_Date__c, Internal_use_only__c, No__c, Responsible_contact__c, Responsible_selection__c, Responsible_user__c, Subject__c, Summary__c, Trip_Report__c, Name   -->                                       
+            <apex:repeat value="{!NoCategory}" var="item">
+                <apex:outputpanel rendered="{!NOT(item.internal_use__c)}" >
+                    <tr>
+                        <td class="colsubject"><apex:outputfield value="{!item.Name}" /></td>
+                        <td class="colsummary"><apex:outputfield value="{!item.Summary__c}" /></td>
+                        <td class="colresponsible"><apex:outputfield value="{!item.Responsible_company__c}" /></td>
+                        <td class="colduedate"><apex:outputfield value="{!item.Due_Date__c}" /></td>
+                        <td class="coloppy"><apex:outputfield value="{!item.Opportunity__r.name}"/></td>
+                    </tr>
+                </apex:outputpanel>
+            </apex:repeat>
+        </table>
+        <br/>
+    </apex:outputPanel>
+<!-- End ActionItem-->
+</div>
+</apex:component>

@@ -1,0 +1,125 @@
+<apex:page standardController="Case"  applyBodyTag="false" contentType="application/vnd.ms-excel#80D.xls"   showHeader="false"  extensions="CasesWithTasks">
+
+
+ <head>
+        <style>
+            body { font-family: 'Arial Unicode MS';}
+            .Headersl{fort: Bold;text-align:left }
+            .Headersr{fort: Bold;text-align:Right}
+            h4 {fort: Bold;text-align:Right}
+        </style>
+ </head>
+
+<body>
+    <div class="content">
+    
+       <table border="1" CellSpacing="0" CellPadding="0" class="headertable"  style="width:100%; font-size:10px;border: .5px solid black">
+          <tr>
+             <td width="200px" ColSpan="2"  class="headercol1" ><apex:outputLabel value="{!$ObjectType.Case.fields.CaseNumber.label}:" for="Case" /></td>
+	         <td ColSpan="4" class="headercol1" ><apex:outputLabel value="{!Case.CaseNumber}" for="Case" /></td>
+             </tr>
+             
+             <tr>
+                <td  ColSpan="2" class="headercol1" ><apex:outputLabel value="{!$ObjectType.Case.fields.AccountId.label}:" for="Case" /></td>
+                <td ColSpan="4" class="headercol3" ><apex:outputLabel value="{!AccountDetails}"  /></td>
+            </tr>
+
+             <tr>
+            <td  ColSpan="2" class="headercol3" ><apex:outputLabel value="{!$ObjectType.Case.fields.Customer_Ref__c.label}:"  for="Case" /></td>
+
+                <td ColSpan="4" class="headercol3" ><apex:outputLabel value="{!Case.Customer_Ref__c}" id="Customer_Ref__c" for="Case" /></td>
+            </tr>
+            
+            <tr>
+         <td  ColSpan="2" class="headercol3" ><apex:outputLabel value="Contact Name:"  for="Case" /></td>
+
+                <td class="headercol3" ColSpan="4" ><apex:outputLabel value="{!Case.Contact.Name}"  for="Case" /></td>
+                </tr>
+                
+             <tr>
+                 <td ColSpan="2"  class="headercol3" ><apex:outputLabel value="Contact Email:"  for="Case" /></td>
+                 <td ColSpan="4" class="headercol3" ><apex:outputLabel value="{!Case.Contact.Email}"  for="Case" /></td>
+            </tr>
+            <tr>
+                <td ColSpan="2"  class="headercol3" ><apex:outputLabel value="{!$ObjectType.Case.Fields.OwnerId.label}" for="Case" /></td>
+                <td ColSpan="4" class="headercol3" ><apex:outputLabel value="{!CaseOwner.Name}" id="CaseOwnerName" for="Case" /></td>
+            </tr>
+            <tr>
+                <td class="headercol3"><apex:outputLabel value="{!$ObjectType.Case.fields.Product_Type__c.label}:" for="Case" /></td>
+                <td class="headercol3"><apex:outputLabel value="{!Productname.Parent_Category__c}" for="Case" /></td>
+                <td class="headercol3"><apex:outputLabel value="{!$ObjectType.Case.fields.CreatedDate.label}:"  for="Case" />
+                 </td>
+                <td class="headercol3"><apex:outputText value="{0,date,dd'/'MMM'/'yyyy}">
+                <apex:param value="{!Case.CreatedDate}" /></apex:outputText>
+                </td>
+                <td class="headercol3"><apex:outputLabel value="{!$ObjectType.Case.fields.ClosedDate.label}:"  for="Case" /></td>
+                <td  class="headercol3" ><apex:outputText value="{0,date,dd'/'MMM'/'yyyy}">
+                 <apex:param value="{!Case.ClosedDate}" />
+                 </apex:outputText>
+                  </td>
+                </tr>
+                <tr>
+         <td class="headercol3"><apex:outputLabel value="{!$ObjectType.Case.fields.Customer_Type__c.label}:" for="Case" /></td>
+
+                <td class="headercol3"><apex:outputLabel value="{!Case.Customer_Type__c}" for="Case" /></td>
+                         <td class="headercol3"><apex:outputLabel value="{!$ObjectType.Case.fields.Order_Number__c.label}:" for="Case" /></td>
+
+                <td class="headercol3"><apex:outputLabel value="{!Case.Order_Number__c}" for="Case" /></td>
+                         <td class="headercol3"><apex:outputLabel value="{!$ObjectType.Case.fields.Customer_PO_Number__c.label}:" for="Case" /></td>
+
+                <td  class="headercol3" ><apex:outputLabel value="{!Case.Customer_PO_Number__c}"  for="Case" /></td>
+
+                </tr>
+                <tr>
+                  <td class="headercol3"><apex:outputLabel value="{!$ObjectType.Case.fields.Our_Item__c.label}:" for="Case" /></td>
+                  <td class="headercol3"><apex:outputLabel value="{!Case.Our_Item__c}" for="Case" /></td>
+                  <td class="headercol3"><apex:outputLabel value="{!$ObjectType.Case.fields.QueriedQty__c.label}:" for="Case" /></td>
+                  <td class="headercol3"><apex:outputLabel value="{!Case.QueriedQty__c}" for="Case" /></td>
+                 <td class="headercol3"><apex:outputLabel value="{!$ObjectType.Case.fields.Batch_Number__c.label}:" for="Case" /></td>
+                  <td  class="headercol3" ><apex:outputLabel value="{!Case.Batch_Number__c}"  for="Case" /></td>
+                </tr>
+              <tr>
+                <td  ColSpan="2" class="headercol1" ><apex:outputLabel value="{!$ObjectType.Case.fields.Subject.label}:" for="Case" /></td>
+                <td Colspan="4" class="headercol3" ><apex:outputField value="{!Case.subject}" id="sub" /></td>
+            </tr>
+            <tr>
+                <td  ColSpan="2" class="headercol1" ><apex:outputLabel value="{!$ObjectType.Case.fields.Description.label}:" for="Case" /></td>
+                <td  colspan="4" class="headercol3" ><apex:outputField value="{!Case.Description}" id="desc1" /></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="headercol1" style="border: .5px  solid black;"><apex:outputLabel value="Investigated By:" /></td>
+                <td colspan="2" class="headercol1" style="border: .5px  solid black;"><apex:outputLabel value="{!InvestigatedBy.Name}" id="InvestigatedBy" /></td>
+                <td colspan="2" class="headercol1" style="border: .5px  solid black;"><apex:outputLabel value="Date Completed:{! InvestigationCaseTask.Date_Completed__c}" id="Date_Completed__c" /></td>
+            </tr>
+            <tr>
+                <td  ColSpan="2" class="headercol3" style="border: .5px  solid black;"><apex:outputLabel value="Root cause:{!InvestigationCaseTask.Root_Couse__c}" id="Root_Couse__c" /></td>
+                <td colspan="4" class="headercol1" style="border: .5px  solid black;"><apex:outputLabel value="Actual Faulty Quantity:{! InvestigationCaseTask.Actual_Faulty_Qty__c}" id="Actual_Faulty_Qty__c"/></td>
+            </tr>
+            <tr>
+            
+                 <td ColSpan="6" class="headercol3"  >Investigation Details:<apex:outputField style="white-space:pre;"  value="{!InvestigationCaseTask.Investigation_Details__c}" id="Investigation_Details__c"  /></td>
+            </tr>
+             <tr>
+                 <td ColSpan="6" class="headercol3" ><apex:outputLabel value="Containment Action:{!InvestigationCaseTask.Containment_Action__c}"  /></td>
+           </tr>
+            <tr>
+             <td ColSpan="6" class="headercol3" ><apex:outputLabel value="Corrective Action:{!InvestigationCaseTask.Corrective_Action__c}"  /></td>
+            </tr>
+           <tr>
+                 <td ColSpan="6" class="headercol3" ><apex:outputLabel value="Preventative Action:{!InvestigationCaseTask.Preventative_Action__c}"  /></td>
+            </tr>
+            <tr>
+             <td ColSpan="6" class="headercol3" >Date:<apex:outputText value="{0,date,dd'/'MMM'/'yyyy}" >
+               <apex:param value="{!Case.ClosedDate}" />
+               </apex:outputText>
+             </td>
+            </tr>
+        </table>
+            
+        
+        
+   
+                           
+        </div>
+    </body>
+</apex:page>
