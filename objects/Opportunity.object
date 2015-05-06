@@ -7011,7 +7011,9 @@ OR( ISBLANK( Approval_Solution_specification__c ), Approval_Solution_specificati
     <validationRules>
         <fullName>Count_products</fullName>
         <active>true</active>
-        <errorConditionFormula>AND( Probability &gt;= 0.7, Opportunity_Product_Count__c = 0)</errorConditionFormula>
+        <errorConditionFormula>AND( Probability &gt;= 0.2, Opportunity_Product_Count__c = 0, (OR(RecordType.DeveloperName=&apos;Innovation_Opportunities_CD&apos;, RecordType.DeveloperName=&apos;Standard_Opportunities_CD&apos;))  )
+||
+AND( Probability &gt;= 0.7, Opportunity_Product_Count__c = 0,(AND(RecordType.DeveloperName&lt;&gt;&apos;Innovation_Opportunities_CD&apos;, RecordType.DeveloperName&lt;&gt;&apos;Standard_Opportunities_CD&apos;))  )</errorConditionFormula>
         <errorMessage>Please add product types before changing to this probability level</errorMessage>
     </validationRules>
     <validationRules>
@@ -7068,7 +7070,11 @@ Gross_Margin_Percentage__c= 0
     <validationRules>
         <fullName>Enter_amount</fullName>
         <active>true</active>
-        <errorConditionFormula>AND( Probability &gt;= 0.2,OR( 
+        <errorConditionFormula>AND( Probability &gt;= 0.2,
+
+(AND(RecordType.DeveloperName&lt;&gt;&apos;Innovation_Opportunities_CD&apos;, RecordType.DeveloperName&lt;&gt;&apos;Standard_Opportunities_CD&apos;)) ,
+
+OR( 
 ISBLANK(  Amount  ), 
 Amount  = 0
 ))</errorConditionFormula>
@@ -7179,7 +7185,7 @@ Amount_year_three__c =0, (AND(RecordType.DeveloperName&lt;&gt;&apos;Innovation_O
 AND(Probability &gt;= 0.7,
 Amount_this_year__c =0,
 Amount_year_two__c  =0,
-Amount_year_three__c =0, (OR(RecordType.DeveloperName=&apos;Innovation_Opportunities_CD&apos;, RecordType.DeveloperName=&apos;Standard_Opportunities_CD&apos;)))</errorConditionFormula>
+Amount_year_three__c =0,(OR(RecordType.DeveloperName=&apos;Innovation_Opportunities_CD&apos;, RecordType.DeveloperName=&apos;Standard_Opportunities_CD&apos;)) )</errorConditionFormula>
         <errorMessage>This probability level requires a revenue summary forecast (Year 1, Year 2, Year 3)</errorMessage>
     </validationRules>
     <validationRules>
