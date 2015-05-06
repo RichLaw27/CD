@@ -1957,6 +1957,14 @@ IF(Total_Revenue_Last_12_Months_Prev_Year__c&gt;0, &apos;Churn&apos;, &apos;Laps
         <type>Summary</type>
     </fields>
     <fields>
+        <fullName>Transfer_From__c</fullName>
+        <externalId>false</externalId>
+        <label>Transfer From</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
         <fullName>Type</fullName>
         <picklist>
             <picklistValues>
