@@ -1416,6 +1416,46 @@
                 <fullName>Manufactured Cards</fullName>
                 <default>false</default>
             </picklistValues>
+            <picklistValues>
+                <fullName>General Protection</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Electrical &amp; Fasteners</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Electronics</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tapes and POS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Security Seals</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Printer Solutions</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Access Hardware</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hose Protection</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hardware</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MRO</fullName>
+                <default>false</default>
+            </picklistValues>
             <sorted>false</sorted>
         </picklist>
         <trackFeedHistory>false</trackFeedHistory>
@@ -1645,6 +1685,376 @@
             </picklistValues>
             <picklistValues>
                 <fullName>Wrong length delivered</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Catalogue Error</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Packaging Damaged</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Delivery Early</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Delivery Late</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Duplicated Delivery</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Delivery Address Incorrect</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Order Entered Incorrectly</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Picked Incorrectly Despatch</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Labelled Incorrectly (Production)</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Labelled Incorrectly (Sub-pack / Dist)</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Not Ordered</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Over Delivered</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Packed Incorrectly (Production)</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Packed Incorrectly (Sub-pack / Dist)</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Shortage (In Delivery)</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Re-sourced (BOP)</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Re-tooled (MAN)</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Confirmation Error</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Goods Lost</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Carrier Service Level</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Unsuitable for Application</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Adhesive Issue</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Aged / Old</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Assembly - Incorrect / Poor</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Assembly - Missing / Incorrect part</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BOM / Process Document Incorrect</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Breaking - Cable Tie Only</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Breaking - Other</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Breaking - Splitting/ Cracking</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Breaking - Under Load</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Brittle Part (e.g.. Nylon - Moisture)</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Burnt / Discoloured</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Colour Issue</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Compliance Issue</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Corrosion</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Delamination</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dimension Incorrect</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Distortion</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Environmental Resistance Issue</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Feed PIP / Hot Feed</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Flash</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Flexibility / Hardness Issue</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Flow Marks</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Foreign Object</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Gassing / Vent Issue</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Geometry (Shape) Incorrect</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hole(s) in Part</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Label Detail Incorrect</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Malfunction Part</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Material Cure Issue</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Material Overheated</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Material Performance Issue</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mis-match</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mixed Parts in a Pack</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Moisture Excess (Nylon)</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Option Incorrect</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Packaging Design / Selection Issue</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Packaging Incorrect</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Performance Issue</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Product Recall</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Quantity Incorrect</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Short Moulding</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sinking</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sprues / Stringing / Debris</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Surface Finish Issue</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Temperature Resistance Issue</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tool Build Incorrect</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tool Range / Design Issue</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Voids</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Weld Line</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Contamination</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Damaged Part(s)</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Fit Issue</fullName>
                 <cssExposed>false</cssExposed>
                 <default>false</default>
             </picklistValues>
@@ -2690,7 +3100,19 @@
         <picklistValues>
             <picklist>Product_Group_C__c</picklist>
             <values>
+                <fullName>Access Hardware</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Cartons</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electrical %26 Fasteners</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronics</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -2706,6 +3128,18 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>General Protection</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hardware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hose Protection</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Inks</fullName>
                 <default>false</default>
             </values>
@@ -2718,6 +3152,10 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>MRO</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Manufactured Cards</fullName>
                 <default>false</default>
             </values>
@@ -2726,7 +3164,19 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Printer Solutions</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Purchased Products</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Security Seals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tapes and POS</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -2737,7 +3187,103 @@
         <picklistValues>
             <picklist>Reason</picklist>
             <values>
+                <fullName>Adhesive Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Aged %2F Old</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Assembly - Incorrect %2F Poor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Assembly - Missing %2F Incorrect part</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BOM %2F Process Document Incorrect</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Bow</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Breaking - Cable Tie Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Breaking - Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Breaking - Splitting%2F Cracking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Breaking - Under Load</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Brittle Part %28e%2Eg%2E%2E Nylon - Moisture%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Burnt %2F Discoloured</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Carrier Service Level</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Catalogue Error</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Colour Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Compliance Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Confirmation Error</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contamination</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Corrosion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Damaged Part%28s%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delamination</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delivery Address Incorrect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delivery Early</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delivery Late</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dimension Incorrect</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -2761,11 +3307,63 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Distortion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Duplicated Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Early</fullName>
                 <default>false</default>
             </values>
             <values>
+                <fullName>Environmental Resistance Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Feed PIP %2F Hot Feed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fit Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flash</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flexibility %2F Hardness Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flow Marks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Foreign Object</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gassing %2F Vent Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Geometry %28Shape%29 Incorrect</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Gloss level</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Goods Lost</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hole%28s%29 in Part</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -2785,11 +3383,39 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Label Detail Incorrect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Labelled Incorrectly %28Production%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Labelled Incorrectly %28Sub-pack %2F Dist%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Late</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Letter of contents absent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Malfunction Part</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Material Cure Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Material Overheated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Material Performance Issue</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -2817,7 +3443,23 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Mis-match</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mixed Parts in a Pack</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Moisture Excess %28Nylon%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>No tape</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Ordered</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -2829,7 +3471,23 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Option Incorrect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Entered Incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Out of Spec</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Over Delivered</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -2857,7 +3515,51 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Packaging Damaged</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Packaging Design %2F Selection Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Packaging Incorrect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Packed Incorrectly %28Production%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Packed Incorrectly %28Sub-pack %2F Dist%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Performance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Performance Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Picked Incorrectly Despatch</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Recall</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quantity Incorrect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Re-sourced %28BOP%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Re-tooled %28MAN%29</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -2865,7 +3567,27 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Short Moulding</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shortage %28In Delivery%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sinking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sprues %2F Stringing %2F Debris</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Surface</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Surface Finish Issue</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -2877,7 +3599,31 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Temperature Resistance Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tool Build Incorrect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tool Range %2F Design Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Twisting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unsuitable for Application</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Voids</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Weld Line</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -3768,7 +4514,19 @@
         <picklistValues>
             <picklist>Product_Group_C__c</picklist>
             <values>
+                <fullName>Access Hardware</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Cartons</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electrical %26 Fasteners</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronics</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -3784,6 +4542,18 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>General Protection</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hardware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hose Protection</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Inks</fullName>
                 <default>false</default>
             </values>
@@ -3796,6 +4566,10 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>MRO</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Manufactured Cards</fullName>
                 <default>false</default>
             </values>
@@ -3804,7 +4578,19 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Printer Solutions</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Purchased Products</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Security Seals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tapes and POS</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -3815,7 +4601,103 @@
         <picklistValues>
             <picklist>Reason</picklist>
             <values>
+                <fullName>Adhesive Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Aged %2F Old</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Assembly - Incorrect %2F Poor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Assembly - Missing %2F Incorrect part</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BOM %2F Process Document Incorrect</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Bow</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Breaking - Cable Tie Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Breaking - Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Breaking - Splitting%2F Cracking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Breaking - Under Load</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Brittle Part %28e%2Eg%2E%2E Nylon - Moisture%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Burnt %2F Discoloured</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Carrier Service Level</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Catalogue Error</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Colour Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Compliance Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Confirmation Error</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contamination</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Corrosion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Damaged Part%28s%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delamination</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delivery Address Incorrect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delivery Early</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delivery Late</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dimension Incorrect</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -3839,11 +4721,63 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Distortion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Duplicated Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Early</fullName>
                 <default>false</default>
             </values>
             <values>
+                <fullName>Environmental Resistance Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Feed PIP %2F Hot Feed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fit Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flash</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flexibility %2F Hardness Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flow Marks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Foreign Object</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gassing %2F Vent Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Geometry %28Shape%29 Incorrect</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Gloss level</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Goods Lost</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hole%28s%29 in Part</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -3863,11 +4797,39 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Label Detail Incorrect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Labelled Incorrectly %28Production%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Labelled Incorrectly %28Sub-pack %2F Dist%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Late</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Letter of contents absent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Malfunction Part</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Material Cure Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Material Overheated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Material Performance Issue</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -3895,7 +4857,23 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Mis-match</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mixed Parts in a Pack</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Moisture Excess %28Nylon%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>No tape</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Ordered</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -3907,7 +4885,23 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Option Incorrect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Entered Incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Out of Spec</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Over Delivered</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -3935,7 +4929,51 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Packaging Damaged</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Packaging Design %2F Selection Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Packaging Incorrect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Packed Incorrectly %28Production%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Packed Incorrectly %28Sub-pack %2F Dist%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Performance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Performance Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Picked Incorrectly Despatch</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Recall</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quantity Incorrect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Re-sourced %28BOP%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Re-tooled %28MAN%29</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -3943,7 +4981,27 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Short Moulding</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shortage %28In Delivery%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sinking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sprues %2F Stringing %2F Debris</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Surface</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Surface Finish Issue</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -3955,7 +5013,31 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Temperature Resistance Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tool Build Incorrect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tool Range %2F Design Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Twisting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unsuitable for Application</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Voids</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Weld Line</fullName>
                 <default>false</default>
             </values>
             <values>

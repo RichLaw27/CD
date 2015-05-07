@@ -92,7 +92,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>Account.AccountSource</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -179,6 +179,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.CSR__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Competitor_Equivalent__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

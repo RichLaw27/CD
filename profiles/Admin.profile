@@ -183,6 +183,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Account.Competitor_Equivalent__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Account.CreditLimit__c</field>
         <readable>true</readable>
     </fieldPermissions>

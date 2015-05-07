@@ -436,6 +436,28 @@
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>Competitor_Equivalent__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Competitor Equivalent</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>The Account you are adding must have a Type = Competitor.</errorMessage>
+            <filterItems>
+                <field>$Source.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Competitor</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Customer Accounts</relationshipLabel>
+        <relationshipName>Customer_Accounts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>CreditLimit__c</fullName>
         <externalId>false</externalId>
         <label>Credit Limit</label>
@@ -3203,44 +3225,8 @@ IF(Total_Revenue_Last_12_Months_Prev_Year__c&gt;0, &apos;Churn&apos;, &apos;Laps
         <picklistValues>
             <picklist>Type</picklist>
             <values>
-                <fullName>Analyst</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Competitor</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Customer</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Integrator</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Investor</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Partner</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Press</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Prospect</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Reseller</fullName>
-                <default>false</default>
+                <default>true</default>
             </values>
         </picklistValues>
         <picklistValues>
