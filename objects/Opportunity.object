@@ -1082,6 +1082,11 @@ OR(Business_Area__r.MDM_External_Id__c = &apos;FIL&apos;, Business_Area__r.MDM_E
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Pricebook2Id</fullName>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>Probability</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>

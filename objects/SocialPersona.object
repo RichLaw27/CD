@@ -50,6 +50,9 @@
     <fields>
         <fullName>Provider</fullName>
     </fields>
+    <fields>
+        <fullName>SourceApp</fullName>
+    </fields>
     <searchLayouts>
         <customTabListAdditionalFields>Name</customTabListAdditionalFields>
         <customTabListAdditionalFields>Provider</customTabListAdditionalFields>

@@ -13,6 +13,10 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
+        <actionName>EditPost</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>EditTopics</actionName>
         <type>Default</type>
     </actionOverrides>
