@@ -498,6 +498,16 @@
         <type>Picklist</type>
     </fields>
     <fields>
+        <fullName>Customer_Family__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer Family</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Customer_Grade__c</fullName>
         <externalId>false</externalId>
         <label>Customer Grade</label>
