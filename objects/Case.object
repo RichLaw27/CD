@@ -315,8 +315,17 @@
             </picklistValues>
             <picklistValues>
                 <fullName>Contamination</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
                 <controllingFieldValues>Filter Products</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
                 <controllingFieldValues>Porous Products</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
                 <controllingFieldValues>Tear Tape</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
@@ -438,6 +447,16 @@
             </picklistValues>
             <picklistValues>
                 <fullName>Other</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
                 <controllingFieldValues>Tear Tape</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
@@ -1063,6 +1082,1042 @@
             <picklistValues>
                 <fullName>B18 - Wrong product</fullName>
                 <controllingFieldValues>Extrusion Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Out of Spec</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Not as expected</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Performance</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Late</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Early</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Not received</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Require more data/info</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Catalogue Error</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Packaging Damaged</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Delivery Early</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Delivery Late</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Duplicated Delivery</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Delivery Address Incorrect</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Order Entered Incorrectly</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Picked Incorrectly Despatch</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Labelled Incorrectly (Production)</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Labelled Incorrectly (Sub-pack / Dist)</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Not Ordered</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Over Delivered</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Packed Incorrectly (Production)</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Packed Incorrectly (Sub-pack / Dist)</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Shortage (In Delivery)</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Re-sourced (BOP)</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Re-tooled (MAN)</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Confirmation Error</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Goods Lost</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Carrier Service Level</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Unsuitable for Application</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Adhesive Issue</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Aged / Old</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Assembly - Incorrect / Poor</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Assembly - Missing / Incorrect part</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BOM / Process Document Incorrect</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Breaking - Cable Tie Only</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Breaking - Other</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Breaking - Splitting/ Cracking</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Breaking - Under Load</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Brittle Part (e.g.. Nylon - Moisture)</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Burnt / Discoloured</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Colour Issue</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Compliance Issue</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Corrosion</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Delamination</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dimension Incorrect</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Distortion</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Environmental Resistance Issue</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Feed PIP / Hot Feed</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Flash</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Flexibility / Hardness Issue</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Flow Marks</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Foreign Object</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Gassing / Vent Issue</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Geometry (Shape) Incorrect</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hole(s) in Part</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Label Detail Incorrect</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Malfunction Part</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Material Cure Issue</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Material Overheated</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Material Performance Issue</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mis-match</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mixed Parts in a Pack</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Moisture Excess (Nylon)</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Option Incorrect</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Packaging Design / Selection Issue</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Packaging Incorrect</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Performance Issue</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Product Recall</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Quantity Incorrect</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Short Moulding</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sinking</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sprues / Stringing / Debris</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Surface Finish Issue</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Temperature Resistance Issue</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tool Build Incorrect</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tool Range / Design Issue</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Voids</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Weld Line</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Damaged Part(s)</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Fit Issue</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <sorted>false</sorted>
@@ -2305,6 +3360,22 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Adhesive Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Aged %2F Old</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Assembly - Incorrect %2F Poor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Assembly - Missing %2F Incorrect part</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Attribute Failure</fullName>
                 <default>false</default>
             </values>
@@ -2381,6 +3452,10 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>BOM %2F Process Document Incorrect</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Bad Cut</fullName>
                 <default>false</default>
             </values>
@@ -2405,7 +3480,39 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Breaking - Cable Tie Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Breaking - Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Breaking - Splitting%2F Cracking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Breaking - Under Load</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Brittle Part %28e%2Eg%2E%2E Nylon - Moisture%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Burnt %2F Discoloured</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Carbon Carry Over %28CCO%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Carrier Service Level</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Catalogue Error</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -2417,7 +3524,19 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Colour Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Colour Match Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Compliance Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Confirmation Error</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -2426,6 +3545,10 @@
             </values>
             <values>
                 <fullName>Coring %2F Melt hole</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Corrosion</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -2457,11 +3580,35 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Damaged Part%28s%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Damaged Tubes</fullName>
                 <default>false</default>
             </values>
             <values>
+                <fullName>Delamination</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delivery Address Incorrect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delivery Early</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delivery Late</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Delivery address</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dimension Incorrect</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -2493,7 +3640,19 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Distortion</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Double delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Duplicated Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Early</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -2502,6 +3661,10 @@
             </values>
             <values>
                 <fullName>End Segment Variation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Environmental Resistance Issue</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -2521,7 +3684,15 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Feed PIP %2F Hot Feed</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Filth</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fit Issue</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -2529,7 +3700,19 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Flash</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Flavour Variation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flexibility %2F Hardness Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flow Marks</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -2537,7 +3720,23 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Foreign Object</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gassing %2F Vent Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Geometry %28Shape%29 Incorrect</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Gloss level</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Goods Lost</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -2558,6 +3757,10 @@
             </values>
             <values>
                 <fullName>High Weight</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hole%28s%29 in Part</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -2641,6 +3844,10 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Label Detail Incorrect</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Label Not Overprintable</fullName>
                 <default>false</default>
             </values>
@@ -2653,6 +3860,14 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Labelled Incorrectly %28Production%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Labelled Incorrectly %28Sub-pack %2F Dist%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Labelling %2F Documentation Error</fullName>
                 <default>false</default>
             </values>
@@ -2662,6 +3877,10 @@
             </values>
             <values>
                 <fullName>Labels Received In Poor Condition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Late</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -2709,6 +3928,22 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Malfunction Part</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Material Cure Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Material Overheated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Material Performance Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Material%2F</fullName>
                 <default>false</default>
             </values>
@@ -2730,6 +3965,10 @@
             </values>
             <values>
                 <fullName>Material%2FShrinkage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mis-match</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -2765,7 +4004,15 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Mixed Parts in a Pack</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Model</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Moisture Excess %28Nylon%29</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -2774,6 +4021,18 @@
             </values>
             <values>
                 <fullName>No tape</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Ordered</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not as expected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not received</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -2793,11 +4052,27 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Option Incorrect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Entered Incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Other</fullName>
                 <default>false</default>
             </values>
             <values>
+                <fullName>Out of Spec</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Ovality %2F Shape</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Over Delivered</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -2829,7 +4104,39 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Packaging Damaged</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Packaging Defect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Packaging Design %2F Selection Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Packaging Incorrect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Packed Incorrectly %28Production%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Packed Incorrectly %28Sub-pack %2F Dist%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Performance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Performance Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Picked Incorrectly Despatch</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -2865,7 +4172,15 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Product Recall</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Quantity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quantity Incorrect</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -2881,11 +4196,23 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Re-sourced %28BOP%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Re-tooled %28MAN%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Recess Ends</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Recipe</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Require more data%2Finfo</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -2901,6 +4228,18 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Short Moulding</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shortage %28In Delivery%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sinking</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Slit Edge Quality Issues</fullName>
                 <default>false</default>
             </values>
@@ -2913,11 +4252,19 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Sprues %2F Stringing %2F Debris</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Straightness</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Surface</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Surface Finish Issue</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -2933,7 +4280,19 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Temperature Resistance Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Tight Release</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tool Build Incorrect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tool Range %2F Design Issue</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -2961,6 +4320,10 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Unsuitable for Application</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>V Groove defect</fullName>
                 <default>false</default>
             </values>
@@ -2973,7 +4336,15 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Voids</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Weight Variation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Weld Line</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -3719,6 +5090,22 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Adhesive Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Aged %2F Old</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Assembly - Incorrect %2F Poor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Assembly - Missing %2F Incorrect part</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Attribute Failure</fullName>
                 <default>false</default>
             </values>
@@ -3795,6 +5182,10 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>BOM %2F Process Document Incorrect</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Bad Cut</fullName>
                 <default>false</default>
             </values>
@@ -3819,7 +5210,39 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Breaking - Cable Tie Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Breaking - Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Breaking - Splitting%2F Cracking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Breaking - Under Load</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Brittle Part %28e%2Eg%2E%2E Nylon - Moisture%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Burnt %2F Discoloured</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Carbon Carry Over %28CCO%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Carrier Service Level</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Catalogue Error</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -3831,7 +5254,19 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Colour Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Colour Match Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Compliance Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Confirmation Error</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -3840,6 +5275,10 @@
             </values>
             <values>
                 <fullName>Coring %2F Melt hole</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Corrosion</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -3871,11 +5310,35 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Damaged Part%28s%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Damaged Tubes</fullName>
                 <default>false</default>
             </values>
             <values>
+                <fullName>Delamination</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delivery Address Incorrect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delivery Early</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delivery Late</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Delivery address</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dimension Incorrect</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -3907,7 +5370,19 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Distortion</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Double delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Duplicated Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Early</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -3916,6 +5391,10 @@
             </values>
             <values>
                 <fullName>End Segment Variation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Environmental Resistance Issue</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -3935,7 +5414,15 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Feed PIP %2F Hot Feed</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Filth</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fit Issue</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -3943,7 +5430,19 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Flash</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Flavour Variation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flexibility %2F Hardness Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flow Marks</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -3951,7 +5450,23 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Foreign Object</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gassing %2F Vent Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Geometry %28Shape%29 Incorrect</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Gloss level</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Goods Lost</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -3972,6 +5487,10 @@
             </values>
             <values>
                 <fullName>High Weight</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hole%28s%29 in Part</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -4055,6 +5574,10 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Label Detail Incorrect</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Label Not Overprintable</fullName>
                 <default>false</default>
             </values>
@@ -4067,6 +5590,14 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Labelled Incorrectly %28Production%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Labelled Incorrectly %28Sub-pack %2F Dist%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Labelling %2F Documentation Error</fullName>
                 <default>false</default>
             </values>
@@ -4076,6 +5607,10 @@
             </values>
             <values>
                 <fullName>Labels Received In Poor Condition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Late</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -4123,6 +5658,22 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Malfunction Part</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Material Cure Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Material Overheated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Material Performance Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Material%2F</fullName>
                 <default>false</default>
             </values>
@@ -4144,6 +5695,10 @@
             </values>
             <values>
                 <fullName>Material%2FShrinkage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mis-match</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -4179,7 +5734,15 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Mixed Parts in a Pack</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Model</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Moisture Excess %28Nylon%29</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -4188,6 +5751,18 @@
             </values>
             <values>
                 <fullName>No tape</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Ordered</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not as expected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not received</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -4207,11 +5782,27 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Option Incorrect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Entered Incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Other</fullName>
                 <default>false</default>
             </values>
             <values>
+                <fullName>Out of Spec</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Ovality %2F Shape</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Over Delivered</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -4243,7 +5834,39 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Packaging Damaged</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Packaging Defect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Packaging Design %2F Selection Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Packaging Incorrect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Packed Incorrectly %28Production%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Packed Incorrectly %28Sub-pack %2F Dist%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Performance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Performance Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Picked Incorrectly Despatch</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -4279,7 +5902,15 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Product Recall</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Quantity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quantity Incorrect</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -4295,11 +5926,23 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Re-sourced %28BOP%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Re-tooled %28MAN%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Recess Ends</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Recipe</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Require more data%2Finfo</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -4315,6 +5958,18 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Short Moulding</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shortage %28In Delivery%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sinking</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Slit Edge Quality Issues</fullName>
                 <default>false</default>
             </values>
@@ -4327,11 +5982,19 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Sprues %2F Stringing %2F Debris</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Straightness</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Surface</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Surface Finish Issue</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -4347,7 +6010,19 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Temperature Resistance Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Tight Release</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tool Build Incorrect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tool Range %2F Design Issue</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -4375,6 +6050,10 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Unsuitable for Application</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>V Groove defect</fullName>
                 <default>false</default>
             </values>
@@ -4387,7 +6066,15 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Voids</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Weight Variation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Weld Line</fullName>
                 <default>false</default>
             </values>
             <values>
