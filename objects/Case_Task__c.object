@@ -351,17 +351,37 @@
             <controllingField>Product_Group__c</controllingField>
             <picklistValues>
                 <fullName>Customer</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
                 <controllingFieldValues>Cartons</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
                 <controllingFieldValues>Foil</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
                 <controllingFieldValues>Leaflets</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>Supplier</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
                 <controllingFieldValues>Cartons</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
                 <controllingFieldValues>Foil</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
                 <controllingFieldValues>Labels</controllingFieldValues>
                 <controllingFieldValues>Leaflets</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -444,10 +464,20 @@
             </picklistValues>
             <picklistValues>
                 <fullName>Despatch</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
                 <controllingFieldValues>Cartons</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
                 <controllingFieldValues>Foil</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
                 <controllingFieldValues>Labels</controllingFieldValues>
                 <controllingFieldValues>Leaflets</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -494,9 +524,19 @@
             </picklistValues>
             <picklistValues>
                 <fullName>IT</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
                 <controllingFieldValues>Cartons</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
                 <controllingFieldValues>Foil</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
                 <controllingFieldValues>Leaflets</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -539,10 +579,20 @@
             </picklistValues>
             <picklistValues>
                 <fullName>Production</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
                 <controllingFieldValues>Cartons</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
                 <controllingFieldValues>Extrusion Products</controllingFieldValues>
                 <controllingFieldValues>Foil</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
                 <controllingFieldValues>Leaflets</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -561,9 +611,19 @@
             </picklistValues>
             <picklistValues>
                 <fullName>Senior Management</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
                 <controllingFieldValues>Cartons</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
                 <controllingFieldValues>Foil</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
                 <controllingFieldValues>Leaflets</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -573,14 +633,34 @@
             </picklistValues>
             <picklistValues>
                 <fullName>Customer Services</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
                 <controllingFieldValues>Labels</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
                 <controllingFieldValues>Tear Tape</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>Planning</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
                 <controllingFieldValues>Extrusion Products</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
                 <controllingFieldValues>Labels</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
                 <controllingFieldValues>Tear Tape</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
@@ -664,14 +744,34 @@
             </picklistValues>
             <picklistValues>
                 <fullName>Quality Assurance</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
                 <controllingFieldValues>Extrusion Products</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
                 <controllingFieldValues>Porous Products</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>Shipping</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
                 <controllingFieldValues>Extrusion Products</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
                 <controllingFieldValues>Porous Products</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -716,7 +816,17 @@
             </picklistValues>
             <picklistValues>
                 <fullName>Finance &amp; Administration</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
                 <controllingFieldValues>Extrusion Products</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -753,7 +863,17 @@
             </picklistValues>
             <picklistValues>
                 <fullName>Purchasing</fullName>
+                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>Electronics</controllingFieldValues>
                 <controllingFieldValues>Extrusion Products</controllingFieldValues>
+                <controllingFieldValues>General Protection</controllingFieldValues>
+                <controllingFieldValues>Hardware</controllingFieldValues>
+                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>Security Seals</controllingFieldValues>
+                <controllingFieldValues>Tapes and POS</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
