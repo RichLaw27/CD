@@ -55,6 +55,78 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <fields>
+        <fullName>Account_Customer_Acc_No__c</fullName>
+        <externalId>false</externalId>
+        <formula>CaseID__r.Account.FS_CUST_ID__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Customer Acc No</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Main_City__c</fullName>
+        <externalId>false</externalId>
+        <formula>CaseID__r.Account.ShippingCity</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Main City</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Main_Country__c</fullName>
+        <externalId>false</externalId>
+        <formula>CaseID__r.Account.ShippingCountry</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Main Country</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Main_State_Province__c</fullName>
+        <externalId>false</externalId>
+        <formula>CaseID__r.Account.ShippingState</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Main State/Province</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Main_Street__c</fullName>
+        <externalId>false</externalId>
+        <formula>CaseID__r.Account.ShippingStreet</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Main Street</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Main_Zip_Postal_Code__c</fullName>
+        <externalId>false</externalId>
+        <formula>CaseID__r.Account.ShippingPostalCode</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Main Zip/Postal Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Actual_Faulty_Qty__c</fullName>
         <externalId>false</externalId>
         <label>Actual Faulty Qty</label>
@@ -91,6 +163,163 @@
         <trackTrending>false</trackTrending>
         <type>MasterDetail</type>
         <writeRequiresMasterRead>true</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Case_Customer_Contact__c</fullName>
+        <externalId>false</externalId>
+        <formula>CaseID__r.Contact.FirstName&amp;&apos; &apos;&amp; CaseID__r.Contact.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Case Customer Contact</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Case_Customer_Number__c</fullName>
+        <description>Used in Mail Merge.</description>
+        <externalId>false</externalId>
+        <formula>CaseID__r.Account.FS_Site_ID__r.Name__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Case Customer Number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Case_Customer_Order_No__c</fullName>
+        <externalId>false</externalId>
+        <formula>CaseID__r.Customer_PO_Number__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Case Customer Order No</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Case_Customer_Ref__c</fullName>
+        <externalId>false</externalId>
+        <formula>CaseID__r.Customer_Ref__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Case Customer Ref</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Case_Customer__c</fullName>
+        <externalId>false</externalId>
+        <formula>CaseID__r.Account.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Case Customer</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Case_Date_Complete__c</fullName>
+        <externalId>false</externalId>
+        <formula>CaseID__r.ClosedDate</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Case Date Complete</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Case_Date_Opened__c</fullName>
+        <externalId>false</externalId>
+        <formula>CaseID__r.CreatedDate</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Case Date Opened</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Case_Item_No__c</fullName>
+        <externalId>false</externalId>
+        <formula>CaseID__r.Our_Item__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Case Item No</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Case_Order_No__c</fullName>
+        <externalId>false</externalId>
+        <formula>CaseID__r.Order_Number__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Case Order No</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Case_Product_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>CaseID__r.Product_Type__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Case Product Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Case_Qty_Affected__c</fullName>
+        <externalId>false</externalId>
+        <formula>CaseID__r.QueriedQty__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Case Qty Affected</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>5</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Case_S_O_Reference__c</fullName>
+        <externalId>false</externalId>
+        <formula>CaseID__r.Batch_Number__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Case S/O Reference</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Case_Subject__c</fullName>
+        <externalId>false</externalId>
+        <formula>CaseID__r.Subject</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Case Subject</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Containment_Action__c</fullName>
@@ -298,43 +527,43 @@
                 <default>false</default>
             </picklistValues>
             <picklistValues>
-                <fullName>General Protection</fullName>
+                <fullName>CD General Protection</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
-                <fullName>Electrical &amp; Fasteners</fullName>
+                <fullName>CD Electrical &amp; Fasteners</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
-                <fullName>Electronics</fullName>
+                <fullName>CD Electronics</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
-                <fullName>Tapes and POS</fullName>
+                <fullName>CD Tapes and POS</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
-                <fullName>Security Seals</fullName>
+                <fullName>CD Security Seals</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
-                <fullName>Printer Solutions</fullName>
+                <fullName>CD Printer Solutions</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
-                <fullName>Access Hardware</fullName>
+                <fullName>CD Access Hardware</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
-                <fullName>Hose Protection</fullName>
+                <fullName>CD Hose Protection</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
-                <fullName>Hardware</fullName>
+                <fullName>CD Hardware</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
-                <fullName>MRO</fullName>
+                <fullName>CD MRO</fullName>
                 <default>false</default>
             </picklistValues>
             <sorted>false</sorted>
@@ -351,37 +580,37 @@
             <controllingField>Product_Group__c</controllingField>
             <picklistValues>
                 <fullName>Customer</fullName>
-                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Access Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>CD Electronics</controllingFieldValues>
+                <controllingFieldValues>CD General Protection</controllingFieldValues>
+                <controllingFieldValues>CD Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Hose Protection</controllingFieldValues>
+                <controllingFieldValues>CD MRO</controllingFieldValues>
+                <controllingFieldValues>CD Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>CD Security Seals</controllingFieldValues>
+                <controllingFieldValues>CD Tapes and POS</controllingFieldValues>
                 <controllingFieldValues>Cartons</controllingFieldValues>
-                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
-                <controllingFieldValues>Electronics</controllingFieldValues>
                 <controllingFieldValues>Foil</controllingFieldValues>
-                <controllingFieldValues>General Protection</controllingFieldValues>
-                <controllingFieldValues>Hardware</controllingFieldValues>
-                <controllingFieldValues>Hose Protection</controllingFieldValues>
                 <controllingFieldValues>Leaflets</controllingFieldValues>
-                <controllingFieldValues>MRO</controllingFieldValues>
-                <controllingFieldValues>Printer Solutions</controllingFieldValues>
-                <controllingFieldValues>Security Seals</controllingFieldValues>
-                <controllingFieldValues>Tapes and POS</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>Supplier</fullName>
-                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Access Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>CD Electronics</controllingFieldValues>
+                <controllingFieldValues>CD General Protection</controllingFieldValues>
+                <controllingFieldValues>CD Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Hose Protection</controllingFieldValues>
+                <controllingFieldValues>CD MRO</controllingFieldValues>
+                <controllingFieldValues>CD Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>CD Security Seals</controllingFieldValues>
+                <controllingFieldValues>CD Tapes and POS</controllingFieldValues>
                 <controllingFieldValues>Cartons</controllingFieldValues>
-                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
-                <controllingFieldValues>Electronics</controllingFieldValues>
                 <controllingFieldValues>Foil</controllingFieldValues>
-                <controllingFieldValues>General Protection</controllingFieldValues>
-                <controllingFieldValues>Hardware</controllingFieldValues>
-                <controllingFieldValues>Hose Protection</controllingFieldValues>
                 <controllingFieldValues>Labels</controllingFieldValues>
                 <controllingFieldValues>Leaflets</controllingFieldValues>
-                <controllingFieldValues>MRO</controllingFieldValues>
-                <controllingFieldValues>Printer Solutions</controllingFieldValues>
-                <controllingFieldValues>Security Seals</controllingFieldValues>
-                <controllingFieldValues>Tapes and POS</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -464,20 +693,20 @@
             </picklistValues>
             <picklistValues>
                 <fullName>Despatch</fullName>
-                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Access Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>CD Electronics</controllingFieldValues>
+                <controllingFieldValues>CD General Protection</controllingFieldValues>
+                <controllingFieldValues>CD Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Hose Protection</controllingFieldValues>
+                <controllingFieldValues>CD MRO</controllingFieldValues>
+                <controllingFieldValues>CD Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>CD Security Seals</controllingFieldValues>
+                <controllingFieldValues>CD Tapes and POS</controllingFieldValues>
                 <controllingFieldValues>Cartons</controllingFieldValues>
-                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
-                <controllingFieldValues>Electronics</controllingFieldValues>
                 <controllingFieldValues>Foil</controllingFieldValues>
-                <controllingFieldValues>General Protection</controllingFieldValues>
-                <controllingFieldValues>Hardware</controllingFieldValues>
-                <controllingFieldValues>Hose Protection</controllingFieldValues>
                 <controllingFieldValues>Labels</controllingFieldValues>
                 <controllingFieldValues>Leaflets</controllingFieldValues>
-                <controllingFieldValues>MRO</controllingFieldValues>
-                <controllingFieldValues>Printer Solutions</controllingFieldValues>
-                <controllingFieldValues>Security Seals</controllingFieldValues>
-                <controllingFieldValues>Tapes and POS</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -524,19 +753,19 @@
             </picklistValues>
             <picklistValues>
                 <fullName>IT</fullName>
-                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Access Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>CD Electronics</controllingFieldValues>
+                <controllingFieldValues>CD General Protection</controllingFieldValues>
+                <controllingFieldValues>CD Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Hose Protection</controllingFieldValues>
+                <controllingFieldValues>CD MRO</controllingFieldValues>
+                <controllingFieldValues>CD Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>CD Security Seals</controllingFieldValues>
+                <controllingFieldValues>CD Tapes and POS</controllingFieldValues>
                 <controllingFieldValues>Cartons</controllingFieldValues>
-                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
-                <controllingFieldValues>Electronics</controllingFieldValues>
                 <controllingFieldValues>Foil</controllingFieldValues>
-                <controllingFieldValues>General Protection</controllingFieldValues>
-                <controllingFieldValues>Hardware</controllingFieldValues>
-                <controllingFieldValues>Hose Protection</controllingFieldValues>
                 <controllingFieldValues>Leaflets</controllingFieldValues>
-                <controllingFieldValues>MRO</controllingFieldValues>
-                <controllingFieldValues>Printer Solutions</controllingFieldValues>
-                <controllingFieldValues>Security Seals</controllingFieldValues>
-                <controllingFieldValues>Tapes and POS</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -579,20 +808,20 @@
             </picklistValues>
             <picklistValues>
                 <fullName>Production</fullName>
-                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Access Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>CD Electronics</controllingFieldValues>
+                <controllingFieldValues>CD General Protection</controllingFieldValues>
+                <controllingFieldValues>CD Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Hose Protection</controllingFieldValues>
+                <controllingFieldValues>CD MRO</controllingFieldValues>
+                <controllingFieldValues>CD Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>CD Security Seals</controllingFieldValues>
+                <controllingFieldValues>CD Tapes and POS</controllingFieldValues>
                 <controllingFieldValues>Cartons</controllingFieldValues>
-                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
-                <controllingFieldValues>Electronics</controllingFieldValues>
                 <controllingFieldValues>Extrusion Products</controllingFieldValues>
                 <controllingFieldValues>Foil</controllingFieldValues>
-                <controllingFieldValues>General Protection</controllingFieldValues>
-                <controllingFieldValues>Hardware</controllingFieldValues>
-                <controllingFieldValues>Hose Protection</controllingFieldValues>
                 <controllingFieldValues>Leaflets</controllingFieldValues>
-                <controllingFieldValues>MRO</controllingFieldValues>
-                <controllingFieldValues>Printer Solutions</controllingFieldValues>
-                <controllingFieldValues>Security Seals</controllingFieldValues>
-                <controllingFieldValues>Tapes and POS</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -611,19 +840,19 @@
             </picklistValues>
             <picklistValues>
                 <fullName>Senior Management</fullName>
-                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Access Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>CD Electronics</controllingFieldValues>
+                <controllingFieldValues>CD General Protection</controllingFieldValues>
+                <controllingFieldValues>CD Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Hose Protection</controllingFieldValues>
+                <controllingFieldValues>CD MRO</controllingFieldValues>
+                <controllingFieldValues>CD Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>CD Security Seals</controllingFieldValues>
+                <controllingFieldValues>CD Tapes and POS</controllingFieldValues>
                 <controllingFieldValues>Cartons</controllingFieldValues>
-                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
-                <controllingFieldValues>Electronics</controllingFieldValues>
                 <controllingFieldValues>Foil</controllingFieldValues>
-                <controllingFieldValues>General Protection</controllingFieldValues>
-                <controllingFieldValues>Hardware</controllingFieldValues>
-                <controllingFieldValues>Hose Protection</controllingFieldValues>
                 <controllingFieldValues>Leaflets</controllingFieldValues>
-                <controllingFieldValues>MRO</controllingFieldValues>
-                <controllingFieldValues>Printer Solutions</controllingFieldValues>
-                <controllingFieldValues>Security Seals</controllingFieldValues>
-                <controllingFieldValues>Tapes and POS</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -633,34 +862,34 @@
             </picklistValues>
             <picklistValues>
                 <fullName>Customer Services</fullName>
-                <controllingFieldValues>Access Hardware</controllingFieldValues>
-                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
-                <controllingFieldValues>Electronics</controllingFieldValues>
-                <controllingFieldValues>General Protection</controllingFieldValues>
-                <controllingFieldValues>Hardware</controllingFieldValues>
-                <controllingFieldValues>Hose Protection</controllingFieldValues>
+                <controllingFieldValues>CD Access Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>CD Electronics</controllingFieldValues>
+                <controllingFieldValues>CD General Protection</controllingFieldValues>
+                <controllingFieldValues>CD Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Hose Protection</controllingFieldValues>
+                <controllingFieldValues>CD MRO</controllingFieldValues>
+                <controllingFieldValues>CD Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>CD Security Seals</controllingFieldValues>
+                <controllingFieldValues>CD Tapes and POS</controllingFieldValues>
                 <controllingFieldValues>Labels</controllingFieldValues>
-                <controllingFieldValues>MRO</controllingFieldValues>
-                <controllingFieldValues>Printer Solutions</controllingFieldValues>
-                <controllingFieldValues>Security Seals</controllingFieldValues>
-                <controllingFieldValues>Tapes and POS</controllingFieldValues>
                 <controllingFieldValues>Tear Tape</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>Planning</fullName>
-                <controllingFieldValues>Access Hardware</controllingFieldValues>
-                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
-                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>CD Access Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>CD Electronics</controllingFieldValues>
+                <controllingFieldValues>CD General Protection</controllingFieldValues>
+                <controllingFieldValues>CD Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Hose Protection</controllingFieldValues>
+                <controllingFieldValues>CD MRO</controllingFieldValues>
+                <controllingFieldValues>CD Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>CD Security Seals</controllingFieldValues>
+                <controllingFieldValues>CD Tapes and POS</controllingFieldValues>
                 <controllingFieldValues>Extrusion Products</controllingFieldValues>
-                <controllingFieldValues>General Protection</controllingFieldValues>
-                <controllingFieldValues>Hardware</controllingFieldValues>
-                <controllingFieldValues>Hose Protection</controllingFieldValues>
                 <controllingFieldValues>Labels</controllingFieldValues>
-                <controllingFieldValues>MRO</controllingFieldValues>
-                <controllingFieldValues>Printer Solutions</controllingFieldValues>
-                <controllingFieldValues>Security Seals</controllingFieldValues>
-                <controllingFieldValues>Tapes and POS</controllingFieldValues>
                 <controllingFieldValues>Tear Tape</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
@@ -744,34 +973,34 @@
             </picklistValues>
             <picklistValues>
                 <fullName>Quality Assurance</fullName>
-                <controllingFieldValues>Access Hardware</controllingFieldValues>
-                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
-                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>CD Access Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>CD Electronics</controllingFieldValues>
+                <controllingFieldValues>CD General Protection</controllingFieldValues>
+                <controllingFieldValues>CD Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Hose Protection</controllingFieldValues>
+                <controllingFieldValues>CD MRO</controllingFieldValues>
+                <controllingFieldValues>CD Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>CD Security Seals</controllingFieldValues>
+                <controllingFieldValues>CD Tapes and POS</controllingFieldValues>
                 <controllingFieldValues>Extrusion Products</controllingFieldValues>
-                <controllingFieldValues>General Protection</controllingFieldValues>
-                <controllingFieldValues>Hardware</controllingFieldValues>
-                <controllingFieldValues>Hose Protection</controllingFieldValues>
-                <controllingFieldValues>MRO</controllingFieldValues>
                 <controllingFieldValues>Porous Products</controllingFieldValues>
-                <controllingFieldValues>Printer Solutions</controllingFieldValues>
-                <controllingFieldValues>Security Seals</controllingFieldValues>
-                <controllingFieldValues>Tapes and POS</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>Shipping</fullName>
-                <controllingFieldValues>Access Hardware</controllingFieldValues>
-                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
-                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>CD Access Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>CD Electronics</controllingFieldValues>
+                <controllingFieldValues>CD General Protection</controllingFieldValues>
+                <controllingFieldValues>CD Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Hose Protection</controllingFieldValues>
+                <controllingFieldValues>CD MRO</controllingFieldValues>
+                <controllingFieldValues>CD Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>CD Security Seals</controllingFieldValues>
+                <controllingFieldValues>CD Tapes and POS</controllingFieldValues>
                 <controllingFieldValues>Extrusion Products</controllingFieldValues>
-                <controllingFieldValues>General Protection</controllingFieldValues>
-                <controllingFieldValues>Hardware</controllingFieldValues>
-                <controllingFieldValues>Hose Protection</controllingFieldValues>
-                <controllingFieldValues>MRO</controllingFieldValues>
                 <controllingFieldValues>Porous Products</controllingFieldValues>
-                <controllingFieldValues>Printer Solutions</controllingFieldValues>
-                <controllingFieldValues>Security Seals</controllingFieldValues>
-                <controllingFieldValues>Tapes and POS</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -816,17 +1045,17 @@
             </picklistValues>
             <picklistValues>
                 <fullName>Finance &amp; Administration</fullName>
-                <controllingFieldValues>Access Hardware</controllingFieldValues>
-                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
-                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>CD Access Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>CD Electronics</controllingFieldValues>
+                <controllingFieldValues>CD General Protection</controllingFieldValues>
+                <controllingFieldValues>CD Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Hose Protection</controllingFieldValues>
+                <controllingFieldValues>CD MRO</controllingFieldValues>
+                <controllingFieldValues>CD Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>CD Security Seals</controllingFieldValues>
+                <controllingFieldValues>CD Tapes and POS</controllingFieldValues>
                 <controllingFieldValues>Extrusion Products</controllingFieldValues>
-                <controllingFieldValues>General Protection</controllingFieldValues>
-                <controllingFieldValues>Hardware</controllingFieldValues>
-                <controllingFieldValues>Hose Protection</controllingFieldValues>
-                <controllingFieldValues>MRO</controllingFieldValues>
-                <controllingFieldValues>Printer Solutions</controllingFieldValues>
-                <controllingFieldValues>Security Seals</controllingFieldValues>
-                <controllingFieldValues>Tapes and POS</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -863,17 +1092,17 @@
             </picklistValues>
             <picklistValues>
                 <fullName>Purchasing</fullName>
-                <controllingFieldValues>Access Hardware</controllingFieldValues>
-                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
-                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>CD Access Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>CD Electronics</controllingFieldValues>
+                <controllingFieldValues>CD General Protection</controllingFieldValues>
+                <controllingFieldValues>CD Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Hose Protection</controllingFieldValues>
+                <controllingFieldValues>CD MRO</controllingFieldValues>
+                <controllingFieldValues>CD Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>CD Security Seals</controllingFieldValues>
+                <controllingFieldValues>CD Tapes and POS</controllingFieldValues>
                 <controllingFieldValues>Extrusion Products</controllingFieldValues>
-                <controllingFieldValues>General Protection</controllingFieldValues>
-                <controllingFieldValues>Hardware</controllingFieldValues>
-                <controllingFieldValues>Hose Protection</controllingFieldValues>
-                <controllingFieldValues>MRO</controllingFieldValues>
-                <controllingFieldValues>Printer Solutions</controllingFieldValues>
-                <controllingFieldValues>Security Seals</controllingFieldValues>
-                <controllingFieldValues>Tapes and POS</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -915,114 +1144,114 @@
             </picklistValues>
             <picklistValues>
                 <fullName>Business Development</fullName>
-                <controllingFieldValues>Access Hardware</controllingFieldValues>
-                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
-                <controllingFieldValues>Electronics</controllingFieldValues>
-                <controllingFieldValues>General Protection</controllingFieldValues>
-                <controllingFieldValues>Hardware</controllingFieldValues>
-                <controllingFieldValues>Hose Protection</controllingFieldValues>
-                <controllingFieldValues>MRO</controllingFieldValues>
-                <controllingFieldValues>Printer Solutions</controllingFieldValues>
-                <controllingFieldValues>Security Seals</controllingFieldValues>
-                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <controllingFieldValues>CD Access Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>CD Electronics</controllingFieldValues>
+                <controllingFieldValues>CD General Protection</controllingFieldValues>
+                <controllingFieldValues>CD Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Hose Protection</controllingFieldValues>
+                <controllingFieldValues>CD MRO</controllingFieldValues>
+                <controllingFieldValues>CD Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>CD Security Seals</controllingFieldValues>
+                <controllingFieldValues>CD Tapes and POS</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>Field Sales</fullName>
-                <controllingFieldValues>Access Hardware</controllingFieldValues>
-                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
-                <controllingFieldValues>Electronics</controllingFieldValues>
-                <controllingFieldValues>General Protection</controllingFieldValues>
-                <controllingFieldValues>Hardware</controllingFieldValues>
-                <controllingFieldValues>Hose Protection</controllingFieldValues>
-                <controllingFieldValues>MRO</controllingFieldValues>
-                <controllingFieldValues>Printer Solutions</controllingFieldValues>
-                <controllingFieldValues>Security Seals</controllingFieldValues>
-                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <controllingFieldValues>CD Access Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>CD Electronics</controllingFieldValues>
+                <controllingFieldValues>CD General Protection</controllingFieldValues>
+                <controllingFieldValues>CD Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Hose Protection</controllingFieldValues>
+                <controllingFieldValues>CD MRO</controllingFieldValues>
+                <controllingFieldValues>CD Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>CD Security Seals</controllingFieldValues>
+                <controllingFieldValues>CD Tapes and POS</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>Internal Sales (Interco)</fullName>
-                <controllingFieldValues>Access Hardware</controllingFieldValues>
-                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
-                <controllingFieldValues>Electronics</controllingFieldValues>
-                <controllingFieldValues>General Protection</controllingFieldValues>
-                <controllingFieldValues>Hardware</controllingFieldValues>
-                <controllingFieldValues>Hose Protection</controllingFieldValues>
-                <controllingFieldValues>MRO</controllingFieldValues>
-                <controllingFieldValues>Printer Solutions</controllingFieldValues>
-                <controllingFieldValues>Security Seals</controllingFieldValues>
-                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <controllingFieldValues>CD Access Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>CD Electronics</controllingFieldValues>
+                <controllingFieldValues>CD General Protection</controllingFieldValues>
+                <controllingFieldValues>CD Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Hose Protection</controllingFieldValues>
+                <controllingFieldValues>CD MRO</controllingFieldValues>
+                <controllingFieldValues>CD Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>CD Security Seals</controllingFieldValues>
+                <controllingFieldValues>CD Tapes and POS</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>Marketing</fullName>
-                <controllingFieldValues>Access Hardware</controllingFieldValues>
-                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
-                <controllingFieldValues>Electronics</controllingFieldValues>
-                <controllingFieldValues>General Protection</controllingFieldValues>
-                <controllingFieldValues>Hardware</controllingFieldValues>
-                <controllingFieldValues>Hose Protection</controllingFieldValues>
-                <controllingFieldValues>MRO</controllingFieldValues>
-                <controllingFieldValues>Printer Solutions</controllingFieldValues>
-                <controllingFieldValues>Security Seals</controllingFieldValues>
-                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <controllingFieldValues>CD Access Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>CD Electronics</controllingFieldValues>
+                <controllingFieldValues>CD General Protection</controllingFieldValues>
+                <controllingFieldValues>CD Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Hose Protection</controllingFieldValues>
+                <controllingFieldValues>CD MRO</controllingFieldValues>
+                <controllingFieldValues>CD Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>CD Security Seals</controllingFieldValues>
+                <controllingFieldValues>CD Tapes and POS</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>Negotiated / Commercial Decision</fullName>
-                <controllingFieldValues>Access Hardware</controllingFieldValues>
-                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
-                <controllingFieldValues>Electronics</controllingFieldValues>
-                <controllingFieldValues>General Protection</controllingFieldValues>
-                <controllingFieldValues>Hardware</controllingFieldValues>
-                <controllingFieldValues>Hose Protection</controllingFieldValues>
-                <controllingFieldValues>MRO</controllingFieldValues>
-                <controllingFieldValues>Printer Solutions</controllingFieldValues>
-                <controllingFieldValues>Security Seals</controllingFieldValues>
-                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <controllingFieldValues>CD Access Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>CD Electronics</controllingFieldValues>
+                <controllingFieldValues>CD General Protection</controllingFieldValues>
+                <controllingFieldValues>CD Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Hose Protection</controllingFieldValues>
+                <controllingFieldValues>CD MRO</controllingFieldValues>
+                <controllingFieldValues>CD Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>CD Security Seals</controllingFieldValues>
+                <controllingFieldValues>CD Tapes and POS</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>Product Management</fullName>
-                <controllingFieldValues>Access Hardware</controllingFieldValues>
-                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
-                <controllingFieldValues>Electronics</controllingFieldValues>
-                <controllingFieldValues>General Protection</controllingFieldValues>
-                <controllingFieldValues>Hardware</controllingFieldValues>
-                <controllingFieldValues>Hose Protection</controllingFieldValues>
-                <controllingFieldValues>MRO</controllingFieldValues>
-                <controllingFieldValues>Printer Solutions</controllingFieldValues>
-                <controllingFieldValues>Security Seals</controllingFieldValues>
-                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <controllingFieldValues>CD Access Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>CD Electronics</controllingFieldValues>
+                <controllingFieldValues>CD General Protection</controllingFieldValues>
+                <controllingFieldValues>CD Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Hose Protection</controllingFieldValues>
+                <controllingFieldValues>CD MRO</controllingFieldValues>
+                <controllingFieldValues>CD Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>CD Security Seals</controllingFieldValues>
+                <controllingFieldValues>CD Tapes and POS</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>Sub-Pack Distribution</fullName>
-                <controllingFieldValues>Access Hardware</controllingFieldValues>
-                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
-                <controllingFieldValues>Electronics</controllingFieldValues>
-                <controllingFieldValues>General Protection</controllingFieldValues>
-                <controllingFieldValues>Hardware</controllingFieldValues>
-                <controllingFieldValues>Hose Protection</controllingFieldValues>
-                <controllingFieldValues>MRO</controllingFieldValues>
-                <controllingFieldValues>Printer Solutions</controllingFieldValues>
-                <controllingFieldValues>Security Seals</controllingFieldValues>
-                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <controllingFieldValues>CD Access Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>CD Electronics</controllingFieldValues>
+                <controllingFieldValues>CD General Protection</controllingFieldValues>
+                <controllingFieldValues>CD Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Hose Protection</controllingFieldValues>
+                <controllingFieldValues>CD MRO</controllingFieldValues>
+                <controllingFieldValues>CD Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>CD Security Seals</controllingFieldValues>
+                <controllingFieldValues>CD Tapes and POS</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>Tooling Development</fullName>
-                <controllingFieldValues>Access Hardware</controllingFieldValues>
-                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
-                <controllingFieldValues>Electronics</controllingFieldValues>
-                <controllingFieldValues>General Protection</controllingFieldValues>
-                <controllingFieldValues>Hardware</controllingFieldValues>
-                <controllingFieldValues>Hose Protection</controllingFieldValues>
-                <controllingFieldValues>MRO</controllingFieldValues>
-                <controllingFieldValues>Printer Solutions</controllingFieldValues>
-                <controllingFieldValues>Security Seals</controllingFieldValues>
-                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <controllingFieldValues>CD Access Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>CD Electronics</controllingFieldValues>
+                <controllingFieldValues>CD General Protection</controllingFieldValues>
+                <controllingFieldValues>CD Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Hose Protection</controllingFieldValues>
+                <controllingFieldValues>CD MRO</controllingFieldValues>
+                <controllingFieldValues>CD Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>CD Security Seals</controllingFieldValues>
+                <controllingFieldValues>CD Tapes and POS</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <sorted>false</sorted>
@@ -1226,20 +1455,20 @@
             </picklistValues>
             <picklistValues>
                 <fullName>UK</fullName>
-                <controllingFieldValues>Access Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Access Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>CD Electronics</controllingFieldValues>
+                <controllingFieldValues>CD General Protection</controllingFieldValues>
+                <controllingFieldValues>CD Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Hose Protection</controllingFieldValues>
+                <controllingFieldValues>CD MRO</controllingFieldValues>
+                <controllingFieldValues>CD Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>CD Security Seals</controllingFieldValues>
+                <controllingFieldValues>CD Tapes and POS</controllingFieldValues>
                 <controllingFieldValues>Cartons</controllingFieldValues>
-                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
-                <controllingFieldValues>Electronics</controllingFieldValues>
                 <controllingFieldValues>Foil</controllingFieldValues>
-                <controllingFieldValues>General Protection</controllingFieldValues>
-                <controllingFieldValues>Hardware</controllingFieldValues>
-                <controllingFieldValues>Hose Protection</controllingFieldValues>
                 <controllingFieldValues>Inks</controllingFieldValues>
                 <controllingFieldValues>Leaflets</controllingFieldValues>
-                <controllingFieldValues>MRO</controllingFieldValues>
-                <controllingFieldValues>Printer Solutions</controllingFieldValues>
-                <controllingFieldValues>Security Seals</controllingFieldValues>
-                <controllingFieldValues>Tapes and POS</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -1411,20 +1640,20 @@
             </picklistValues>
             <picklistValues>
                 <fullName>Other</fullName>
-                <controllingFieldValues>Access Hardware</controllingFieldValues>
-                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
-                <controllingFieldValues>Electronics</controllingFieldValues>
+                <controllingFieldValues>CD Access Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>CD Electronics</controllingFieldValues>
+                <controllingFieldValues>CD General Protection</controllingFieldValues>
+                <controllingFieldValues>CD Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Hose Protection</controllingFieldValues>
+                <controllingFieldValues>CD MRO</controllingFieldValues>
+                <controllingFieldValues>CD Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>CD Security Seals</controllingFieldValues>
+                <controllingFieldValues>CD Tapes and POS</controllingFieldValues>
                 <controllingFieldValues>Filter Products</controllingFieldValues>
-                <controllingFieldValues>General Protection</controllingFieldValues>
-                <controllingFieldValues>Hardware</controllingFieldValues>
-                <controllingFieldValues>Hose Protection</controllingFieldValues>
                 <controllingFieldValues>Inks</controllingFieldValues>
-                <controllingFieldValues>MRO</controllingFieldValues>
                 <controllingFieldValues>Manufactured Cards</controllingFieldValues>
-                <controllingFieldValues>Printer Solutions</controllingFieldValues>
                 <controllingFieldValues>Purchased Products</controllingFieldValues>
-                <controllingFieldValues>Security Seals</controllingFieldValues>
-                <controllingFieldValues>Tapes and POS</controllingFieldValues>
                 <controllingFieldValues>Tear Tape</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
@@ -1504,62 +1733,62 @@
             </picklistValues>
             <picklistValues>
                 <fullName>Personnel</fullName>
-                <controllingFieldValues>Access Hardware</controllingFieldValues>
-                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
-                <controllingFieldValues>Electronics</controllingFieldValues>
-                <controllingFieldValues>General Protection</controllingFieldValues>
-                <controllingFieldValues>Hardware</controllingFieldValues>
-                <controllingFieldValues>Hose Protection</controllingFieldValues>
-                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>CD Access Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>CD Electronics</controllingFieldValues>
+                <controllingFieldValues>CD General Protection</controllingFieldValues>
+                <controllingFieldValues>CD Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Hose Protection</controllingFieldValues>
+                <controllingFieldValues>CD MRO</controllingFieldValues>
+                <controllingFieldValues>CD Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>CD Security Seals</controllingFieldValues>
+                <controllingFieldValues>CD Tapes and POS</controllingFieldValues>
                 <controllingFieldValues>Porous Products</controllingFieldValues>
-                <controllingFieldValues>Printer Solutions</controllingFieldValues>
-                <controllingFieldValues>Security Seals</controllingFieldValues>
-                <controllingFieldValues>Tapes and POS</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>Materials</fullName>
-                <controllingFieldValues>Access Hardware</controllingFieldValues>
-                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
-                <controllingFieldValues>Electronics</controllingFieldValues>
-                <controllingFieldValues>General Protection</controllingFieldValues>
-                <controllingFieldValues>Hardware</controllingFieldValues>
-                <controllingFieldValues>Hose Protection</controllingFieldValues>
-                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>CD Access Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>CD Electronics</controllingFieldValues>
+                <controllingFieldValues>CD General Protection</controllingFieldValues>
+                <controllingFieldValues>CD Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Hose Protection</controllingFieldValues>
+                <controllingFieldValues>CD MRO</controllingFieldValues>
+                <controllingFieldValues>CD Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>CD Security Seals</controllingFieldValues>
+                <controllingFieldValues>CD Tapes and POS</controllingFieldValues>
                 <controllingFieldValues>Porous Products</controllingFieldValues>
-                <controllingFieldValues>Printer Solutions</controllingFieldValues>
-                <controllingFieldValues>Security Seals</controllingFieldValues>
-                <controllingFieldValues>Tapes and POS</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>Methods</fullName>
-                <controllingFieldValues>Access Hardware</controllingFieldValues>
-                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
-                <controllingFieldValues>Electronics</controllingFieldValues>
-                <controllingFieldValues>General Protection</controllingFieldValues>
-                <controllingFieldValues>Hardware</controllingFieldValues>
-                <controllingFieldValues>Hose Protection</controllingFieldValues>
-                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>CD Access Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>CD Electronics</controllingFieldValues>
+                <controllingFieldValues>CD General Protection</controllingFieldValues>
+                <controllingFieldValues>CD Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Hose Protection</controllingFieldValues>
+                <controllingFieldValues>CD MRO</controllingFieldValues>
+                <controllingFieldValues>CD Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>CD Security Seals</controllingFieldValues>
+                <controllingFieldValues>CD Tapes and POS</controllingFieldValues>
                 <controllingFieldValues>Porous Products</controllingFieldValues>
-                <controllingFieldValues>Printer Solutions</controllingFieldValues>
-                <controllingFieldValues>Security Seals</controllingFieldValues>
-                <controllingFieldValues>Tapes and POS</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>Machine</fullName>
-                <controllingFieldValues>Access Hardware</controllingFieldValues>
-                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
-                <controllingFieldValues>Electronics</controllingFieldValues>
-                <controllingFieldValues>General Protection</controllingFieldValues>
-                <controllingFieldValues>Hardware</controllingFieldValues>
-                <controllingFieldValues>Hose Protection</controllingFieldValues>
-                <controllingFieldValues>MRO</controllingFieldValues>
+                <controllingFieldValues>CD Access Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>CD Electronics</controllingFieldValues>
+                <controllingFieldValues>CD General Protection</controllingFieldValues>
+                <controllingFieldValues>CD Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Hose Protection</controllingFieldValues>
+                <controllingFieldValues>CD MRO</controllingFieldValues>
+                <controllingFieldValues>CD Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>CD Security Seals</controllingFieldValues>
+                <controllingFieldValues>CD Tapes and POS</controllingFieldValues>
                 <controllingFieldValues>Porous Products</controllingFieldValues>
-                <controllingFieldValues>Printer Solutions</controllingFieldValues>
-                <controllingFieldValues>Security Seals</controllingFieldValues>
-                <controllingFieldValues>Tapes and POS</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -2023,16 +2252,16 @@
             </picklistValues>
             <picklistValues>
                 <fullName>Environment</fullName>
-                <controllingFieldValues>Access Hardware</controllingFieldValues>
-                <controllingFieldValues>Electrical &amp; Fasteners</controllingFieldValues>
-                <controllingFieldValues>Electronics</controllingFieldValues>
-                <controllingFieldValues>General Protection</controllingFieldValues>
-                <controllingFieldValues>Hardware</controllingFieldValues>
-                <controllingFieldValues>Hose Protection</controllingFieldValues>
-                <controllingFieldValues>MRO</controllingFieldValues>
-                <controllingFieldValues>Printer Solutions</controllingFieldValues>
-                <controllingFieldValues>Security Seals</controllingFieldValues>
-                <controllingFieldValues>Tapes and POS</controllingFieldValues>
+                <controllingFieldValues>CD Access Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Electrical &amp; Fasteners</controllingFieldValues>
+                <controllingFieldValues>CD Electronics</controllingFieldValues>
+                <controllingFieldValues>CD General Protection</controllingFieldValues>
+                <controllingFieldValues>CD Hardware</controllingFieldValues>
+                <controllingFieldValues>CD Hose Protection</controllingFieldValues>
+                <controllingFieldValues>CD MRO</controllingFieldValues>
+                <controllingFieldValues>CD Printer Solutions</controllingFieldValues>
+                <controllingFieldValues>CD Security Seals</controllingFieldValues>
+                <controllingFieldValues>CD Tapes and POS</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <sorted>false</sorted>
@@ -2145,19 +2374,47 @@
         <picklistValues>
             <picklist>Product_Group__c</picklist>
             <values>
-                <fullName>Access Hardware</fullName>
+                <fullName>CD Access Hardware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CD Electrical %26 Fasteners</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CD Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CD General Protection</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CD Hardware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CD Hose Protection</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CD MRO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CD Printer Solutions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CD Security Seals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CD Tapes and POS</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Cartons</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Electrical %26 Fasteners</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Electronics</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -2173,18 +2430,6 @@
                 <default>false</default>
             </values>
             <values>
-                <fullName>General Protection</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Hardware</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Hose Protection</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Inks</fullName>
                 <default>false</default>
             </values>
@@ -2197,10 +2442,6 @@
                 <default>false</default>
             </values>
             <values>
-                <fullName>MRO</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Manufactured Cards</fullName>
                 <default>false</default>
             </values>
@@ -2209,19 +2450,7 @@
                 <default>false</default>
             </values>
             <values>
-                <fullName>Printer Solutions</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Purchased Products</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Security Seals</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Tapes and POS</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -3297,19 +3526,47 @@
         <picklistValues>
             <picklist>Product_Group__c</picklist>
             <values>
-                <fullName>Access Hardware</fullName>
+                <fullName>CD Access Hardware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CD Electrical %26 Fasteners</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CD Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CD General Protection</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CD Hardware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CD Hose Protection</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CD MRO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CD Printer Solutions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CD Security Seals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CD Tapes and POS</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Cartons</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Electrical %26 Fasteners</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Electronics</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -3325,18 +3582,6 @@
                 <default>false</default>
             </values>
             <values>
-                <fullName>General Protection</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Hardware</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Hose Protection</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Inks</fullName>
                 <default>false</default>
             </values>
@@ -3349,10 +3594,6 @@
                 <default>false</default>
             </values>
             <values>
-                <fullName>MRO</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Manufactured Cards</fullName>
                 <default>false</default>
             </values>
@@ -3361,19 +3602,7 @@
                 <default>false</default>
             </values>
             <values>
-                <fullName>Printer Solutions</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Purchased Products</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Security Seals</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Tapes and POS</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -4461,19 +4690,47 @@
         <picklistValues>
             <picklist>Product_Group__c</picklist>
             <values>
-                <fullName>Access Hardware</fullName>
+                <fullName>CD Access Hardware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CD Electrical %26 Fasteners</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CD Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CD General Protection</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CD Hardware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CD Hose Protection</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CD MRO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CD Printer Solutions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CD Security Seals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CD Tapes and POS</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Cartons</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Electrical %26 Fasteners</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Electronics</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -4489,18 +4746,6 @@
                 <default>false</default>
             </values>
             <values>
-                <fullName>General Protection</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Hardware</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Hose Protection</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Inks</fullName>
                 <default>false</default>
             </values>
@@ -4513,10 +4758,6 @@
                 <default>false</default>
             </values>
             <values>
-                <fullName>MRO</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Manufactured Cards</fullName>
                 <default>false</default>
             </values>
@@ -4525,19 +4766,7 @@
                 <default>false</default>
             </values>
             <values>
-                <fullName>Printer Solutions</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Purchased Products</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Security Seals</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Tapes and POS</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -5625,19 +5854,47 @@
         <picklistValues>
             <picklist>Product_Group__c</picklist>
             <values>
-                <fullName>Access Hardware</fullName>
+                <fullName>CD Access Hardware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CD Electrical %26 Fasteners</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CD Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CD General Protection</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CD Hardware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CD Hose Protection</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CD MRO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CD Printer Solutions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CD Security Seals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CD Tapes and POS</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Cartons</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Electrical %26 Fasteners</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Electronics</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -5653,18 +5910,6 @@
                 <default>false</default>
             </values>
             <values>
-                <fullName>General Protection</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Hardware</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Hose Protection</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Inks</fullName>
                 <default>false</default>
             </values>
@@ -5677,10 +5922,6 @@
                 <default>false</default>
             </values>
             <values>
-                <fullName>MRO</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Manufactured Cards</fullName>
                 <default>false</default>
             </values>
@@ -5689,19 +5930,7 @@
                 <default>false</default>
             </values>
             <values>
-                <fullName>Printer Solutions</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Purchased Products</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Security Seals</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Tapes and POS</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -6777,19 +7006,47 @@
         <picklistValues>
             <picklist>Product_Group__c</picklist>
             <values>
-                <fullName>Access Hardware</fullName>
+                <fullName>CD Access Hardware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CD Electrical %26 Fasteners</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CD Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CD General Protection</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CD Hardware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CD Hose Protection</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CD MRO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CD Printer Solutions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CD Security Seals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CD Tapes and POS</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Cartons</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Electrical %26 Fasteners</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Electronics</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -6805,18 +7062,6 @@
                 <default>false</default>
             </values>
             <values>
-                <fullName>General Protection</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Hardware</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Hose Protection</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Inks</fullName>
                 <default>false</default>
             </values>
@@ -6829,10 +7074,6 @@
                 <default>false</default>
             </values>
             <values>
-                <fullName>MRO</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Manufactured Cards</fullName>
                 <default>false</default>
             </values>
@@ -6841,19 +7082,7 @@
                 <default>false</default>
             </values>
             <values>
-                <fullName>Printer Solutions</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Purchased Products</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Security Seals</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Tapes and POS</fullName>
                 <default>false</default>
             </values>
             <values>

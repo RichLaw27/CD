@@ -383,6 +383,17 @@
         <type>Picklist</type>
     </fields>
     <fields>
+        <fullName>Business_Area_Text__c</fullName>
+        <description>Used in Sharing Rules. Updated by workflow to be the same as the Business Area. Required because criteria based sharing can&apos;t use relationship fields. Not on the Page Layout.</description>
+        <externalId>false</externalId>
+        <label>Business Area Text</label>
+        <length>200</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Business_Area__c</fullName>
         <deleteConstraint>Restrict</deleteConstraint>
         <externalId>false</externalId>
@@ -979,6 +990,17 @@ IF(Total_Revenue_Last_12_Months_Prev_Year__c&gt;0, &apos;Churn&apos;, &apos;Laps
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
     <fields>
+        <fullName>Number_of_Employees__c</fullName>
+        <externalId>false</externalId>
+        <label>Number of Employees</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Number_of_Field_Sales__c</fullName>
         <externalId>false</externalId>
         <label>Number of Field Sales</label>
@@ -1366,7 +1388,17 @@ IF(Total_Revenue_Last_12_Months_Prev_Year__c&gt;0, &apos;Churn&apos;, &apos;Laps
     <fields>
         <fullName>Revenue_Growth__c</fullName>
         <externalId>false</externalId>
-        <label>Revenue Growth</label>
+        <label>Revenue Growth %</label>
+        <precision>17</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Revenue_K__c</fullName>
+        <externalId>false</externalId>
+        <label>Revenue £K</label>
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
@@ -1917,27 +1949,11 @@ IF(Total_Revenue_Last_12_Months_Prev_Year__c&gt;0, &apos;Churn&apos;, &apos;Laps
         <fullName>Territory__c</fullName>
         <externalId>false</externalId>
         <label>Territory</label>
-        <picklist>
-            <picklistValues>
-                <fullName>North</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>South</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>East</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>West</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
+        <length>255</length>
+        <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <type>Picklist</type>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>TickerSymbol</fullName>
@@ -2228,6 +2244,23 @@ IF(Total_Revenue_Last_12_Months_Prev_Year__c&gt;0, &apos;Churn&apos;, &apos;Laps
         <label>Active Accounts</label>
     </listViews>
     <listViews>
+        <fullName>All_Competitors</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.SITE</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ACCOUNT.TYPE</field>
+            <operation>equals</operation>
+            <value>Competitor</value>
+        </filters>
+        <label>All Competitors</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
         <fullName>All_Distribution_Accounts</fullName>
         <columns>ACCOUNT.NAME</columns>
         <columns>FS_CUST_ID__c</columns>
@@ -2342,13 +2375,9 @@ IF(Total_Revenue_Last_12_Months_Prev_Year__c&gt;0, &apos;Churn&apos;, &apos;Laps
     </listViews>
     <listViews>
         <fullName>MyAccounts</fullName>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>CORE.USERS.ALIAS</field>
-            <operation>equals</operation>
-            <value>Nihar Pa</value>
-        </filters>
+        <filterScope>Mine</filterScope>
         <label>My Accounts</label>
+        <language>en_US</language>
     </listViews>
     <listViews>
         <fullName>NewThisWeek</fullName>
@@ -3206,25 +3235,6 @@ IF(Total_Revenue_Last_12_Months_Prev_Year__c&gt;0, &apos;Churn&apos;, &apos;Laps
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Territory__c</picklist>
-            <values>
-                <fullName>East</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>North</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>South</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>West</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Type</picklist>
             <values>
                 <fullName>Competitor</fullName>
@@ -4033,25 +4043,6 @@ IF(Total_Revenue_Last_12_Months_Prev_Year__c&gt;0, &apos;Churn&apos;, &apos;Laps
             </values>
             <values>
                 <fullName>Writing Instruments</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Territory__c</picklist>
-            <values>
-                <fullName>East</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>North</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>South</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>West</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -4904,25 +4895,6 @@ IF(Total_Revenue_Last_12_Months_Prev_Year__c&gt;0, &apos;Churn&apos;, &apos;Laps
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Territory__c</picklist>
-            <values>
-                <fullName>East</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>North</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>South</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>West</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Type</picklist>
             <values>
                 <fullName>Analyst</fullName>
@@ -5767,25 +5739,6 @@ IF(Total_Revenue_Last_12_Months_Prev_Year__c&gt;0, &apos;Churn&apos;, &apos;Laps
             </values>
             <values>
                 <fullName>Writing Instruments</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Territory__c</picklist>
-            <values>
-                <fullName>East</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>North</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>South</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>West</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -6638,25 +6591,6 @@ IF(Total_Revenue_Last_12_Months_Prev_Year__c&gt;0, &apos;Churn&apos;, &apos;Laps
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Territory__c</picklist>
-            <values>
-                <fullName>East</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>North</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>South</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>West</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Type</picklist>
             <values>
                 <fullName>Analyst</fullName>
@@ -7498,25 +7432,6 @@ IF(Total_Revenue_Last_12_Months_Prev_Year__c&gt;0, &apos;Churn&apos;, &apos;Laps
             </values>
             <values>
                 <fullName>Writing Instruments</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Territory__c</picklist>
-            <values>
-                <fullName>East</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>North</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>South</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>West</fullName>
                 <default>false</default>
             </values>
         </picklistValues>

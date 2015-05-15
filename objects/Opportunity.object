@@ -469,6 +469,38 @@ OR(Business_Area__r.MDM_External_Id__c = &apos;FIL&apos;, Business_Area__r.MDM_E
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>COUNT_Create_Val_Prop_Opp_Task__c</fullName>
+        <description>Count of Create Value Proposition Opportunity Tasks.</description>
+        <externalId>false</externalId>
+        <label>COUNT Create Val Prop Opp Task</label>
+        <summaryFilterItems>
+            <field>Opportunity_Task__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>50% - Create Value Proposition</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Opportunity_Task__c.Opportunity__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>COUNT_Cus_Sol_Req_Opp_Tasks__c</fullName>
+        <description>Count of the number of Custom Solution Design Required Opportunity Tasks. Used in Process.</description>
+        <externalId>false</externalId>
+        <label>COUNT Cus Sol Req Opp Tasks</label>
+        <summaryFilterItems>
+            <field>Opportunity_Task__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>20% - Custom Solution Design Required</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Opportunity_Task__c.Opportunity__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
         <fullName>CSR__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -7165,6 +7197,42 @@ Probability &gt;= 0.7,
 OR(ISBLANK(Approval_Graphical_design__c), Approval_Graphical_design__c &gt; TODAY())
 )</errorConditionFormula>
         <errorMessage>This probability level for portfolio opportunities requires an approved Graphical Solution Design Opportunity Task</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Prevents_Dev_Value_Prop_if_no_Cust_Desig</fullName>
+        <active>true</active>
+        <description>Prevents Innovation Opportunity CD being set to Develop Value Proposition if the Require Custom Solution Design Task is not complete.</description>
+        <errorConditionFormula>RecordType.DeveloperName=&apos;Innovation_Opportunities_CD&apos;
+
+ &amp;&amp; 
+  ISPICKVAL( StageName , &apos;Develop Value Proposition&apos;) 
+
+&amp;&amp;
+ NOT(ISPICKVAL( X2a_Custom_Solution_Complete__c , &apos;Yes&apos;))</errorConditionFormula>
+        <errorMessage>You cannot set this Opportunity to Stage Develop Value Proposition until the Custom Solution Design Required Opportunity Task is completed.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Prevents_Eval_Sol_Prop_if_no_Create_Val</fullName>
+        <active>true</active>
+        <description>Prevents Innovation Opportunity CD being set to Evaluation Solution if the Create Value Proposition Task is not complete.</description>
+        <errorConditionFormula>RecordType.DeveloperName=&apos;Innovation_Opportunities_CD&apos;
+
+ &amp;&amp; 
+  ISPICKVAL( StageName , &apos;Evaluate Solution&apos;) 
+
+&amp;&amp;
+ NOT(ISPICKVAL(  Create_Value_Proposition_Task__c  , &apos;Yes&apos;))</errorConditionFormula>
+        <errorMessage>You cannot set this Opportunity to Stage Evaluation Solution until the Create Value Proposition Opportunity Task is completed.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Prevents_Standard_Pricebook_on_CD_Opps</fullName>
+        <active>true</active>
+        <description>Prevents Products from the Standard Pricebook being added to CD Opportunities</description>
+        <errorConditionFormula>(OR(RecordType.DeveloperName&lt;&gt;&apos;Innovation_Opportunities_CD&apos;, RecordType.DeveloperName&lt;&gt;&apos;Standard_Opportunities_CD&apos;))
+
+ &amp;&amp; 
+ Pricebook2.Name =&apos;Standard Price Book&apos;</errorConditionFormula>
+        <errorMessage>You can not add Product Types from the Standard Pricebook to CD Opportunities. Please select the Distribution Pricebook.</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>Reason_for_Won_or_Lost</fullName>

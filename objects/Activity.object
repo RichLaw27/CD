@@ -108,6 +108,18 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Task_Age__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( ISPICKVAL( Status , &apos;Completed&apos;) ,  ActivityDate -  DATEVALUE( CreatedDate) , NOW()- CreatedDate)</formula>
+        <inlineHelpText>Calculates the age of Case.</inlineHelpText>
+        <label>Task Age</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>i__EmailHasAttachments__c</fullName>
         <defaultValue>false</defaultValue>
         <deprecated>false</deprecated>
