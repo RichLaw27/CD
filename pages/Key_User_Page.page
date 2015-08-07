@@ -1,0 +1,22 @@
+<apex:page showHeader="false" sidebar="false">
+<Apex:form >
+<!---<apex:outputPanel rendered="{!$User.User_is_a_Key_User__c}">
+<apex:inputtext value="{!$User.KeyUser__c}"/>
+{!$User.User_is_a_Key_User__c}
+</apex:outputPanel>--->
+
+<apex:pageBlock title="Key User Information">
+<apex:pageBlockSection columns="2">
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="Key User" for="keyUser"></apex:outputlabel>
+<apex:outputText value="{!$User.KeyUser__c}" id="keyUser"/>
+</apex:pageBlockSectionItem>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="User is a Key User" for="isKeyUser"></apex:outputlabel>
+<apex:outputText value="{!$User.User_is_a_Key_User__c}" id="isKeyUser"/>
+</apex:pageBlockSectionItem>
+</apex:pageBlockSection>
+
+</apex:pageBlock>
+</Apex:form>
+</apex:page>

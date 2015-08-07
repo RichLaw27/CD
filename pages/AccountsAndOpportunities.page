@@ -1,0 +1,23 @@
+<apex:page controller="accountsAndOpportunitiesController" showHeader="false" sidebar="false"> 
+    <div>
+    <apex:outputtext value="{!$Label.No_Opportunities}" rendered="{!NOT(showOpportunities)}"/>
+    </div>
+    <apex:repeat value="{!userAccounts}" var="acc" id="accRepeat">
+        <apex:pageBlock title="{!acc.AccountName}">
+            <apex:facet name="header">
+                <apex:outputLink target="_parent" value="/{!acc.AccountId}" style="font-size: 20px;padding-left:10px;">{!acc.AccountName}</apex:outputLink>
+            </apex:facet>
+            <apex:outputText value="{!$Label.openOpportunities}"/><br/>
+            <apex:pageBlockTable value="{!acc.opportunities}" var="opp" width="750px" columnsWidth="250px, 200px, 140px, 80px, 80px" styleClass="tableClass" border="1" id="oppRepeat">
+                    <apex:column headerValue="Name">
+                        <apex:outputLink target="_parent" value="/{!opp.Id}">{!opp.Name}</apex:outputLink>
+                    </apex:column>
+                    <apex:column headerValue="Year 2/Annualised Revenue" value="{!opp.Amount_year_two__c}"/>
+                    <apex:column headerValue="Stage" value="{!opp.StageName}"/>
+                    <apex:column headerValue="Probability" value="{!opp.Probability}"/>
+                    <apex:column headerValue="CloseDate" value="{!opp.CloseDate}"/>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:repeat>
+    
+</apex:page>

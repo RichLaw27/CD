@@ -1,0 +1,10 @@
+<apex:page controller="accountsAndOpportunitiesController" showHeader="false" sidebar="false"> 
+   	<apex:outputtext value="{!$Label.No_Accounts}" rendered="{!NOT(showAccounts)}"/>
+   	<apex:pageBlock title="{!$Label.Accounts}" rendered="{!showAccounts}">
+    	<apex:pageBlockTable value="{!Accounts}" var="account" width="250px" columnsWidth="250px" styleClass="tableClass" border="1" id="accRepeat">
+    			<apex:column headerValue="Name">
+    				<apex:outputLink target="_parent" value="/{!account.Id}">{!account.Name}</apex:outputLink>
+    			</apex:column>
+    	</apex:pageBlockTable>
+    </apex:pageBlock>   
+</apex:page>

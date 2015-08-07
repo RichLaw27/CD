@@ -49,6 +49,15 @@
     <enableFeeds>true</enableFeeds>
     <externalSharingModel>Private</externalSharingModel>
     <fields>
+        <fullName>Clkn_Active__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Field just for use in the migration of Clondalkin Users</inlineHelpText>
+        <label>Clkn Active</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>DB_Region__c</fullName>
         <description>This is a field that is installed by and used with the Adoption Dashboard AppExchange package. If your org already has a similar field, you can change the reports that are part of the Adoption Dashboard package to use your custom field and then delete this field.</description>
         <externalId>false</externalId>
@@ -90,6 +99,27 @@
         <formula>Division =  $User.Division</formula>
         <label>IsSameDivision</label>
         <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>KeyUser__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Assigned KeyUser for Support</inlineHelpText>
+        <label>KeyUser</label>
+        <relationshipName>KeyUser</relationshipName>
+        <restrictedAdminField>false</restrictedAdminField>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Hierarchy</type>
+    </fields>
+    <fields>
+        <fullName>Long_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(Id)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Created for data manipulation in Sandbox</inlineHelpText>
+        <label>Long ID</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>MDM_External_Id__c</fullName>
@@ -152,15 +182,15 @@
                 <default>true</default>
             </picklistValues>
             <picklistValues>
-                <fullName>Components</fullName>
+                <fullName>Filter Products</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
-                <fullName>Filters</fullName>
+                <fullName>Health &amp; Personal Care Packaging</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
-                <fullName>Healthcare</fullName>
+                <fullName>Distribution</fullName>
                 <default>false</default>
             </picklistValues>
             <sorted>false</sorted>
@@ -234,6 +264,34 @@
         </picklist>
         <trackFeedHistory>false</trackFeedHistory>
         <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>User_is_a_Key_User__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>User is a Key User</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Visit_Report_Notification_2__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Select an user to receive an email notification when a new visit report has been filed (besides your manager)</inlineHelpText>
+        <label>Visit Report Notification 2</label>
+        <relationshipName>Visit_Report_2</relationshipName>
+        <restrictedAdminField>false</restrictedAdminField>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Hierarchy</type>
+    </fields>
+    <fields>
+        <fullName>Visit_Report_Notification__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Select an user to receive an email notification when a new visit report has been filed (besides your manager)</inlineHelpText>
+        <label>Visit Report Notification</label>
+        <relationshipName>Visit_Report_1</relationshipName>
+        <restrictedAdminField>false</restrictedAdminField>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Hierarchy</type>
     </fields>
     <listViews>
         <fullName>ActiveUsers</fullName>
@@ -314,11 +372,75 @@
         <columns>MANAGER</columns>
         <filterScope>Everything</filterScope>
         <filters>
-            <field>CORE.PROFILE.NAME</field>
-            <operation>contains</operation>
+            <field>SBU__c</field>
+            <operation>equals</operation>
             <value>Distribution</value>
         </filters>
         <label>All Distribution Users</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>All_Filter_Products_Users</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.COMPANY_NAME</columns>
+        <columns>CORE.USERS.DIVISION</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>SBU__c</field>
+            <operation>equals</operation>
+            <value>Filter Products</value>
+        </filters>
+        <label>All Filter Products Users</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>All_Health_PersonalCarePackaging_Users</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>Clkn_Active__c</columns>
+        <columns>CORE.USERS.COMPANY_NAME</columns>
+        <columns>CORE.USERS.DIVISION</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>SBU__c</field>
+            <operation>equals</operation>
+            <value>Health &amp; Personal Care Packaging</value>
+        </filters>
+        <label>All Health&amp;PersonalCarePackaging Users</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>All_Specialist_Technologies_Users</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.COMPANY_NAME</columns>
+        <columns>CORE.USERS.DIVISION</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>SBU__c</field>
+            <operation>equals</operation>
+            <value>Specialist Technologies</value>
+        </filters>
+        <label>All Specialist Technologies Users</label>
         <language>en_US</language>
     </listViews>
     <listViews>

@@ -169,6 +169,7 @@
     <label>Site</label>
     <listViews>
         <fullName>All</fullName>
+        <columns>Business__c</columns>
         <columns>NAME</columns>
         <columns>Business_Area__c</columns>
         <columns>MDM_External_Id__c</columns>
@@ -177,6 +178,74 @@
         <columns>Site_Country__c</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>All_CD_SBU</fullName>
+        <columns>NAME</columns>
+        <columns>Business__c</columns>
+        <columns>Business_Area__c</columns>
+        <columns>Region__c</columns>
+        <columns>Name__c</columns>
+        <columns>Site_Country__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>SBU__c</field>
+            <operation>equals</operation>
+            <value>CD</value>
+        </filters>
+        <label>All CD SBU</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>All_FILTERS_SBU</fullName>
+        <columns>NAME</columns>
+        <columns>Business__c</columns>
+        <columns>Business_Area__c</columns>
+        <columns>Region__c</columns>
+        <columns>Name__c</columns>
+        <columns>Site_Country__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>SBU__c</field>
+            <operation>equals</operation>
+            <value>FILTERS</value>
+        </filters>
+        <label>All FILTERS SBU</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>All_HPC_SBU</fullName>
+        <columns>NAME</columns>
+        <columns>Business__c</columns>
+        <columns>Business_Area__c</columns>
+        <columns>Region__c</columns>
+        <columns>Name__c</columns>
+        <columns>Site_Country__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>SBU__c</field>
+            <operation>equals</operation>
+            <value>HPC</value>
+        </filters>
+        <label>All HPC SBU</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>All_ST_SBU</fullName>
+        <columns>NAME</columns>
+        <columns>Business__c</columns>
+        <columns>Business_Area__c</columns>
+        <columns>Region__c</columns>
+        <columns>Name__c</columns>
+        <columns>Site_Country__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>SBU__c</field>
+            <operation>equals</operation>
+            <value>ST</value>
+        </filters>
+        <label>All ST SBU</label>
         <language>en_US</language>
     </listViews>
     <nameField>

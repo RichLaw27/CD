@@ -1,0 +1,6 @@
+<apex:page standardController="Visit_Report__c" extensions="TestSendMailController">
+    <apex:form >
+        <apex:inputTextarea value="{!emailPlainText}"/>
+        <apex:commandButton value="Send" action="{!sendMail}"/>
+    </apex:form>
+</apex:page>
