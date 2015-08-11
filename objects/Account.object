@@ -292,24 +292,24 @@
         <type>Date</type>
     </fields>
     <fields>
-        <fullName>Approved_by_GMC_Date__c</fullName>
-        <description>(Optional) date on which the Key Account plan was approved by the Group Management Comittee</description>
-        <externalId>false</externalId>
-        <label>Approved by GMC Date</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <type>Date</type>
-    </fields>
-    <fields>
-        <fullName>Approved_by_GMC__c</fullName>
+        <fullName>Approved_by_GMC_User__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
-        <label>Approved by GMC</label>
+        <label>Approved by GMC User</label>
         <referenceTo>User</referenceTo>
         <relationshipName>ApprovedbyGMC</relationshipName>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Approved_by_GMC__c</fullName>
+        <description>(Optional) date on which the Key Account plan was approved by the Group Management Comittee</description>
+        <externalId>false</externalId>
+        <label>Approved by GMC</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Date</type>
     </fields>
     <fields>
         <fullName>Approved_by_Regional__c</fullName>
@@ -664,16 +664,6 @@
         <type>Lookup</type>
     </fields>
     <fields>
-        <fullName>Customer_Name__c</fullName>
-        <externalId>false</externalId>
-        <label>Customer Name</label>
-        <length>255</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
         <fullName>Customer_Type__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -777,6 +767,16 @@
         <externalId>true</externalId>
         <inlineHelpText>Fourth Shift Customer ID for the Parent of this account - used to establish the account hierarchy</inlineHelpText>
         <label>ERP Customer ID of Parent</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ERP_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>ERP Name</label>
         <length>255</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -2529,7 +2529,17 @@ IF(Total_Revenue_Last_12_Months_Prev_Year__c&gt;0, &apos;Churn&apos;, &apos;Laps
         <picklist>
             <controllingField>Industry</controllingField>
             <picklistValues>
+                <fullName>Aerospace</fullName>
+                <controllingFieldValues>Industrial</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Agricultural Machines</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Aircare</fullName>
+                <controllingFieldValues>Household &amp; Appliances</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -2537,7 +2547,17 @@ IF(Total_Revenue_Last_12_Months_Prev_Year__c&gt;0, &apos;Churn&apos;, &apos;Laps
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Airline</fullName>
+                <controllingFieldValues>Transport &amp; Logistics</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Ambient Goods</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Appliances</fullName>
+                <controllingFieldValues>Household &amp; Appliances</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -2545,7 +2565,22 @@ IF(Total_Revenue_Last_12_Months_Prev_Year__c&gt;0, &apos;Churn&apos;, &apos;Laps
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Automotive</fullName>
+                <controllingFieldValues>Industrial</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Bagged &amp; Boxed Food</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Banking &amp; Insurance</fullName>
+                <controllingFieldValues>Consumer Print &amp; Security</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Beauty</fullName>
+                <controllingFieldValues>Health &amp; Personal Care</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -2558,6 +2593,12 @@ IF(Total_Revenue_Last_12_Months_Prev_Year__c&gt;0, &apos;Churn&apos;, &apos;Laps
             </picklistValues>
             <picklistValues>
                 <fullName>Building Products</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Building products including windows/Floors/Stairs</fullName>
+                <controllingFieldValues>Construction</controllingFieldValues>
+                <controllingFieldValues>Industrial</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -2581,12 +2622,33 @@ IF(Total_Revenue_Last_12_Months_Prev_Year__c&gt;0, &apos;Churn&apos;, &apos;Laps
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Cigarettes &amp; Cigars</fullName>
+                <controllingFieldValues>Tobacco</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Clean Rooms</fullName>
                 <controllingFieldValues>Electronic &amp; Electric</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Components &amp; Assemblies</fullName>
+                <controllingFieldValues>Electronic &amp; Electric</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Conservatories</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Conservatories &amp; Greenhouses</fullName>
+                <controllingFieldValues>Construction</controllingFieldValues>
+                <controllingFieldValues>Industrial</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Contamination Control</fullName>
+                <controllingFieldValues>Industrial</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -2605,7 +2667,37 @@ IF(Total_Revenue_Last_12_Months_Prev_Year__c&gt;0, &apos;Churn&apos;, &apos;Laps
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Education - College</fullName>
+                <controllingFieldValues>Consumer Print &amp; Security</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Education - School</fullName>
+                <controllingFieldValues>Consumer Print &amp; Security</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Education - University</fullName>
+                <controllingFieldValues>Consumer Print &amp; Security</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Electricity Industrial</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Electronics</fullName>
+                <controllingFieldValues>Industrial</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Events &amp; Other</fullName>
+                <controllingFieldValues>Consumer Print &amp; Security</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Fabrication/Machinery</fullName>
+                <controllingFieldValues>Industrial</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -2633,6 +2725,11 @@ IF(Total_Revenue_Last_12_Months_Prev_Year__c&gt;0, &apos;Churn&apos;, &apos;Laps
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Gaming</fullName>
+                <controllingFieldValues>Consumer Print &amp; Security</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Glazing</fullName>
                 <default>false</default>
             </picklistValues>
@@ -2641,11 +2738,27 @@ IF(Total_Revenue_Last_12_Months_Prev_Year__c&gt;0, &apos;Churn&apos;, &apos;Laps
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Graphics and print</fullName>
+                <controllingFieldValues>Consumer Print &amp; Security</controllingFieldValues>
+                <controllingFieldValues>Paper, board and Point of Sale</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Greenhouses</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>Health &amp; Beauty Care</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Health and Beauty Care</fullName>
+                <controllingFieldValues>Health &amp; Personal Care</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Healthcare</fullName>
+                <controllingFieldValues>Health &amp; Personal Care</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -2665,7 +2778,28 @@ IF(Total_Revenue_Last_12_Months_Prev_Year__c&gt;0, &apos;Churn&apos;, &apos;Laps
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Household products &amp; Aircare</fullName>
+                <controllingFieldValues>Health &amp; Personal Care</controllingFieldValues>
+                <controllingFieldValues>Household</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HVAC</fullName>
+                <controllingFieldValues>Construction</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hydraulics/Pneumatics</fullName>
+                <controllingFieldValues>Industrial</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Identification &amp; Entitlement</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Identity Solutions</fullName>
+                <controllingFieldValues>Identity Solutions</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -2702,6 +2836,11 @@ IF(Total_Revenue_Last_12_Months_Prev_Year__c&gt;0, &apos;Churn&apos;, &apos;Laps
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Medical devices</fullName>
+                <controllingFieldValues>Health &amp; Personal Care</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Metal &amp; Metalwork</fullName>
                 <default>false</default>
             </picklistValues>
@@ -2714,8 +2853,18 @@ IF(Total_Revenue_Last_12_Months_Prev_Year__c&gt;0, &apos;Churn&apos;, &apos;Laps
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Off Road</fullName>
+                <controllingFieldValues>Automotive</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Oil &amp; Gas</fullName>
                 <controllingFieldValues>Industrial</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>On Road</fullName>
+                <controllingFieldValues>Automotive</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -2728,6 +2877,11 @@ IF(Total_Revenue_Last_12_Months_Prev_Year__c&gt;0, &apos;Churn&apos;, &apos;Laps
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Other Tobacco Products (OTP)</fullName>
+                <controllingFieldValues>Tobacco</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Packaged Goods</fullName>
                 <default>false</default>
             </picklistValues>
@@ -2737,6 +2891,12 @@ IF(Total_Revenue_Last_12_Months_Prev_Year__c&gt;0, &apos;Churn&apos;, &apos;Laps
             </picklistValues>
             <picklistValues>
                 <fullName>Paper</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Paper &amp; Stationery</fullName>
+                <controllingFieldValues>Consumer Print &amp; Security</controllingFieldValues>
+                <controllingFieldValues>Paper, board and Point of Sale</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -2753,6 +2913,21 @@ IF(Total_Revenue_Last_12_Months_Prev_Year__c&gt;0, &apos;Churn&apos;, &apos;Laps
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Pharmaceutical - branded</fullName>
+                <controllingFieldValues>Health &amp; Personal Care</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pharmaceutical - generic</fullName>
+                <controllingFieldValues>Health &amp; Personal Care</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pharmaceutical - OTC</fullName>
+                <controllingFieldValues>Health &amp; Personal Care</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Pipe</fullName>
                 <default>false</default>
             </picklistValues>
@@ -2761,9 +2936,24 @@ IF(Total_Revenue_Last_12_Months_Prev_Year__c&gt;0, &apos;Churn&apos;, &apos;Laps
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Point of sale, sign &amp; display</fullName>
+                <controllingFieldValues>Paper, board and Point of Sale</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>POS &amp; Signage</fullName>
+                <controllingFieldValues>Retail and POP</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Printing Systems</fullName>
                 <controllingFieldValues>Household</controllingFieldValues>
                 <controllingFieldValues>Household &amp; Appliances</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Public Sector</fullName>
+                <controllingFieldValues>Consumer Print &amp; Security</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -2783,11 +2973,21 @@ IF(Total_Revenue_Last_12_Months_Prev_Year__c&gt;0, &apos;Churn&apos;, &apos;Laps
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Road</fullName>
+                <controllingFieldValues>Transport &amp; Logistics</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Roll Your Own Products</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>Roofs</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sea</fullName>
+                <controllingFieldValues>Transport &amp; Logistics</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -2811,7 +3011,17 @@ IF(Total_Revenue_Last_12_Months_Prev_Year__c&gt;0, &apos;Churn&apos;, &apos;Laps
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Smokeless Nicotine Devices (SND)</fullName>
+                <controllingFieldValues>Tobacco</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Solid Goods</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Specialist Transport</fullName>
+                <controllingFieldValues>Industrial</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -2828,7 +3038,22 @@ IF(Total_Revenue_Last_12_Months_Prev_Year__c&gt;0, &apos;Churn&apos;, &apos;Laps
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Transit and Shelf-Ready</fullName>
+                <controllingFieldValues>Paper, board and Point of Sale</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Tubes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Utilities</fullName>
+                <controllingFieldValues>Industrial</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Veterinary</fullName>
+                <controllingFieldValues>Health &amp; Personal Care</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -2837,7 +3062,16 @@ IF(Total_Revenue_Last_12_Months_Prev_Year__c&gt;0, &apos;Churn&apos;, &apos;Laps
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>White goods</fullName>
+                <controllingFieldValues>Industrial</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Wholesale</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Windows</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -2855,245 +3089,11 @@ IF(Total_Revenue_Last_12_Months_Prev_Year__c&gt;0, &apos;Churn&apos;, &apos;Laps
                 <default>false</default>
             </picklistValues>
             <picklistValues>
-                <fullName>Windows</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Cigarettes &amp; Cigars</fullName>
-                <controllingFieldValues>Tobacco</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Other Tobacco Products (OTP)</fullName>
-                <controllingFieldValues>Tobacco</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Smokeless Nicotine Devices (SND)</fullName>
-                <controllingFieldValues>Tobacco</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Healthcare</fullName>
-                <controllingFieldValues>Health &amp; Personal Care</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Pharmaceutical - branded</fullName>
-                <controllingFieldValues>Health &amp; Personal Care</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Pharmaceutical - generic</fullName>
-                <controllingFieldValues>Health &amp; Personal Care</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Pharmaceutical - OTC</fullName>
-                <controllingFieldValues>Health &amp; Personal Care</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Medical devices</fullName>
-                <controllingFieldValues>Health &amp; Personal Care</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Veterinary</fullName>
-                <controllingFieldValues>Health &amp; Personal Care</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Health and Beauty Care</fullName>
-                <controllingFieldValues>Health &amp; Personal Care</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Household products &amp; Aircare</fullName>
-                <controllingFieldValues>Health &amp; Personal Care</controllingFieldValues>
-                <controllingFieldValues>Household</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Graphics and print</fullName>
-                <controllingFieldValues>Consumer Print &amp; Security</controllingFieldValues>
-                <controllingFieldValues>Paper, board and Point of Sale</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Paper &amp; Stationery</fullName>
-                <controllingFieldValues>Consumer Print &amp; Security</controllingFieldValues>
-                <controllingFieldValues>Paper, board and Point of Sale</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Point of sale, sign &amp; display</fullName>
-                <controllingFieldValues>Paper, board and Point of Sale</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Transit and Shelf-Ready</fullName>
-                <controllingFieldValues>Paper, board and Point of Sale</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>White goods</fullName>
-                <controllingFieldValues>Industrial</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Automotive</fullName>
-                <controllingFieldValues>Industrial</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Aerospace</fullName>
-                <controllingFieldValues>Industrial</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Fabrication/Machinery</fullName>
-                <controllingFieldValues>Industrial</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Hydraulics/Pneumatics</fullName>
-                <controllingFieldValues>Industrial</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Specialist Transport</fullName>
-                <controllingFieldValues>Industrial</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Components &amp; Assemblies</fullName>
-                <controllingFieldValues>Electronic &amp; Electric</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Building products including windows/Floors/Stairs</fullName>
-                <controllingFieldValues>Construction</controllingFieldValues>
-                <controllingFieldValues>Industrial</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Conservatories &amp; Greenhouses</fullName>
-                <controllingFieldValues>Construction</controllingFieldValues>
-                <controllingFieldValues>Industrial</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>HVAC</fullName>
-                <controllingFieldValues>Construction</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Identity Solutions</fullName>
-                <controllingFieldValues>Identity Solutions</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Aircare</fullName>
-                <controllingFieldValues>Household &amp; Appliances</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Airline</fullName>
-                <controllingFieldValues>Transport &amp; Logistics</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Appliances</fullName>
-                <controllingFieldValues>Household &amp; Appliances</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Banking &amp; Insurance</fullName>
-                <controllingFieldValues>Consumer Print &amp; Security</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Beauty</fullName>
-                <controllingFieldValues>Health &amp; Personal Care</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Contamination Control</fullName>
-                <controllingFieldValues>Industrial</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Education - College</fullName>
-                <controllingFieldValues>Consumer Print &amp; Security</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Education - School</fullName>
-                <controllingFieldValues>Consumer Print &amp; Security</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Education - University</fullName>
-                <controllingFieldValues>Consumer Print &amp; Security</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Electronics</fullName>
-                <controllingFieldValues>Industrial</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Events &amp; Other</fullName>
-                <controllingFieldValues>Consumer Print &amp; Security</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Gaming</fullName>
-                <controllingFieldValues>Consumer Print &amp; Security</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Off Road</fullName>
-                <controllingFieldValues>Automotive</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>On Road</fullName>
-                <controllingFieldValues>Automotive</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>POS &amp; Signage</fullName>
-                <controllingFieldValues>Retail and POP</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Public Sector</fullName>
-                <controllingFieldValues>Consumer Print &amp; Security</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Road</fullName>
-                <controllingFieldValues>Transport &amp; Logistics</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Sea</fullName>
-                <controllingFieldValues>Transport &amp; Logistics</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
                 <fullName>Writing Systems</fullName>
                 <controllingFieldValues>Household &amp; Appliances</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
-            <picklistValues>
-                <fullName>Utilities</fullName>
-                <controllingFieldValues>Industrial</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
+            <sorted>true</sorted>
         </picklist>
         <trackFeedHistory>false</trackFeedHistory>
         <type>Picklist</type>
@@ -12772,6 +12772,19 @@ NOT($Profile.Name=&quot;System Administrator&quot;))</errorConditionFormula>
         <errorMessage>Current  and Previous can not be same</errorMessage>
     </validationRules>
     <validationRules>
+        <fullName>Duplication_Reason_required</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( Possible_Duplicate__c = TRUE, ISBLANK(Duplicate_Remarks__c))</errorConditionFormula>
+        <errorMessage>Duplicate Remarks is required</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Inactive_Reason_required_when_Active</fullName>
+        <active>true</active>
+        <description>Inactive Reason required when the Active checkbox is unchecked</description>
+        <errorConditionFormula>AND( Active__c = FALSE,  ISPICKVAL(Inactive_Reason__c , &apos;&apos;))</errorConditionFormula>
+        <errorMessage>Inactive Reason is Required.</errorMessage>
+    </validationRules>
+    <validationRules>
         <fullName>Lock_MDM_External_ID_if_FSSite_ID_known</fullName>
         <active>true</active>
         <errorConditionFormula>AND( ISCHANGED( MDM_External_ID__c ) ,NOT( ISBLANK( FS_Site_ID__c )), NOT(SBU__c=&apos;CD&apos;))</errorConditionFormula>
@@ -12875,7 +12888,7 @@ NOT($Profile.Name=&quot;System Administrator&quot;))</errorConditionFormula>
     <webLinks>
         <fullName>Navex_Global</fullName>
         <availability>online</availability>
-        <displayType>link</displayType>
+        <displayType>button</displayType>
         <encodingKey>UTF-8</encodingKey>
         <hasMenubar>false</hasMenubar>
         <hasScrollbars>true</hasScrollbars>

@@ -182,17 +182,13 @@ OR(Business_Area__r.MDM_External_Id__c = &apos;FIL&apos;, Business_Area__r.MDM_E
         <type>Checkbox</type>
     </fields>
     <fields>
-        <fullName>Agree_Requirement_Definition__c</fullName>
+        <fullName>Agree_Requirement_Definition_Task__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Create this task to track the requirement definition with the client. Its has to perform when opportunity probability is - 20%</inlineHelpText>
         <label>1. Agree Requirement Definition?</label>
         <picklist>
             <picklistValues>
                 <fullName>YES</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>NO</fullName>
                 <default>false</default>
             </picklistValues>
             <sorted>false</sorted>
@@ -667,17 +663,13 @@ OR(Business_Area__r.MDM_External_Id__c = &apos;FIL&apos;, Business_Area__r.MDM_E
         <type>Picklist</type>
     </fields>
     <fields>
-        <fullName>Create_Value_Proposition__c</fullName>
+        <fullName>Create_Value_Proposition_Task__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Create this task to track the creation of the customer value proposition for this opportunity. This task is require when opportunity stage is - 50%.</inlineHelpText>
         <label>2. Create Value Proposition?</label>
         <picklist>
             <picklistValues>
                 <fullName>YES</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>NO</fullName>
                 <default>false</default>
             </picklistValues>
             <sorted>false</sorted>
@@ -688,17 +680,13 @@ OR(Business_Area__r.MDM_External_Id__c = &apos;FIL&apos;, Business_Area__r.MDM_E
         <type>Picklist</type>
     </fields>
     <fields>
-        <fullName>Creation_of_Solution_Cost_Estimate__c</fullName>
+        <fullName>Creation_of_Solution_Cost_Estimate_Task__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Create this task to track creation of the solution cost estimate. Its has to perform when opportunity probability is - 70%</inlineHelpText>
         <label>4. Creation of Solution Cost Estimate?</label>
         <picklist>
             <picklistValues>
                 <fullName>YES</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>NO</fullName>
                 <default>false</default>
             </picklistValues>
             <sorted>false</sorted>
@@ -924,17 +912,13 @@ min(today() - LastActivityDate , now() - LastModifiedDate ),now() - LastModified
         <type>Date</type>
     </fields>
     <fields>
-        <fullName>Final_Product_Solution_Spec__c</fullName>
+        <fullName>Final_Product_Solution_Spec_Task__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Create this task to track the creation of the internal solution specification. Its has to perform when opportunity probability is - 70%</inlineHelpText>
         <label>3. Final Product Solution Spec?</label>
         <picklist>
             <picklistValues>
                 <fullName>YES</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>NO</fullName>
                 <default>false</default>
             </picklistValues>
             <sorted>false</sorted>
@@ -1080,10 +1064,6 @@ min(today() - LastActivityDate , now() - LastModifiedDate ),now() - LastModified
         <picklist>
             <picklistValues>
                 <fullName>YES</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>NO</fullName>
                 <default>false</default>
             </picklistValues>
             <sorted>false</sorted>
@@ -2832,8 +2812,70 @@ min(today() - LastActivityDate , now() - LastModifiedDate ),now() - LastModified
         <picklist>
             <controllingField>Market_Category__c</controllingField>
             <picklistValues>
+                <fullName>Aerospace</fullName>
+                <controllingFieldValues>Industrial</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Aircare</fullName>
+                <controllingFieldValues>Household &amp; Appliances</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Airline</fullName>
+                <controllingFieldValues>Transport &amp; Logistics</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Appliances</fullName>
+                <controllingFieldValues>Household &amp; Appliances</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Automotive</fullName>
+                <controllingFieldValues>Industrial</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Banking &amp; Insurance</fullName>
+                <controllingFieldValues>Consumer Print &amp; Security</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Beauty</fullName>
+                <controllingFieldValues>Health &amp; Personal Care</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Building products including windows/Floors/Stairs</fullName>
+                <controllingFieldValues>Construction</controllingFieldValues>
+                <controllingFieldValues>Industrial</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cigarettes &amp; Cigars</fullName>
+                <controllingFieldValues>Tobacco</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Clean Rooms</fullName>
                 <controllingFieldValues>Electronic &amp; Electric</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Components &amp; Assemblies</fullName>
+                <controllingFieldValues>Electronic &amp; Electric</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Conservatories &amp; Greenhouses</fullName>
+                <controllingFieldValues>Construction</controllingFieldValues>
+                <controllingFieldValues>Industrial</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Contamination Control</fullName>
+                <controllingFieldValues>Industrial</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -2845,6 +2887,36 @@ min(today() - LastActivityDate , now() - LastModifiedDate ),now() - LastModified
                 <fullName>Drink</fullName>
                 <controllingFieldValues>Food &amp; Beverage</controllingFieldValues>
                 <controllingFieldValues>Food &amp; Drink</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Education - College</fullName>
+                <controllingFieldValues>Consumer Print &amp; Security</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Education - School</fullName>
+                <controllingFieldValues>Consumer Print &amp; Security</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Education - University</fullName>
+                <controllingFieldValues>Consumer Print &amp; Security</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Electronics</fullName>
+                <controllingFieldValues>Industrial</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Events &amp; Other</fullName>
+                <controllingFieldValues>Consumer Print &amp; Security</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Fabrication/Machinery</fullName>
+                <controllingFieldValues>Industrial</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -2872,6 +2944,11 @@ min(today() - LastActivityDate , now() - LastModifiedDate ),now() - LastModified
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Gaming</fullName>
+                <controllingFieldValues>Consumer Print &amp; Security</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Glazing</fullName>
                 <default>false</default>
             </picklistValues>
@@ -2884,11 +2961,27 @@ min(today() - LastActivityDate , now() - LastModifiedDate ),now() - LastModified
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Graphics and print</fullName>
+                <controllingFieldValues>Consumer Print &amp; Security</controllingFieldValues>
+                <controllingFieldValues>Paper, board and Point of Sale</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Greenhouses</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>Health &amp; Beauty Care</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Health and Beauty Care</fullName>
+                <controllingFieldValues>Health &amp; Personal Care</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Healthcare</fullName>
+                <controllingFieldValues>Health &amp; Personal Care</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -2908,7 +3001,27 @@ min(today() - LastActivityDate , now() - LastModifiedDate ),now() - LastModified
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Household products &amp; Aircare</fullName>
+                <controllingFieldValues>Household</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HVAC</fullName>
+                <controllingFieldValues>Construction</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hydraulics/Pneumatics</fullName>
+                <controllingFieldValues>Industrial</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Identification &amp; Entitlement</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Identity Solutions</fullName>
+                <controllingFieldValues>Identity Solutions</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -2945,6 +3058,11 @@ min(today() - LastActivityDate , now() - LastModifiedDate ),now() - LastModified
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Medical devices</fullName>
+                <controllingFieldValues>Health &amp; Personal Care</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Metal &amp; Metalwork</fullName>
                 <default>false</default>
             </picklistValues>
@@ -2957,8 +3075,18 @@ min(today() - LastActivityDate , now() - LastModifiedDate ),now() - LastModified
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Off Road</fullName>
+                <controllingFieldValues>Automotive</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Oil &amp; Gas</fullName>
                 <controllingFieldValues>Industrial</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>On Road</fullName>
+                <controllingFieldValues>Automotive</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -2971,6 +3099,11 @@ min(today() - LastActivityDate , now() - LastModifiedDate ),now() - LastModified
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Other Tobacco Products (OTP)</fullName>
+                <controllingFieldValues>Tobacco</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Packaged Goods</fullName>
                 <default>false</default>
             </picklistValues>
@@ -2980,6 +3113,12 @@ min(today() - LastActivityDate , now() - LastModifiedDate ),now() - LastModified
             </picklistValues>
             <picklistValues>
                 <fullName>Paper</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Paper &amp; Stationery</fullName>
+                <controllingFieldValues>Consumer Print &amp; Security</controllingFieldValues>
+                <controllingFieldValues>Paper, board and Point of Sale</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -2996,6 +3135,21 @@ min(today() - LastActivityDate , now() - LastModifiedDate ),now() - LastModified
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Pharmaceutical - branded</fullName>
+                <controllingFieldValues>Health &amp; Personal Care</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pharmaceutical - generic</fullName>
+                <controllingFieldValues>Health &amp; Personal Care</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pharmaceutical - OTC</fullName>
+                <controllingFieldValues>Health &amp; Personal Care</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Pipe</fullName>
                 <default>false</default>
             </picklistValues>
@@ -3004,9 +3158,24 @@ min(today() - LastActivityDate , now() - LastModifiedDate ),now() - LastModified
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Point of sale, sign &amp; display</fullName>
+                <controllingFieldValues>Paper, board and Point of Sale</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>POS &amp; Signage</fullName>
+                <controllingFieldValues>Retail and POP</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Printing Systems</fullName>
                 <controllingFieldValues>Household</controllingFieldValues>
                 <controllingFieldValues>Household &amp; Appliances</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Public Sector</fullName>
+                <controllingFieldValues>Consumer Print &amp; Security</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -3026,11 +3195,21 @@ min(today() - LastActivityDate , now() - LastModifiedDate ),now() - LastModified
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Road</fullName>
+                <controllingFieldValues>Transport &amp; Logistics</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Roll Your Own Products</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>Roofs</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sea</fullName>
+                <controllingFieldValues>Transport &amp; Logistics</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -3058,11 +3237,21 @@ min(today() - LastActivityDate , now() - LastModifiedDate ),now() - LastModified
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Smokeless Nicotine Devices (SND)</fullName>
+                <controllingFieldValues>Tobacco</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Solid Goods</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>Special Healthcare</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Specialist Transport</fullName>
+                <controllingFieldValues>Industrial</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -3082,11 +3271,32 @@ min(today() - LastActivityDate , now() - LastModifiedDate ),now() - LastModified
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Transit and Shelf-Ready</fullName>
+                <controllingFieldValues>Paper, board and Point of Sale</controllingFieldValues>
+                <controllingFieldValues>Retail and POP</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Tubes</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Utilities</fullName>
+                <controllingFieldValues>Industrial</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Veterinary</fullName>
+                <controllingFieldValues>Health &amp; Personal Care</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Water</fullName>
+                <controllingFieldValues>Industrial</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>White goods</fullName>
                 <controllingFieldValues>Industrial</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
@@ -3113,241 +3323,11 @@ min(today() - LastActivityDate , now() - LastModifiedDate ),now() - LastModified
                 <default>false</default>
             </picklistValues>
             <picklistValues>
-                <fullName>Cigarettes &amp; Cigars</fullName>
-                <controllingFieldValues>Tobacco</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Other Tobacco Products (OTP)</fullName>
-                <controllingFieldValues>Tobacco</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Smokeless Nicotine Devices (SND)</fullName>
-                <controllingFieldValues>Tobacco</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Healthcare</fullName>
-                <controllingFieldValues>Health &amp; Personal Care</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Pharmaceutical - branded</fullName>
-                <controllingFieldValues>Health &amp; Personal Care</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Pharmaceutical - generic</fullName>
-                <controllingFieldValues>Health &amp; Personal Care</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Pharmaceutical - OTC</fullName>
-                <controllingFieldValues>Health &amp; Personal Care</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Medical devices</fullName>
-                <controllingFieldValues>Health &amp; Personal Care</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Veterinary</fullName>
-                <controllingFieldValues>Health &amp; Personal Care</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Health and Beauty Care</fullName>
-                <controllingFieldValues>Health &amp; Personal Care</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Household products &amp; Aircare</fullName>
-                <controllingFieldValues>Household</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Graphics and print</fullName>
-                <controllingFieldValues>Consumer Print &amp; Security</controllingFieldValues>
-                <controllingFieldValues>Paper, board and Point of Sale</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Paper &amp; Stationery</fullName>
-                <controllingFieldValues>Consumer Print &amp; Security</controllingFieldValues>
-                <controllingFieldValues>Paper, board and Point of Sale</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Point of sale, sign &amp; display</fullName>
-                <controllingFieldValues>Paper, board and Point of Sale</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Transit and Shelf-Ready</fullName>
-                <controllingFieldValues>Paper, board and Point of Sale</controllingFieldValues>
-                <controllingFieldValues>Retail and POP</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>White goods</fullName>
-                <controllingFieldValues>Industrial</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Automotive</fullName>
-                <controllingFieldValues>Industrial</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Aerospace</fullName>
-                <controllingFieldValues>Industrial</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Fabrication/Machinery</fullName>
-                <controllingFieldValues>Industrial</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Hydraulics/Pneumatics</fullName>
-                <controllingFieldValues>Industrial</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Specialist Transport</fullName>
-                <controllingFieldValues>Industrial</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Components &amp; Assemblies</fullName>
-                <controllingFieldValues>Electronic &amp; Electric</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Building products including windows/Floors/Stairs</fullName>
-                <controllingFieldValues>Construction</controllingFieldValues>
-                <controllingFieldValues>Industrial</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Conservatories &amp; Greenhouses</fullName>
-                <controllingFieldValues>Construction</controllingFieldValues>
-                <controllingFieldValues>Industrial</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>HVAC</fullName>
-                <controllingFieldValues>Construction</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Identity Solutions</fullName>
-                <controllingFieldValues>Identity Solutions</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Aircare</fullName>
-                <controllingFieldValues>Household &amp; Appliances</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Airline</fullName>
-                <controllingFieldValues>Transport &amp; Logistics</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Appliances</fullName>
-                <controllingFieldValues>Household &amp; Appliances</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Banking &amp; Insurance</fullName>
-                <controllingFieldValues>Consumer Print &amp; Security</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Beauty</fullName>
-                <controllingFieldValues>Health &amp; Personal Care</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Contamination Control</fullName>
-                <controllingFieldValues>Industrial</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Education - College</fullName>
-                <controllingFieldValues>Consumer Print &amp; Security</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Education - School</fullName>
-                <controllingFieldValues>Consumer Print &amp; Security</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Education - University</fullName>
-                <controllingFieldValues>Consumer Print &amp; Security</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Electronics</fullName>
-                <controllingFieldValues>Industrial</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Events &amp; Other</fullName>
-                <controllingFieldValues>Consumer Print &amp; Security</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Gaming</fullName>
-                <controllingFieldValues>Consumer Print &amp; Security</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Off Road</fullName>
-                <controllingFieldValues>Automotive</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>On Road</fullName>
-                <controllingFieldValues>Automotive</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>POS &amp; Signage</fullName>
-                <controllingFieldValues>Retail and POP</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Public Sector</fullName>
-                <controllingFieldValues>Consumer Print &amp; Security</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Road</fullName>
-                <controllingFieldValues>Transport &amp; Logistics</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Sea</fullName>
-                <controllingFieldValues>Transport &amp; Logistics</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
                 <fullName>Writing Systems</fullName>
                 <controllingFieldValues>Household &amp; Appliances</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
-            <picklistValues>
-                <fullName>Utilities</fullName>
-                <controllingFieldValues>Industrial</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
+            <sorted>true</sorted>
         </picklist>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -3519,17 +3499,13 @@ min(today() - LastActivityDate , now() - LastModifiedDate ),now() - LastModified
         <type>Currency</type>
     </fields>
     <fields>
-        <fullName>Trial_and_Internal_Planning__c</fullName>
+        <fullName>Trial_and_Internal_Planning_Task__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Create this task to confirm customer trial acceptance (if relevant) and internal production approval to meet the product requirements. Its has to perform when opportunity probability is - 90%</inlineHelpText>
         <label>5. Trial and Internal Planning?</label>
         <picklist>
             <picklistValues>
                 <fullName>YES</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>NO</fullName>
                 <default>false</default>
             </picklistValues>
             <sorted>false</sorted>
@@ -3929,11 +3905,7 @@ min(today() - LastActivityDate , now() - LastModifiedDate ),now() - LastModified
         <description>None existing product / innovation opportunities</description>
         <label>Innovation Opportunities</label>
         <picklistValues>
-            <picklist>Agree_Requirement_Definition__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
+            <picklist>Agree_Requirement_Definition_Task__c</picklist>
             <values>
                 <fullName>YES</fullName>
                 <default>false</default>
@@ -3982,22 +3954,14 @@ min(today() - LastActivityDate , now() - LastModifiedDate ),now() - LastModified
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Create_Value_Proposition__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
+            <picklist>Create_Value_Proposition_Task__c</picklist>
             <values>
                 <fullName>YES</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Creation_of_Solution_Cost_Estimate__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
+            <picklist>Creation_of_Solution_Cost_Estimate_Task__c</picklist>
             <values>
                 <fullName>YES</fullName>
                 <default>false</default>
@@ -4023,11 +3987,7 @@ min(today() - LastActivityDate , now() - LastModifiedDate ),now() - LastModified
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Final_Product_Solution_Spec__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
+            <picklist>Final_Product_Solution_Spec_Task__c</picklist>
             <values>
                 <fullName>YES</fullName>
                 <default>false</default>
@@ -4080,10 +4040,6 @@ min(today() - LastActivityDate , now() - LastModifiedDate ),now() - LastModified
         </picklistValues>
         <picklistValues>
             <picklist>Know_your_customer__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
             <values>
                 <fullName>YES</fullName>
                 <default>false</default>
@@ -5538,11 +5494,7 @@ min(today() - LastActivityDate , now() - LastModifiedDate ),now() - LastModified
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Trial_and_Internal_Planning__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
+            <picklist>Trial_and_Internal_Planning_Task__c</picklist>
             <values>
                 <fullName>YES</fullName>
                 <default>false</default>
@@ -5593,11 +5545,7 @@ min(today() - LastActivityDate , now() - LastModifiedDate ),now() - LastModified
         <description>Used by Component Distribution for Opportunities with Custom Solution Products</description>
         <label>Innovation Opportunities CD</label>
         <picklistValues>
-            <picklist>Agree_Requirement_Definition__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
+            <picklist>Agree_Requirement_Definition_Task__c</picklist>
             <values>
                 <fullName>YES</fullName>
                 <default>false</default>
@@ -5646,22 +5594,14 @@ min(today() - LastActivityDate , now() - LastModifiedDate ),now() - LastModified
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Create_Value_Proposition__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
+            <picklist>Create_Value_Proposition_Task__c</picklist>
             <values>
                 <fullName>YES</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Creation_of_Solution_Cost_Estimate__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
+            <picklist>Creation_of_Solution_Cost_Estimate_Task__c</picklist>
             <values>
                 <fullName>YES</fullName>
                 <default>false</default>
@@ -5687,11 +5627,7 @@ min(today() - LastActivityDate , now() - LastModifiedDate ),now() - LastModified
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Final_Product_Solution_Spec__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
+            <picklist>Final_Product_Solution_Spec_Task__c</picklist>
             <values>
                 <fullName>YES</fullName>
                 <default>false</default>
@@ -5744,10 +5680,6 @@ min(today() - LastActivityDate , now() - LastModifiedDate ),now() - LastModified
         </picklistValues>
         <picklistValues>
             <picklist>Know_your_customer__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
             <values>
                 <fullName>YES</fullName>
                 <default>false</default>
@@ -7206,11 +7138,7 @@ min(today() - LastActivityDate , now() - LastModifiedDate ),now() - LastModified
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Trial_and_Internal_Planning__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
+            <picklist>Trial_and_Internal_Planning_Task__c</picklist>
             <values>
                 <fullName>YES</fullName>
                 <default>false</default>
@@ -7261,11 +7189,7 @@ min(today() - LastActivityDate , now() - LastModifiedDate ),now() - LastModified
         <description>Opportunities for portfolio products which require modifications or design</description>
         <label>Portfolio product opportunities requiring modifications</label>
         <picklistValues>
-            <picklist>Agree_Requirement_Definition__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
+            <picklist>Agree_Requirement_Definition_Task__c</picklist>
             <values>
                 <fullName>YES</fullName>
                 <default>false</default>
@@ -7314,22 +7238,14 @@ min(today() - LastActivityDate , now() - LastModifiedDate ),now() - LastModified
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Create_Value_Proposition__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
+            <picklist>Create_Value_Proposition_Task__c</picklist>
             <values>
                 <fullName>YES</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Creation_of_Solution_Cost_Estimate__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
+            <picklist>Creation_of_Solution_Cost_Estimate_Task__c</picklist>
             <values>
                 <fullName>YES</fullName>
                 <default>false</default>
@@ -7355,11 +7271,7 @@ min(today() - LastActivityDate , now() - LastModifiedDate ),now() - LastModified
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Final_Product_Solution_Spec__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
+            <picklist>Final_Product_Solution_Spec_Task__c</picklist>
             <values>
                 <fullName>YES</fullName>
                 <default>false</default>
@@ -7412,10 +7324,6 @@ min(today() - LastActivityDate , now() - LastModifiedDate ),now() - LastModified
         </picklistValues>
         <picklistValues>
             <picklist>Know_your_customer__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
             <values>
                 <fullName>YES</fullName>
                 <default>false</default>
@@ -8870,11 +8778,7 @@ min(today() - LastActivityDate , now() - LastModifiedDate ),now() - LastModified
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Trial_and_Internal_Planning__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
+            <picklist>Trial_and_Internal_Planning_Task__c</picklist>
             <values>
                 <fullName>YES</fullName>
                 <default>false</default>
@@ -8925,11 +8829,7 @@ min(today() - LastActivityDate , now() - LastModifiedDate ),now() - LastModified
         <description>Opportunites relating to Standard products</description>
         <label>Standard Opportunities</label>
         <picklistValues>
-            <picklist>Agree_Requirement_Definition__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
+            <picklist>Agree_Requirement_Definition_Task__c</picklist>
             <values>
                 <fullName>YES</fullName>
                 <default>false</default>
@@ -8978,22 +8878,14 @@ min(today() - LastActivityDate , now() - LastModifiedDate ),now() - LastModified
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Create_Value_Proposition__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
+            <picklist>Create_Value_Proposition_Task__c</picklist>
             <values>
                 <fullName>YES</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Creation_of_Solution_Cost_Estimate__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
+            <picklist>Creation_of_Solution_Cost_Estimate_Task__c</picklist>
             <values>
                 <fullName>YES</fullName>
                 <default>false</default>
@@ -9019,11 +8911,7 @@ min(today() - LastActivityDate , now() - LastModifiedDate ),now() - LastModified
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Final_Product_Solution_Spec__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
+            <picklist>Final_Product_Solution_Spec_Task__c</picklist>
             <values>
                 <fullName>YES</fullName>
                 <default>false</default>
@@ -9076,10 +8964,6 @@ min(today() - LastActivityDate , now() - LastModifiedDate ),now() - LastModified
         </picklistValues>
         <picklistValues>
             <picklist>Know_your_customer__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
             <values>
                 <fullName>YES</fullName>
                 <default>false</default>
@@ -10534,11 +10418,7 @@ min(today() - LastActivityDate , now() - LastModifiedDate ),now() - LastModified
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Trial_and_Internal_Planning__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
+            <picklist>Trial_and_Internal_Planning_Task__c</picklist>
             <values>
                 <fullName>YES</fullName>
                 <default>false</default>
@@ -10589,11 +10469,7 @@ min(today() - LastActivityDate , now() - LastModifiedDate ),now() - LastModified
         <description>Used by Component Distribution for Opportunities with Standard Products</description>
         <label>Standard Opportunities CD</label>
         <picklistValues>
-            <picklist>Agree_Requirement_Definition__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
+            <picklist>Agree_Requirement_Definition_Task__c</picklist>
             <values>
                 <fullName>YES</fullName>
                 <default>false</default>
@@ -10642,22 +10518,14 @@ min(today() - LastActivityDate , now() - LastModifiedDate ),now() - LastModified
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Create_Value_Proposition__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
+            <picklist>Create_Value_Proposition_Task__c</picklist>
             <values>
                 <fullName>YES</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Creation_of_Solution_Cost_Estimate__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
+            <picklist>Creation_of_Solution_Cost_Estimate_Task__c</picklist>
             <values>
                 <fullName>YES</fullName>
                 <default>false</default>
@@ -10683,11 +10551,7 @@ min(today() - LastActivityDate , now() - LastModifiedDate ),now() - LastModified
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Final_Product_Solution_Spec__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
+            <picklist>Final_Product_Solution_Spec_Task__c</picklist>
             <values>
                 <fullName>YES</fullName>
                 <default>false</default>
@@ -10740,10 +10604,6 @@ min(today() - LastActivityDate , now() - LastModifiedDate ),now() - LastModified
         </picklistValues>
         <picklistValues>
             <picklist>Know_your_customer__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
             <values>
                 <fullName>YES</fullName>
                 <default>false</default>
@@ -12202,11 +12062,7 @@ min(today() - LastActivityDate , now() - LastModifiedDate ),now() - LastModified
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Trial_and_Internal_Planning__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
+            <picklist>Trial_and_Internal_Planning_Task__c</picklist>
             <values>
                 <fullName>YES</fullName>
                 <default>false</default>
@@ -12257,11 +12113,7 @@ min(today() - LastActivityDate , now() - LastModifiedDate ),now() - LastModified
         <description>Default opportunity type for lead conversion - can not progress through opportunity stages</description>
         <label>Unknown Opportunity Type</label>
         <picklistValues>
-            <picklist>Agree_Requirement_Definition__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
+            <picklist>Agree_Requirement_Definition_Task__c</picklist>
             <values>
                 <fullName>YES</fullName>
                 <default>false</default>
@@ -12310,22 +12162,14 @@ min(today() - LastActivityDate , now() - LastModifiedDate ),now() - LastModified
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Create_Value_Proposition__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
+            <picklist>Create_Value_Proposition_Task__c</picklist>
             <values>
                 <fullName>YES</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Creation_of_Solution_Cost_Estimate__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
+            <picklist>Creation_of_Solution_Cost_Estimate_Task__c</picklist>
             <values>
                 <fullName>YES</fullName>
                 <default>false</default>
@@ -12366,11 +12210,7 @@ min(today() - LastActivityDate , now() - LastModifiedDate ),now() - LastModified
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Final_Product_Solution_Spec__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
+            <picklist>Final_Product_Solution_Spec_Task__c</picklist>
             <values>
                 <fullName>YES</fullName>
                 <default>false</default>
@@ -12423,10 +12263,6 @@ min(today() - LastActivityDate , now() - LastModifiedDate ),now() - LastModified
         </picklistValues>
         <picklistValues>
             <picklist>Know_your_customer__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
             <values>
                 <fullName>YES</fullName>
                 <default>false</default>
@@ -13881,11 +13717,7 @@ min(today() - LastActivityDate , now() - LastModifiedDate ),now() - LastModified
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Trial_and_Internal_Planning__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
+            <picklist>Trial_and_Internal_Planning_Task__c</picklist>
             <values>
                 <fullName>YES</fullName>
                 <default>false</default>
@@ -13966,9 +13798,9 @@ min(today() - LastActivityDate , now() - LastModifiedDate ),now() - LastModified
         <active>true</active>
         <errorConditionFormula>AND($Setup.TurnOffAutomation__c.Validation_Rules__c=true,
 Probability &gt;=0.2,
-ISBLANK(TEXT(Agree_Requirement_Definition__c)),
+ISBLANK(TEXT(Agree_Requirement_Definition_Task__c)),
 AND(RecordType.DeveloperName&lt;&gt;&apos;Innovation_Opportunities_CD&apos;, RecordType.DeveloperName&lt;&gt;&apos;Standard_Opportunities_CD&apos;))</errorConditionFormula>
-        <errorDisplayField>Agree_Requirement_Definition__c</errorDisplayField>
+        <errorDisplayField>Agree_Requirement_Definition_Task__c</errorDisplayField>
         <errorMessage>Please mark this task as complete.</errorMessage>
     </validationRules>
     <validationRules>
@@ -13987,7 +13819,7 @@ AND(RecordType.DeveloperName&lt;&gt;&apos;Innovation_Opportunities_CD&apos;, Rec
     <validationRules>
         <fullName>Check_Account_Verified</fullName>
         <active>true</active>
-        <errorConditionFormula>AND($Setup.TurnOffAutomation__c.Validation_Rules__c=true,Account_Needs_Verification__c = &apos;YES&apos;, Account_Verified__c = FALSE,  Probability &gt;= 0.2, AND(RecordType.DeveloperName&lt;&gt;&apos;Innovation_Opportunities_CD&apos;, RecordType.DeveloperName&lt;&gt;&apos;Standard_Opportunities_CD&apos;))</errorConditionFormula>
+        <errorConditionFormula>AND($Setup.TurnOffAutomation__c.Validation_Rules__c=true,Account_Needs_Verification__c = &apos;YES&apos;, Account_Verified__c = FALSE,  Probability &gt;= 0.2 )</errorConditionFormula>
         <errorDisplayField>Account_Verified__c</errorDisplayField>
         <errorMessage>The Account must  be verified at this probability level</errorMessage>
     </validationRules>
@@ -14158,10 +13990,10 @@ AND($Setup.TurnOffAutomation__c.Validation_Rules__c=true,Probability &gt;= 0.7, 
         <description>Clkn M&amp;A Project Probability changed from 0.5 to 0.3.</description>
         <errorConditionFormula>AND($Setup.TurnOffAutomation__c.Validation_Rules__c=true,
 Probability &gt;=0.3,
-ISBLANK(TEXT(Create_Value_Proposition__c)),
-AND(RecordType.DeveloperName&lt;&gt;&apos;Innovation_Opportunities_CD&apos;, RecordType.DeveloperName&lt;&gt;&apos;Standard_Opportunities_CD&apos;)
+ISBLANK(TEXT(Create_Value_Proposition_Task__c))
+
 )</errorConditionFormula>
-        <errorDisplayField>Create_Value_Proposition__c</errorDisplayField>
+        <errorDisplayField>Create_Value_Proposition_Task__c</errorDisplayField>
         <errorMessage>Please mark this task as complete.</errorMessage>
     </validationRules>
     <validationRules>
@@ -14170,10 +14002,9 @@ AND(RecordType.DeveloperName&lt;&gt;&apos;Innovation_Opportunities_CD&apos;, Rec
         <description>Clkn M&amp;A Project Probability changed from 0.7 to 0.95</description>
         <errorConditionFormula>AND($Setup.TurnOffAutomation__c.Validation_Rules__c=true,
 Probability &gt;=0.95, 
-ISBLANK(TEXT(Creation_of_Solution_Cost_Estimate__c)),
-AND(RecordType.DeveloperName&lt;&gt;&apos;Innovation_Opportunities_CD&apos;, RecordType.DeveloperName&lt;&gt;&apos;Standard_Opportunities_CD&apos;) 
+ISBLANK(TEXT(Creation_of_Solution_Cost_Estimate_Task__c)) 
 )</errorConditionFormula>
-        <errorDisplayField>Creation_of_Solution_Cost_Estimate__c</errorDisplayField>
+        <errorDisplayField>Creation_of_Solution_Cost_Estimate_Task__c</errorDisplayField>
         <errorMessage>Please mark this task as complete.</errorMessage>
     </validationRules>
     <validationRules>
@@ -14195,7 +14026,7 @@ AND(RecordType.DeveloperName&lt;&gt;&apos;Innovation_Opportunities_CD&apos;, Rec
         <errorConditionFormula>AND($Setup.TurnOffAutomation__c.Validation_Rules__c=true,Probability &gt;= 0.2,OR( 
 ISBLANK(   Gross_Margin_Percentage__c ), 
 Gross_Margin_Percentage__c= 0
-),AND(RecordType.DeveloperName&lt;&gt;&apos;Innovation_Opportunities_CD&apos;, RecordType.DeveloperName&lt;&gt;&apos;Standard_Opportunities_CD&apos;))</errorConditionFormula>
+))</errorConditionFormula>
         <errorDisplayField>Gross_Margin_Percentage__c</errorDisplayField>
         <errorMessage>This probability level requires the gross margin percentage to be specified</errorMessage>
     </validationRules>
@@ -14204,7 +14035,6 @@ Gross_Margin_Percentage__c= 0
         <active>true</active>
         <errorConditionFormula>AND($Setup.TurnOffAutomation__c.Validation_Rules__c=true,Probability &gt;= 0.2,
 
-(AND(RecordType.DeveloperName&lt;&gt;&apos;Innovation_Opportunities_CD&apos;, RecordType.DeveloperName&lt;&gt;&apos;Standard_Opportunities_CD&apos;)) ,
 
 OR( 
 ISBLANK(  Amount  ), 
@@ -14219,9 +14049,9 @@ Amount  = 0
         <description>Clkn M&amp;A Project changed 0.7 to 0.6</description>
         <errorConditionFormula>AND($Setup.TurnOffAutomation__c.Validation_Rules__c=true,
 Probability &gt;=0.6, 
-ISBLANK(TEXT(Final_Product_Solution_Spec__c)),AND(RecordType.DeveloperName&lt;&gt;&apos;Innovation_Opportunities_CD&apos;, RecordType.DeveloperName&lt;&gt;&apos;Standard_Opportunities_CD&apos;) 
+ISBLANK(TEXT(Final_Product_Solution_Spec_Task__c)) 
 )</errorConditionFormula>
-        <errorDisplayField>Final_Product_Solution_Spec__c</errorDisplayField>
+        <errorDisplayField>Final_Product_Solution_Spec_Task__c</errorDisplayField>
         <errorMessage>Please mark this task as complete.</errorMessage>
     </validationRules>
     <validationRules>
@@ -14259,8 +14089,7 @@ OR(ISBLANK(   Approval_Technical_Solution_Timeframes__c   ),   Approval_Technica
         <active>true</active>
         <errorConditionFormula>AND($Setup.TurnOffAutomation__c.Validation_Rules__c=true,
 Probability &gt;=0.2, 
-ISBLANK(TEXT(Know_your_customer__c)),
-AND(RecordType.DeveloperName&lt;&gt;&apos;Innovation_Opportunities_CD&apos;, RecordType.DeveloperName&lt;&gt;&apos;Standard_Opportunities_CD&apos;) 
+ISBLANK(TEXT(Know_your_customer__c)) 
 )</errorConditionFormula>
         <errorDisplayField>Know_your_customer__c</errorDisplayField>
         <errorMessage>Please mark this task as complete.</errorMessage>
@@ -14268,7 +14097,7 @@ AND(RecordType.DeveloperName&lt;&gt;&apos;Innovation_Opportunities_CD&apos;, Rec
     <validationRules>
         <fullName>Opportunity_CSR</fullName>
         <active>true</active>
-        <errorConditionFormula>AND($Setup.TurnOffAutomation__c.Validation_Rules__c=true,Allow_Fastrack_Quote__c =false,Probability &gt; 0.2, ISBLANK(  CSR__c  ), AND(RecordType.DeveloperName&lt;&gt;&apos;Innovation_Opportunities_CD&apos;, RecordType.DeveloperName&lt;&gt;&apos;Standard_Opportunities_CD&apos;) )</errorConditionFormula>
+        <errorConditionFormula>AND($Setup.TurnOffAutomation__c.Validation_Rules__c=true,Allow_Fastrack_Quote__c =false,Probability &gt; 0.2, ISBLANK(  CSR__c  ) )</errorConditionFormula>
         <errorMessage>Please assign a CSR to this opportunity first</errorMessage>
     </validationRules>
     <validationRules>
@@ -14313,7 +14142,7 @@ OR(ISBLANK(Approval_Graphical_design__c), Approval_Graphical_design__c &gt; TODA
         <fullName>Prevents_Eval_Sol_Prop_if_no_Create_Val</fullName>
         <active>false</active>
         <description>Prevents Innovation Opportunity CD being set to Evaluation Solution if the Create Value Proposition Task is not complete.</description>
-        <errorConditionFormula>AND($Setup.TurnOffAutomation__c.Validation_Rules__c=true,RecordType.DeveloperName=&apos;Innovation_Opportunities_CD&apos;,ISPICKVAL( StageName , &apos;Evaluate Solution&apos;),NOT(ISPICKVAL(  Create_Value_Proposition__c  , &apos;Yes&apos;)))</errorConditionFormula>
+        <errorConditionFormula>AND($Setup.TurnOffAutomation__c.Validation_Rules__c=true,RecordType.DeveloperName=&apos;Innovation_Opportunities_CD&apos;,ISPICKVAL( StageName , &apos;Evaluate Solution&apos;),NOT(ISPICKVAL(  Create_Value_Proposition_Task__c  , &apos;Yes&apos;)))</errorConditionFormula>
         <errorMessage>You cannot set this Opportunity to Stage Evaluation Solution until the Create Value Proposition Opportunity Task is completed.</errorMessage>
     </validationRules>
     <validationRules>
@@ -14345,13 +14174,7 @@ ISBLANK(TEXT(Reason_for_Won_Lost_Opp__c))), True, False
         <errorConditionFormula>AND($Setup.TurnOffAutomation__c.Validation_Rules__c=true,Probability &gt;= 0.3,
 Amount_this_year__c =0,
 Amount_year_two__c  =0,
-Amount_year_three__c =0, (AND(RecordType.DeveloperName&lt;&gt;&apos;Innovation_Opportunities_CD&apos;, RecordType.DeveloperName&lt;&gt;&apos;Standard_Opportunities_CD&apos;))
-)
- || 
-AND($Setup.TurnOffAutomation__c.Validation_Rules__c=true,Probability &gt;= 0.7,
-Amount_this_year__c =0,
-Amount_year_two__c  =0,
-Amount_year_three__c =0,(OR(RecordType.DeveloperName=&apos;Innovation_Opportunities_CD&apos;, RecordType.DeveloperName=&apos;Standard_Opportunities_CD&apos;)) )</errorConditionFormula>
+Amount_year_three__c =0)</errorConditionFormula>
         <errorMessage>This probability level requires a revenue summary forecast (Year 1, Year 2, Year 3)</errorMessage>
     </validationRules>
     <validationRules>
@@ -14378,9 +14201,9 @@ Approval_Sample_by_Customer__c  &gt; TODAY()))</errorConditionFormula>
         <description>Clkn project probability was changed from =0.9 to &gt;=0.95</description>
         <errorConditionFormula>AND($Setup.TurnOffAutomation__c.Validation_Rules__c=true,
 Probability  &gt;= 0.95, 
-ISBLANK(TEXT(Trial_and_Internal_Planning__c)),AND(RecordType.DeveloperName&lt;&gt;&apos;Innovation_Opportunities_CD&apos;, RecordType.DeveloperName&lt;&gt;&apos;Standard_Opportunities_CD&apos;) 
+ISBLANK(TEXT(Trial_and_Internal_Planning_Task__c)) 
 )</errorConditionFormula>
-        <errorDisplayField>Trial_and_Internal_Planning__c</errorDisplayField>
+        <errorDisplayField>Trial_and_Internal_Planning_Task__c</errorDisplayField>
         <errorMessage>Please mark this task as complete.</errorMessage>
     </validationRules>
     <webLinks>

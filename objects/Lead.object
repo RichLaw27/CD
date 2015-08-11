@@ -1126,7 +1126,17 @@
         <picklist>
             <controllingField>Industry</controllingField>
             <picklistValues>
+                <fullName>Aerospace</fullName>
+                <controllingFieldValues>Industrial</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Agricultural Machines</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Aircare</fullName>
+                <controllingFieldValues>Household &amp; Appliances</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -1134,7 +1144,17 @@
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Airline</fullName>
+                <controllingFieldValues>Transport &amp; Logistics</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Ambient Goods</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Appliances</fullName>
+                <controllingFieldValues>Household &amp; Appliances</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -1146,7 +1166,22 @@
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Automotive</fullName>
+                <controllingFieldValues>Industrial</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Bagged &amp; Boxed Food</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Banking &amp; Insurance</fullName>
+                <controllingFieldValues>Consumer Print &amp; Security</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Beauty</fullName>
+                <controllingFieldValues>Health &amp; Personal Care</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -1159,6 +1194,13 @@
             </picklistValues>
             <picklistValues>
                 <fullName>Building Products</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Building products including windows/Floors/Stairs</fullName>
+                <controllingFieldValues>Automotive</controllingFieldValues>
+                <controllingFieldValues>Construction</controllingFieldValues>
+                <controllingFieldValues>Industrial</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -1182,6 +1224,11 @@
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Cigarettes &amp; Cigars</fullName>
+                <controllingFieldValues>Tobacco</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Clean Rooms</fullName>
                 <controllingFieldValues>Electronic &amp; Electric</controllingFieldValues>
                 <default>false</default>
@@ -1191,7 +1238,23 @@
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Components &amp; Assemblies</fullName>
+                <controllingFieldValues>Electronic &amp; Electric</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Conservatories</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Conservatories &amp; Greenhouses</fullName>
+                <controllingFieldValues>Construction</controllingFieldValues>
+                <controllingFieldValues>Industrial</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Contamination Control</fullName>
+                <controllingFieldValues>Industrial</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -1210,7 +1273,37 @@
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Education - College</fullName>
+                <controllingFieldValues>Consumer Print &amp; Security</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Education - School</fullName>
+                <controllingFieldValues>Consumer Print &amp; Security</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Education - University</fullName>
+                <controllingFieldValues>Consumer Print &amp; Security</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Electricity Industrial</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Electronics</fullName>
+                <controllingFieldValues>Industrial</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Events &amp; Other</fullName>
+                <controllingFieldValues>Consumer Print &amp; Security</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Fabrication/Machinery</fullName>
+                <controllingFieldValues>Industrial</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -1238,6 +1331,11 @@
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Gaming</fullName>
+                <controllingFieldValues>Consumer Print &amp; Security</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Glazing</fullName>
                 <default>false</default>
             </picklistValues>
@@ -1252,11 +1350,25 @@
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Graphics and print</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Greenhouses</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>Health &amp; Beauty Care</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Health and Beauty Care</fullName>
+                <controllingFieldValues>Health &amp; Personal Care</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Healthcare</fullName>
+                <controllingFieldValues>Health &amp; Personal Care</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -1276,7 +1388,27 @@
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Household products &amp; Aircare</fullName>
+                <controllingFieldValues>Household</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HVAC</fullName>
+                <controllingFieldValues>Construction</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hydraulics/Pneumatics</fullName>
+                <controllingFieldValues>Industrial</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Identification &amp; Entitlement</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Identity Solutions</fullName>
+                <controllingFieldValues>Identity Solutions</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -1313,6 +1445,11 @@
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Medical devices</fullName>
+                <controllingFieldValues>Health &amp; Personal Care</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Metal &amp; Metalwork</fullName>
                 <default>false</default>
             </picklistValues>
@@ -1325,8 +1462,18 @@
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Off Road</fullName>
+                <controllingFieldValues>Automotive</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Oil &amp; Gas</fullName>
                 <controllingFieldValues>Industrial</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>On Road</fullName>
+                <controllingFieldValues>Automotive</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -1339,6 +1486,11 @@
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Other Tobacco Products (OTP)</fullName>
+                <controllingFieldValues>Tobacco</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Packaged Goods</fullName>
                 <default>false</default>
             </picklistValues>
@@ -1348,6 +1500,12 @@
             </picklistValues>
             <picklistValues>
                 <fullName>Paper</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Paper &amp; Stationery</fullName>
+                <controllingFieldValues>Consumer Print &amp; Security</controllingFieldValues>
+                <controllingFieldValues>Paper, board and Point of Sale</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -1364,6 +1522,21 @@
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Pharmaceutical - branded</fullName>
+                <controllingFieldValues>Health &amp; Personal Care</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pharmaceutical - generic</fullName>
+                <controllingFieldValues>Health &amp; Personal Care</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pharmaceutical - OTC</fullName>
+                <controllingFieldValues>Health &amp; Personal Care</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Pipe</fullName>
                 <default>false</default>
             </picklistValues>
@@ -1372,9 +1545,24 @@
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Point of sale, sign &amp; display</fullName>
+                <controllingFieldValues>Paper, board and Point of Sale</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>POS &amp; Signage</fullName>
+                <controllingFieldValues>Retail and POP</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Printing Systems</fullName>
                 <controllingFieldValues>Household</controllingFieldValues>
                 <controllingFieldValues>Household &amp; Appliances</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Public Sector</fullName>
+                <controllingFieldValues>Consumer Print &amp; Security</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -1394,11 +1582,21 @@
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Road</fullName>
+                <controllingFieldValues>Transport &amp; Logistics</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Roll Your Own Products</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>Roofs</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sea</fullName>
+                <controllingFieldValues>Transport &amp; Logistics</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -1426,11 +1624,21 @@
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Smokeless Nicotine Devices (SND)</fullName>
+                <controllingFieldValues>Tobacco</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Solid Goods</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>Special Healthcare</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Specialist Transport</fullName>
+                <controllingFieldValues>Industrial</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -1450,7 +1658,22 @@
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Transit and Shelf-Ready</fullName>
+                <controllingFieldValues>Paper, board and Point of Sale</controllingFieldValues>
+                <controllingFieldValues>Retail and POP</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Tubes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Utilities</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Veterinary</fullName>
+                <controllingFieldValues>Health &amp; Personal Care</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -1459,7 +1682,16 @@
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>White goods</fullName>
+                <controllingFieldValues>Industrial</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Wholesale</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Windows</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -1477,243 +1709,11 @@
                 <default>false</default>
             </picklistValues>
             <picklistValues>
-                <fullName>Windows</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Cigarettes &amp; Cigars</fullName>
-                <controllingFieldValues>Tobacco</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Other Tobacco Products (OTP)</fullName>
-                <controllingFieldValues>Tobacco</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Smokeless Nicotine Devices (SND)</fullName>
-                <controllingFieldValues>Tobacco</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Healthcare</fullName>
-                <controllingFieldValues>Health &amp; Personal Care</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Pharmaceutical - branded</fullName>
-                <controllingFieldValues>Health &amp; Personal Care</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Pharmaceutical - generic</fullName>
-                <controllingFieldValues>Health &amp; Personal Care</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Pharmaceutical - OTC</fullName>
-                <controllingFieldValues>Health &amp; Personal Care</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Medical devices</fullName>
-                <controllingFieldValues>Health &amp; Personal Care</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Veterinary</fullName>
-                <controllingFieldValues>Health &amp; Personal Care</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Health and Beauty Care</fullName>
-                <controllingFieldValues>Health &amp; Personal Care</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Household products &amp; Aircare</fullName>
-                <controllingFieldValues>Household</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Graphics and print</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Paper &amp; Stationery</fullName>
-                <controllingFieldValues>Consumer Print &amp; Security</controllingFieldValues>
-                <controllingFieldValues>Paper, board and Point of Sale</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Point of sale, sign &amp; display</fullName>
-                <controllingFieldValues>Paper, board and Point of Sale</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Transit and Shelf-Ready</fullName>
-                <controllingFieldValues>Paper, board and Point of Sale</controllingFieldValues>
-                <controllingFieldValues>Retail and POP</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>White goods</fullName>
-                <controllingFieldValues>Industrial</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Automotive</fullName>
-                <controllingFieldValues>Industrial</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Aerospace</fullName>
-                <controllingFieldValues>Industrial</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Fabrication/Machinery</fullName>
-                <controllingFieldValues>Industrial</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Hydraulics/Pneumatics</fullName>
-                <controllingFieldValues>Industrial</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Specialist Transport</fullName>
-                <controllingFieldValues>Industrial</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Components &amp; Assemblies</fullName>
-                <controllingFieldValues>Electronic &amp; Electric</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Building products including windows/Floors/Stairs</fullName>
-                <controllingFieldValues>Automotive</controllingFieldValues>
-                <controllingFieldValues>Construction</controllingFieldValues>
-                <controllingFieldValues>Industrial</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Conservatories &amp; Greenhouses</fullName>
-                <controllingFieldValues>Construction</controllingFieldValues>
-                <controllingFieldValues>Industrial</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>HVAC</fullName>
-                <controllingFieldValues>Construction</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Identity Solutions</fullName>
-                <controllingFieldValues>Identity Solutions</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Aircare</fullName>
-                <controllingFieldValues>Household &amp; Appliances</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Airline</fullName>
-                <controllingFieldValues>Transport &amp; Logistics</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Appliances</fullName>
-                <controllingFieldValues>Household &amp; Appliances</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Banking &amp; Insurance</fullName>
-                <controllingFieldValues>Consumer Print &amp; Security</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Beauty</fullName>
-                <controllingFieldValues>Health &amp; Personal Care</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Contamination Control</fullName>
-                <controllingFieldValues>Industrial</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Education - College</fullName>
-                <controllingFieldValues>Consumer Print &amp; Security</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Education - School</fullName>
-                <controllingFieldValues>Consumer Print &amp; Security</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Education - University</fullName>
-                <controllingFieldValues>Consumer Print &amp; Security</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Electronics</fullName>
-                <controllingFieldValues>Industrial</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Events &amp; Other</fullName>
-                <controllingFieldValues>Consumer Print &amp; Security</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Gaming</fullName>
-                <controllingFieldValues>Consumer Print &amp; Security</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Off Road</fullName>
-                <controllingFieldValues>Automotive</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>On Road</fullName>
-                <controllingFieldValues>Automotive</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>POS &amp; Signage</fullName>
-                <controllingFieldValues>Retail and POP</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Public Sector</fullName>
-                <controllingFieldValues>Consumer Print &amp; Security</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Road</fullName>
-                <controllingFieldValues>Transport &amp; Logistics</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Sea</fullName>
-                <controllingFieldValues>Transport &amp; Logistics</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
                 <fullName>Writing Systems</fullName>
                 <controllingFieldValues>Household &amp; Appliances</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
-            <picklistValues>
-                <fullName>Utilities</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
+            <sorted>true</sorted>
         </picklist>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>

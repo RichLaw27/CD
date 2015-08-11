@@ -15,6 +15,11 @@
 <apex:outputLabel value="User is a Key User" for="isKeyUser"></apex:outputlabel>
 <apex:outputText value="{!$User.User_is_a_Key_User__c}" id="isKeyUser"/>
 </apex:pageBlockSectionItem>
+
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="Manager" for="isKeyUser"></apex:outputlabel>
+<apex:outputText value="{!$User.Manager_Name__c}" id="isKeyUser"/>
+</apex:pageBlockSectionItem>
 </apex:pageBlockSection>
 
 </apex:pageBlock>

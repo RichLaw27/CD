@@ -159,14 +159,14 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Account.Approved_by_GMC_Date__c</field>
-        <readable>false</readable>
+        <editable>true</editable>
+        <field>Account.Approved_by_GMC_User__c</field>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>Account.Approved_by_GMC__c</field>
-        <readable>true</readable>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -270,11 +270,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Account.Customer_Name__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Account.Customer_Type__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -321,6 +316,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.ERP_Customer_ID_of_Parent__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.ERP_Name__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -2570,7 +2570,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Opportunity.Agree_Requirement_Definition__c</field>
+        <field>Opportunity.Agree_Requirement_Definition_Task__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -2745,12 +2745,12 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Opportunity.Create_Value_Proposition__c</field>
+        <field>Opportunity.Create_Value_Proposition_Task__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Opportunity.Creation_of_Solution_Cost_Estimate__c</field>
+        <field>Opportunity.Creation_of_Solution_Cost_Estimate_Task__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -2835,7 +2835,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Opportunity.Final_Product_Solution_Spec__c</field>
+        <field>Opportunity.Final_Product_Solution_Spec_Task__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -3164,9 +3164,9 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>Opportunity.TotalOpportunityQuantity</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -3190,7 +3190,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Opportunity.Trial_and_Internal_Planning__c</field>
+        <field>Opportunity.Trial_and_Internal_Planning_Task__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
