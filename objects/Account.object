@@ -165,7 +165,7 @@
                 <default>false</default>
             </picklistValues>
             <picklistValues>
-                <fullName>Region</fullName>
+                <fullName>Regional</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -459,6 +459,62 @@
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Business_Area_picklist__c</fullName>
+        <externalId>false</externalId>
+        <label>Business Area</label>
+        <picklist>
+            <controllingField>Strategic_Business_Unit__c</controllingField>
+            <picklistValues>
+                <fullName>Components</fullName>
+                <controllingFieldValues>Distribution</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Specialty Tapes</fullName>
+                <controllingFieldValues>Distribution</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Extrusion</fullName>
+                <controllingFieldValues>Specialist Technology</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Filters</fullName>
+                <controllingFieldValues>Filter Products</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Health &amp; Personal Care Packaging</fullName>
+                <controllingFieldValues>Health &amp; Personal Care Packaging</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Consumer Packaging</fullName>
+                <controllingFieldValues>Health &amp; Personal Care Packaging</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Porous Technologies</fullName>
+                <controllingFieldValues>Specialist Technology</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Essentra Securing Solutions</fullName>
+                <controllingFieldValues>Distribution</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pipe Protection Technologies</fullName>
+                <controllingFieldValues>Specialist Technology</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
     </fields>
     <fields>
         <fullName>Business_Segment__c</fullName>
@@ -1837,11 +1893,6 @@ IF(Total_Revenue_Last_12_Months_Prev_Year__c&gt;0, &apos;Churn&apos;, &apos;Laps
             </picklistValues>
             <picklistValues>
                 <fullName>Consumer (Denekamp) (Consumer (Linde))</fullName>
-                <controllingFieldValues>Health &amp; Personal Care Packaging</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Consumer (Nimax)</fullName>
                 <controllingFieldValues>Health &amp; Personal Care Packaging</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
@@ -3705,7 +3756,7 @@ Id))))</formula>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Region</fullName>
+                <fullName>Regional</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -3780,6 +3831,45 @@ Id))))</formula>
             </values>
             <values>
                 <fullName>Speciality Tapes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Business_Area_picklist__c</picklist>
+            <values>
+                <fullName>Components</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumer Packaging</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Essentra Securing Solutions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Extrusion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Filters</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Health %26 Personal Care Packaging</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pipe Protection Technologies</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Porous Technologies</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Specialty Tapes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -4210,10 +4300,6 @@ Id))))</formula>
             </values>
             <values>
                 <fullName>Consumer %28Leeuwarden%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Consumer %28Nimax%29</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -4870,7 +4956,7 @@ Id))))</formula>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Region</fullName>
+                <fullName>Regional</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -4945,6 +5031,45 @@ Id))))</formula>
             </values>
             <values>
                 <fullName>Speciality Tapes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Business_Area_picklist__c</picklist>
+            <values>
+                <fullName>Components</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumer Packaging</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Essentra Securing Solutions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Extrusion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Filters</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Health %26 Personal Care Packaging</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pipe Protection Technologies</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Porous Technologies</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Specialty Tapes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -5519,10 +5644,6 @@ Id))))</formula>
             </values>
             <values>
                 <fullName>Consumer %28Leeuwarden%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Consumer %28Nimax%29</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -6447,7 +6568,7 @@ Id))))</formula>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Region</fullName>
+                <fullName>Regional</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -6522,6 +6643,45 @@ Id))))</formula>
             </values>
             <values>
                 <fullName>Speciality Tapes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Business_Area_picklist__c</picklist>
+            <values>
+                <fullName>Components</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumer Packaging</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Essentra Securing Solutions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Extrusion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Filters</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Health %26 Personal Care Packaging</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pipe Protection Technologies</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Porous Technologies</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Specialty Tapes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -7084,10 +7244,6 @@ Id))))</formula>
             </values>
             <values>
                 <fullName>Consumer %28Leeuwarden%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Consumer %28Nimax%29</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -8012,7 +8168,7 @@ Id))))</formula>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Region</fullName>
+                <fullName>Regional</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -8087,6 +8243,45 @@ Id))))</formula>
             </values>
             <values>
                 <fullName>Speciality Tapes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Business_Area_picklist__c</picklist>
+            <values>
+                <fullName>Components</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumer Packaging</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Essentra Securing Solutions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Extrusion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Filters</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Health %26 Personal Care Packaging</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pipe Protection Technologies</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Porous Technologies</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Specialty Tapes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -8657,10 +8852,6 @@ Id))))</formula>
             </values>
             <values>
                 <fullName>Consumer %28Leeuwarden%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Consumer %28Nimax%29</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -9585,7 +9776,7 @@ Id))))</formula>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Region</fullName>
+                <fullName>Regional</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -9660,6 +9851,45 @@ Id))))</formula>
             </values>
             <values>
                 <fullName>Speciality Tapes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Business_Area_picklist__c</picklist>
+            <values>
+                <fullName>Components</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumer Packaging</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Essentra Securing Solutions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Extrusion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Filters</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Health %26 Personal Care Packaging</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pipe Protection Technologies</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Porous Technologies</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Specialty Tapes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -10230,10 +10460,6 @@ Id))))</formula>
             </values>
             <values>
                 <fullName>Consumer %28Leeuwarden%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Consumer %28Nimax%29</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -11159,7 +11385,7 @@ Id))))</formula>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Region</fullName>
+                <fullName>Regional</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -11234,6 +11460,45 @@ Id))))</formula>
             </values>
             <values>
                 <fullName>Speciality Tapes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Business_Area_picklist__c</picklist>
+            <values>
+                <fullName>Components</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumer Packaging</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Essentra Securing Solutions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Extrusion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Filters</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Health %26 Personal Care Packaging</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pipe Protection Technologies</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Porous Technologies</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Specialty Tapes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -11804,10 +12069,6 @@ Id))))</formula>
             </values>
             <values>
                 <fullName>Consumer %28Leeuwarden%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Consumer %28Nimax%29</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -12775,18 +13036,20 @@ NOT($Profile.Name=&quot;System Administrator&quot;))</errorConditionFormula>
         <fullName>Duplication_Reason_required</fullName>
         <active>true</active>
         <errorConditionFormula>AND( Possible_Duplicate__c = TRUE, ISBLANK(Duplicate_Remarks__c))</errorConditionFormula>
-        <errorMessage>Duplicate Remarks is required</errorMessage>
+        <errorDisplayField>Duplicate_Remarks__c</errorDisplayField>
+        <errorMessage>Please explain why this is a duplicate and include a link to it&apos;s matching record.</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>Inactive_Reason_required_when_Active</fullName>
         <active>true</active>
         <description>Inactive Reason required when the Active checkbox is unchecked</description>
         <errorConditionFormula>AND( Active__c = FALSE,  ISPICKVAL(Inactive_Reason__c , &apos;&apos;))</errorConditionFormula>
+        <errorDisplayField>Inactive_Reason__c</errorDisplayField>
         <errorMessage>Inactive Reason is Required.</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>Lock_MDM_External_ID_if_FSSite_ID_known</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>AND( ISCHANGED( MDM_External_ID__c ) ,NOT( ISBLANK( FS_Site_ID__c )), NOT(SBU__c=&apos;CD&apos;))</errorConditionFormula>
         <errorMessage>You can not change the MDM External ID after an update was received from the MDM. We know that because the FS Site ID is set. Only SysAdmin or Divisional Super users can change this field now</errorMessage>
     </validationRules>
