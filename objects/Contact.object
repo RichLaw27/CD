@@ -146,11 +146,11 @@
         <label>Contact Type</label>
         <picklist>
             <picklistValues>
-                <fullName>Financial</fullName>
+                <fullName>Finance / Legal</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
-                <fullName>Innovation</fullName>
+                <fullName>General Management</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -158,51 +158,11 @@
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Operations</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Purchasing</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Senior Management</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Technical</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Accounts Payable</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Buyer/Expeditor</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Design Engineer</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Estimator</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>General Manager</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Maintenance</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Production/Operations Manager</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Proprietor/Owner</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Purchasing Manager</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -214,7 +174,11 @@
                 <default>false</default>
             </picklistValues>
             <picklistValues>
-                <fullName>Senior Finance</fullName>
+                <fullName>Technical</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
                 <default>false</default>
             </picklistValues>
             <sorted>false</sorted>
